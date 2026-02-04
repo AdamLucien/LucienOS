@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://adamkarl.lucien.technology/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/modules</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/modules" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/modules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/modules" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/capabilities</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/capabilities" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/capabilities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/capabilities" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/archive</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/archive" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/archive" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/archive" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/diagnostics</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/diagnostics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/diagnostics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/diagnostics" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/resonance</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/resonance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/resonance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/resonance" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/signal</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/signal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/signal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/signal" />
+  </url>
+
+  <url>
+    <loc>https://adamkarl.lucien.technology/en</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/en/modules</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/modules" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/modules" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/modules" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/en/capabilities</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/capabilities" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/capabilities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/capabilities" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/en/archive</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/archive" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/archive" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/archive" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/en/diagnostics</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/diagnostics" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/diagnostics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/diagnostics" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/en/resonance</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/resonance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/resonance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/resonance" />
+  </url>
+  <url>
+    <loc>https://adamkarl.lucien.technology/en/signal</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/signal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/signal" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamkarl.lucien.technology/signal" />
+  </url>
+</urlset>

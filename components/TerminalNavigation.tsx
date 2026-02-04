@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
 import { Terminal as TerminalIcon } from 'lucide-react';
-import { AppMode, Language } from '../App';
+import { AppMode, Language, SectionKey } from '../App';
 
 interface TerminalNavigationProps {
-  currentSection: string;
-  onNavigate: (section: string) => void;
+  currentSection: SectionKey;
+  onNavigate: (section: SectionKey) => void;
   mode: AppMode;
   lang: Language;
 }
@@ -20,15 +20,16 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
 }) => {
   const [inputValue, setInputValue] = useState('');
   const t = navTranslations[lang];
-  const navOptions = ['CORE', 'MODULES', 'CAPABILITIES', 'ARCHIVE', 'DIAGNOSTICS', 'RESONANCE', 'SIGNAL'];
+  const navOptions: SectionKey[] = ['CORE', 'MODULES', 'CAPABILITIES', 'ARCHIVE', 'DIAGNOSTICS', 'RESONANCE', 'SIGNAL'];
   const accentColor = mode === 'raw' ? '#ff003c' : '#6366f1';
 
   return (
-    <div className="w-full space-y-4">
+    <nav className="w-full space-y-4" aria-label="Section navigation">
       <div className="flex flex-wrap items-center justify-between gap-2">
         {navOptions.map((opt, i) => (
           <button
             key={opt}
+            type="button"
             onClick={() => onNavigate(opt)}
             className={`flex-1 text-[10px] font-bold uppercase tracking-[0.2em] transition-all duration-300 py-3 px-2 border relative group overflow-hidden ${
               currentSection === opt 
@@ -36,6 +37,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
                 : 'border-white/5 hover:border-white/20 hover:bg-white/[0.02]'
             }`}
             style={{ color: currentSection === opt ? accentColor : 'rgba(255,255,255,0.4)' }}
+            aria-current={currentSection === opt ? 'page' : undefined}
           >
             <span className="relative z-10">{t[opt as keyof typeof t]}</span>
             <span className="absolute top-1 left-1 text-[6px] opacity-20 group-hover:opacity-100 font-mono">0{i}</span>
@@ -61,6 +63,6 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
            ))}
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
