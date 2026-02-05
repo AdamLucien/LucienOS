@@ -650,9 +650,15 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <footer className="fixed bottom-0 left-0 w-full py-3 px-8 flex justify-between items-center z-40 bg-black/90 border-t border-white/5 pointer-events-none text-[8px] md:text-[10px]">
+      <footer className="fixed bottom-0 left-0 w-full py-3 px-8 flex justify-between items-center z-40 bg-black/90 border-t border-white/5 text-[8px] md:text-[10px]">
           <div className="opacity-20 font-mono tracking-widest uppercase">© 2026 Lucien Technology</div>
-          <div className="opacity-20 font-mono hidden lg:block uppercase tracking-[0.3em]">Signal over Noise // Strategy above Chaos</div>
+          <div className="hidden lg:flex items-center gap-4 opacity-20 font-mono uppercase tracking-[0.3em]">
+            <span>Signal over Noise // Strategy above Chaos</span>
+            <span className="h-3 w-px bg-white/10" />
+            <a className="hover:opacity-60 transition-opacity" href="https://lucien.technology" target="_blank" rel="noreferrer">lucien.technology</a>
+            <a className="hover:opacity-60 transition-opacity" href="https://portal.lucien.technology" target="_blank" rel="noreferrer">portal.lucien.technology</a>
+            <a className="hover:opacity-60 transition-opacity" href="https://archeon.lucien.technology" target="_blank" rel="noreferrer">archeon.lucien.technology</a>
+          </div>
           <div className="opacity-20 font-mono">LATENCY: 12ms</div>
       </footer>
     </div>
