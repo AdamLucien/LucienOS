@@ -287,6 +287,11 @@ const App: React.FC = () => {
     [language]
   );
 
+  const getSectionHref = useCallback(
+    (section: SectionKey, langOverride: Language = language) => buildPath(section, langOverride),
+    [language]
+  );
+
   useEffect(() => {
     const title = seo.titles[currentSection];
     const description = seo.descriptions[currentSection];
@@ -598,18 +603,26 @@ const App: React.FC = () => {
             
             <div className="flex gap-4 items-center">
               <div className="flex border border-white/10 bg-black/60 backdrop-blur-md p-1 industrial-clip">
-                <button 
-                  onClick={() => navigateTo(currentSection, 'en')}
+                <a 
+                  href={getSectionHref(currentSection, 'en')}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    navigateTo(currentSection, 'en');
+                  }}
                   className={`px-3 py-1.5 text-[10px] font-bold font-mono tracking-widest transition-all ${language === 'en' ? 'bg-indigo-500/20 text-white border-b-2 border-indigo-500' : 'text-white/30 hover:text-white/60'}`}
                 >
                   EN
-                </button>
-                <button 
-                  onClick={() => navigateTo(currentSection, 'cs')}
+                </a>
+                <a 
+                  href={getSectionHref(currentSection, 'cs')}
+                  onClick={(event) => {
+                    event.preventDefault();
+                    navigateTo(currentSection, 'cs');
+                  }}
                   className={`px-3 py-1.5 text-[10px] font-bold font-mono tracking-widest transition-all ${language === 'cs' ? 'bg-indigo-500/20 text-white border-b-2 border-indigo-500' : 'text-white/30 hover:text-white/60'}`}
                 >
                   CS
-                </button>
+                </a>
               </div>
               <ModeToggle mode={mode} lang={language} onToggle={() => setMode(m => m === 'professional' ? 'raw' : 'professional')} />
             </div>
@@ -630,14 +643,19 @@ const App: React.FC = () => {
           </div>
           <div className="flex flex-col gap-4">
             {SECTION_ORDER.map((key) => (
-              <button
+              <a
                 key={key}
-                onClick={() => { navigateTo(key); setIsMobileMenuOpen(false); }}
+                href={getSectionHref(key)}
+                onClick={(event) => { 
+                  event.preventDefault();
+                  navigateTo(key);
+                  setIsMobileMenuOpen(false);
+                }}
                 className={`w-full py-6 px-8 industrial-clip border text-left flex justify-between items-center group transition-all ${currentSection === key ? 'bg-white/10 border-white/30' : 'border-white/5 bg-white/[0.02]'}`}
               >
                 <span className="text-xl font-bold tracking-widest" style={{ color: currentSection === key ? primaryColor : 'white' }}>{t.nav[key]}</span>
                 <span className="text-[9px] font-mono opacity-20 uppercase">Node_Index: 0{SECTION_ORDER.indexOf(key)}</span>
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -646,7 +664,7 @@ const App: React.FC = () => {
       {/* TACTICAL NAVIGATION DOCK (Desktop) */}
       <div className="fixed bottom-0 left-0 w-full z-50 hidden md:block px-8 pb-12">
         <div className="max-w-6xl mx-auto bg-black/80 backdrop-blur-xl border border-white/10 p-6 industrial-clip shadow-2xl">
-          <TerminalNavigation currentSection={currentSection} onNavigate={navigateTo} mode={mode} lang={language} />
+          <TerminalNavigation currentSection={currentSection} onNavigate={navigateTo} getHref={getSectionHref} mode={mode} lang={language} />
         </div>
       </div>
 

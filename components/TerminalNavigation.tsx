@@ -6,6 +6,7 @@ import { AppMode, Language, SectionKey } from '../App';
 interface TerminalNavigationProps {
   currentSection: SectionKey;
   onNavigate: (section: SectionKey) => void;
+  getHref: (section: SectionKey) => string;
   mode: AppMode;
   lang: Language;
 }
@@ -16,7 +17,7 @@ const navTranslations = {
 };
 
 export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({ 
-  currentSection, onNavigate, mode, lang 
+  currentSection, onNavigate, getHref, mode, lang 
 }) => {
   const [inputValue, setInputValue] = useState('');
   const t = navTranslations[lang];
@@ -27,10 +28,13 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
     <nav className="w-full space-y-4" aria-label="Section navigation">
       <div className="flex flex-wrap items-center justify-between gap-2">
         {navOptions.map((opt, i) => (
-          <button
+          <a
             key={opt}
-            type="button"
-            onClick={() => onNavigate(opt)}
+            href={getHref(opt)}
+            onClick={(event) => {
+              event.preventDefault();
+              onNavigate(opt);
+            }}
             className={`flex-1 text-[10px] font-bold uppercase tracking-[0.2em] transition-all duration-300 py-3 px-2 border relative group overflow-hidden ${
               currentSection === opt 
                 ? 'bg-white/10 border-white/30' 
@@ -44,7 +48,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
             {currentSection === opt && (
                <div className="absolute bottom-0 left-0 w-full h-[2px]" style={{ backgroundColor: accentColor }} />
             )}
-          </button>
+          </a>
         ))}
       </div>
       <div className="relative group flex items-center gap-4 border border-white/10 bg-black/60 p-3 industrial-clip">
