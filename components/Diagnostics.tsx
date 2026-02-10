@@ -189,25 +189,26 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
         </div>
 
         {/* RADAR CHART CARD - Fixed Overflow */}
-        <div className="lg:col-span-5 border border-white/10 bg-black/60 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all flex flex-col justify-center overflow-hidden card-hover">
+        <div className="lg:col-span-5 border border-white/10 bg-black/60 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all flex flex-col justify-center card-hover">
           <h3 className={`${headingClass} mb-12 border-b border-white/10 pb-6 flex items-center gap-3`}>
             <Brain className="w-5 h-5 opacity-40" /> {isEn ? 'COGNITIVE_MAP' : 'KOGNITIVNÍ_MAPA'}
           </h3>
-          <div className="h-64 sm:h-80 w-full relative">
+          <div className="h-72 sm:h-80 w-full relative overflow-visible">
             <ResponsiveContainer width="100%" height="100%">
-              <RadarChart cx="50%" cy="50%" outerRadius="58%" data={data.radar} margin={{ top: 24, right: 24, bottom: 24, left: 24 }}>
+              <RadarChart cx="50%" cy="50%" outerRadius="54%" data={data.radar} margin={{ top: 40, right: 40, bottom: 40, left: 40 }}>
                 <PolarGrid stroke="rgba(255,255,255,0.05)" />
                 <PolarAngleAxis 
                   dataKey="subject" 
-                  tick={{ fill: 'rgba(255,255,255,0.45)', fontSize: 8, fontWeight: 700 }}
+                  tick={{ fill: 'rgba(255,255,255,0.55)', fontSize: 8, fontWeight: 700 }}
                   tickLine={false}
                 />
                 <Radar 
                   name="Lucien" 
                   dataKey="A" 
                   stroke={primaryColor} 
-                  fill={primaryColor} 
-                  fillOpacity={0.4} 
+                  fill="none"
+                  fillOpacity={0}
+                  strokeWidth={2}
                 />
               </RadarChart>
             </ResponsiveContainer>
