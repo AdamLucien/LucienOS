@@ -185,15 +185,18 @@ const seoContent = {
 } as const;
 
 const normalizePath = (pathname: string) => {
-  if (!pathname.startsWith('/')) return `/${pathname}`;
-  if (pathname !== '/' && pathname.endsWith('/')) {
-    return pathname.replace(/\/+$/, '');
-  }
-  return pathname;
+  if (!pathname.startsWith('/')) pathname = `/${pathname}`;
+  if (pathname === '/') return '/';
+  return pathname.endsWith('/') ? pathname : `${pathname}/`;
+};
+
+const stripTrailingSlash = (pathname: string) => {
+  if (pathname === '/') return '/';
+  return pathname.replace(/\/+$/, '');
 };
 
 const parseLocation = (pathname: string): { lang: Language; section: SectionKey } => {
-  const cleanPath = normalizePath(pathname);
+  const cleanPath = stripTrailingSlash(normalizePath(pathname));
   const segments = cleanPath.split('/').filter(Boolean);
   let lang: Language = 'cs';
   let index = 0;
@@ -210,8 +213,8 @@ const parseLocation = (pathname: string): { lang: Language; section: SectionKey 
 const buildPath = (section: SectionKey, lang: Language) => {
   const prefix = lang === 'en' ? '/en' : '';
   const sectionPath = SECTION_PATHS[section];
-  if (sectionPath) return `${prefix}/${sectionPath}`;
-  return prefix || '/';
+  if (sectionPath) return `${prefix}/${sectionPath}/`;
+  return prefix ? `${prefix}/` : '/';
 };
 
 const buildUrl = (section: SectionKey, lang: Language) => `${SITE_URL}${buildPath(section, lang)}`;
