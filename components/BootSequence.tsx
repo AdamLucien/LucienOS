@@ -20,44 +20,42 @@ const bootLogs = [
 ];
 
 export const BootSequence: React.FC<BootSequenceProps> = ({ onComplete }) => {
-  const [logs, setLogs] = useState<string[]>([]);
+  const [visibleCount, setVisibleCount] = useState(0);
   
   useEffect(() => {
     const interval = setInterval(() => {
-      setLogs(prev => {
-        if (prev.length < bootLogs.length) {
-          return [...prev, bootLogs[prev.length]];
-        }
-        return prev;
-      });
+      setVisibleCount(prev => (prev < bootLogs.length ? prev + 1 : prev));
     }, 150);
 
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
-    if (logs.length === bootLogs.length) {
+    if (visibleCount === bootLogs.length) {
       const timer = setTimeout(() => {
         onComplete();
       }, 800);
       return () => clearTimeout(timer);
     }
-  }, [logs.length, onComplete]);
+  }, [visibleCount, onComplete]);
 
   return (
     <div className="min-h-screen bg-black text-[#6366f1] p-10 font-mono text-sm md:text-base leading-loose overflow-hidden flex items-center">
       <div className="max-w-4xl mx-auto space-y-2 w-full">
-        {logs.map((log, i) => {
-          if (!log) return null;
+        {bootLogs.map((log, i) => {
           const parts = log.split(']');
+          const isVisible = i < visibleCount;
           return (
-            <div key={i} className="animate-in fade-in slide-in-from-left-4 duration-200">
+            <div
+              key={i}
+              className={`transition-opacity duration-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            >
               <span className="opacity-40 tracking-tighter mr-4 font-bold">{parts[0]}]</span>
               <span className="tracking-widest uppercase text-xs md:text-sm">{parts[1] || ''}</span>
             </div>
           );
         })}
-        {logs.length < bootLogs.length && (
+        {visibleCount < bootLogs.length && (
           <div className="w-2 h-6 bg-[#6366f1] animate-pulse inline-block mt-4 shadow-[0_0_10px_#6366f1]"></div>
         )}
       </div>
