@@ -348,7 +348,8 @@ const App: React.FC = () => {
   useEffect(() => {
     const title = seo.titles[currentSection];
     const description = seo.descriptions[currentSection];
-    const url = buildUrl(currentSection, language);
+    const baseOrigin = getSiteOrigin();
+    const url = buildUrl(currentSection, language, baseOrigin);
     const alternateLang: Language = language === 'cs' ? 'en' : 'cs';
     const alternateLocale = seoContent[alternateLang].locale;
 
@@ -367,7 +368,7 @@ const App: React.FC = () => {
     setMetaTag('property', 'og:url', url);
     setMetaTag('property', 'og:site_name', 'Lucien OS v2.0');
     setMetaTag('property', 'og:locale', seo.locale);
-    setMetaTag('property', 'og:image', `${SITE_URL}/og.png`);
+    setMetaTag('property', 'og:image', joinUrl(baseOrigin, '/og.png'));
     setMetaTag('property', 'og:image:width', '1200');
     setMetaTag('property', 'og:image:height', '630');
 
@@ -380,7 +381,7 @@ const App: React.FC = () => {
     setMetaTag('name', 'twitter:card', 'summary_large_image');
     setMetaTag('name', 'twitter:title', title);
     setMetaTag('name', 'twitter:description', description);
-    setMetaTag('name', 'twitter:image', `${SITE_URL}/og.png`);
+    setMetaTag('name', 'twitter:image', joinUrl(baseOrigin, '/og.png'));
 
     setLinkTag('canonical', url);
     document.querySelectorAll('link[rel="alternate"]').forEach((node) => node.remove());
@@ -393,19 +394,19 @@ const App: React.FC = () => {
       '@graph': [
         {
           '@type': 'Person',
-          '@id': `${SITE_URL}/#person`,
+          '@id': `${baseOrigin}/#person`,
           name: 'Adam Karl Lucien',
-          url: SITE_URL,
+          url: baseOrigin,
           email: 'adam.karl.lucien@lucien.technology',
           jobTitle: language === 'en' ? 'System Architect, AI Engineer' : 'Systémový architekt, AI inženýr'
         },
         {
           '@type': 'WebSite',
-          '@id': `${SITE_URL}/#website`,
-          url: SITE_URL,
+          '@id': `${baseOrigin}/#website`,
+          url: baseOrigin,
           name: 'Lucien OS v2.0',
           inLanguage: language,
-          publisher: { '@id': `${SITE_URL}/#person` }
+          publisher: { '@id': `${baseOrigin}/#person` }
         },
         {
           '@type': 'WebPage',
@@ -413,8 +414,8 @@ const App: React.FC = () => {
           url,
           name: title,
           description,
-          isPartOf: { '@id': `${SITE_URL}/#website` },
-          about: { '@id': `${SITE_URL}/#person` },
+          isPartOf: { '@id': `${baseOrigin}/#website` },
+          about: { '@id': `${baseOrigin}/#person` },
           inLanguage: language
         }
       ]
