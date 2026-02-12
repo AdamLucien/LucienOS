@@ -18,7 +18,13 @@ export type AppMode = 'professional' | 'raw';
 export type Language = 'en' | 'cs';
 export type SectionKey = 'CORE' | 'MODULES' | 'CAPABILITIES' | 'ARCHIVE' | 'DIAGNOSTICS' | 'RESONANCE' | 'SIGNAL';
 
-const SITE_URL = 'https://adamkarl.lucien.technology';
+const DEFAULT_SITE_URL = 'https://adamkarl.lucien.technology';
+const getSiteOrigin = () => {
+  if (typeof window !== 'undefined' && window.location?.origin) {
+    return window.location.origin;
+  }
+  return DEFAULT_SITE_URL;
+};
 
 const SECTION_ORDER: SectionKey[] = [
   'CORE',
@@ -260,7 +266,8 @@ const joinUrl = (base: string, path: string) => {
   return `${normalizedBase}${normalizedPath}`;
 };
 
-const buildUrl = (section: SectionKey, lang: Language) => joinUrl(SITE_URL, buildPath(section, lang));
+const buildUrl = (section: SectionKey, lang: Language, base = getSiteOrigin()) =>
+  joinUrl(base, buildPath(section, lang));
 
 const setMetaTag = (attr: 'name' | 'property', key: string, content: string) => {
   const selector = `meta[${attr}="${key}"]`;

@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
-const SITE_URL = 'https://adamkarl.lucien.technology';
+const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://adamkarl.lucien.technology').replace(/\/+$/, '');
 
 const joinUrl = (base, path) => {
   const normalizedBase = base.replace(/\/+$/, '');
