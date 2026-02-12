@@ -184,6 +184,43 @@ const seoContent = {
   }
 } as const;
 
+const sectionCopy = {
+  en: {
+    CORE: [
+      'System Architect and AI Engineer focused on resilient, auditable systems across digital and physical operations.',
+      'Lucien OS v2.0 documents strategy, defense, and execution patterns for complex environments.',
+      'Explore modules, capabilities, archive, diagnostics, resonance, and signal for full system context.'
+    ],
+    MODULES: [
+      'Modules represent deployed systems spanning autonomous intelligence, predictive governance, and operational logistics.',
+      'Each module highlights scope, stack, and measurable impact across AI and industrial domains.',
+      'Use this page to evaluate alignment, integration paths, and readiness.'
+    ],
+    SIGNAL: [
+      'Signal is the secure contact channel for collaborations, audits, and strategic requests.',
+      'Provide a clear origin ID, protocol type, and payload to accelerate response.',
+      'High-signal requests are prioritized.'
+    ]
+  },
+  cs: {
+    CORE: [
+      'Systémový architekt a AI inženýr se zaměřením na odolné a auditovatelné systémy.',
+      'Lucien OS v2.0 mapuje principy strategie, obrany a exekuce v komplexním prostředí.',
+      'Prozkoumejte moduly, schopnosti, archiv, diagnostiku, rezonanci a signál.'
+    ],
+    MODULES: [
+      'Moduly představují nasazené systémy napříč autonomní inteligencí, prediktivním řízením a logistikou.',
+      'Každý modul shrnuje rozsah, technologický stack a měřitelný dopad.',
+      'Stránka slouží k posouzení kompatibility, integrace a připravenosti.'
+    ],
+    SIGNAL: [
+      'Signál je bezpečný kontaktní kanál pro spolupráci, audity a strategické požadavky.',
+      'Uveďte ID původu, typ protokolu a jasný payload pro rychlou reakci.',
+      'High-signal požadavky mají prioritu.'
+    ]
+  }
+} as const;
+
 const normalizePath = (pathname: string) => {
   if (!pathname.startsWith('/')) pathname = `/${pathname}`;
   if (pathname === '/') return '/';
@@ -217,7 +254,13 @@ const buildPath = (section: SectionKey, lang: Language) => {
   return prefix ? `${prefix}/` : '/';
 };
 
-const buildUrl = (section: SectionKey, lang: Language) => `${SITE_URL}${buildPath(section, lang)}`;
+const joinUrl = (base: string, path: string) => {
+  const normalizedBase = base.replace(/\/+$/, '');
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${normalizedBase}${normalizedPath}`;
+};
+
+const buildUrl = (section: SectionKey, lang: Language) => joinUrl(SITE_URL, buildPath(section, lang));
 
 const setMetaTag = (attr: 'name' | 'property', key: string, content: string) => {
   const selector = `meta[${attr}="${key}"]`;
@@ -413,6 +456,12 @@ const App: React.FC = () => {
              <Binary className="w-64 h-64" />
           </div>
         </div>
+
+        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed">
+          {sectionCopy[language].CORE.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
           <div className="md:col-span-8 p-10 border border-white/10 bg-black/40 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
@@ -482,6 +531,12 @@ const App: React.FC = () => {
               <div className="w-full h-0.5 bg-white animate-[scan_4s_infinite]" />
             </div>
           </div>
+
+          <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-10">
+            {sectionCopy[language].MODULES.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-12 lg:col-span-7 h-full">
@@ -538,6 +593,12 @@ const App: React.FC = () => {
               {language === 'en' ? 'CONTACT' : 'KONTAKT'}
               <span style={{ color: primaryColor }}>_HUB</span>
             </h2>
+        </div>
+
+        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-10">
+          {sectionCopy[language].SIGNAL.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
         </div>
         
         <div className="border border-white/10 bg-black/60 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">

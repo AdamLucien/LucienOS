@@ -114,10 +114,26 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
   const data = getLocalizedData(lang);
   const isEn = lang === 'en';
   const headingClass = "text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.3em]";
+  const seoIntro = isEn
+    ? [
+        'Diagnostics provide a structured profile of cognitive and operational signals.',
+        'Telemetry is presented for clarity and context, supporting strategic decision-making.',
+        'This section aligns system behavior with constraints and mission goals.'
+      ]
+    : [
+        'Diagnostika poskytuje strukturovaný profil kognitivních a provozních signálů.',
+        'Telemetrie je prezentována pro jasnost a kontext rozhodování.',
+        'Sekce zarovnává chování systému se strategickými omezeními a cíli.'
+      ];
 
   return (
     <div className="space-y-24 max-w-7xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Diagnostics' : 'Diagnostika'}</h1>
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed">
+        {seoIntro.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
       {/* HEADER SECTION - Unified with App/Capabilities/Archive */}
       <div className="mb-24 relative overflow-hidden group">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-12">

@@ -130,10 +130,26 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
   const primaryColor = mode === 'raw' ? '#ff003c' : '#6366f1';
   const data = getResonanceData(lang);
   const isEn = lang === 'en';
+  const seoIntro = isEn
+    ? [
+        'Resonance captures long-term interests in systems dynamics, philosophy, and embodied practice.',
+        'Curated media provides context for decision frameworks and attention design.',
+        'This section supports collaborations where alignment is as critical as capability.'
+      ]
+    : [
+        'Rezonance zachycuje dlouhodobé zájmy v systémové dynamice, filozofii a praxi.',
+        'Kurátorská média přinášejí kontext pro rozhodovací rámce a design pozornosti.',
+        'Sekce podporuje spolupráce, kde je shoda stejně důležitá jako schopnost.'
+      ];
 
   return (
     <div className="max-w-7xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Resonance' : 'Rezonance'}</h1>
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-12">
+        {seoIntro.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
       {/* SECTION HEADER */}
       <div className="mb-24 relative overflow-hidden group">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-12">

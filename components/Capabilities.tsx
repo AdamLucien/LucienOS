@@ -150,10 +150,26 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
         hardwareRevision: "REVIZE_HARDWARU: R2-B",
         manualOverride: "MANUÁLNÍ_OVERRIDE: VYPNUTO"
       };
+  const seoIntro = isEn
+    ? [
+        'Capability matrix spans AI engineering, OSINT fusion, systems architecture, and industrial operations.',
+        'Each capability is mapped to measurable performance indicators and tool stacks.',
+        'Use this section to assess strategic readiness and integration fit.'
+      ]
+    : [
+        'Matice schopností zahrnuje AI inženýrství, OSINT fúzi, architekturu systémů a průmyslové operace.',
+        'Každá schopnost je mapována na měřitelné výstupy a nástrojový stack.',
+        'Sekce slouží k posouzení strategické připravenosti a integračního fitu.'
+      ];
 
   return (
     <div className="max-w-7xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Capabilities' : 'Schopnosti'}</h1>
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-12">
+        {seoIntro.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
       {/* HEADER WITH SCANLINE EFFECT */}
       <div className="mb-24 relative overflow-hidden group">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-12">

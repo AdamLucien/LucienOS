@@ -145,10 +145,26 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
   const accentColor = mode === 'raw' ? '#ff003c' : '#6366f1';
   const data = getArchiveData(lang);
   const isEn = lang === 'en';
+  const seoIntro = isEn
+    ? [
+        'Archive consolidates mission history, roles, and milestones across multiple sectors.',
+        'Entries summarize scope, responsibilities, and outcomes to establish operational credibility.',
+        'Use the timeline to trace long-term capability progression and domain exposure.'
+      ]
+    : [
+        'Archiv konsoliduje historii misí, role a systémové milníky napříč sektory.',
+        'Záznamy shrnují rozsah, odpovědnosti a výsledky pro ověření zkušeností.',
+        'Časová osa ukazuje dlouhodobý růst kompetencí a doménové zkušenosti.'
+      ];
 
   return (
     <div className="max-w-6xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Archive' : 'Archiv'}</h1>
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-12">
+        {seoIntro.map((line) => (
+          <p key={line}>{line}</p>
+        ))}
+      </div>
       {/* HEADER */}
       <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/10 pb-12 relative overflow-hidden">
         <div className="relative z-10">
