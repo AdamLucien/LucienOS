@@ -386,7 +386,7 @@ const App: React.FC = () => {
     const baseOrigin = getSiteOrigin();
     const url = buildUrl(currentSection, language, baseOrigin);
     const alternateLang: Language = language === 'cs' ? 'en' : 'cs';
-    const alternateLocale = seoContent[alternateLang].locale;
+    const alternateLocale = buildSeoContent(brand)[alternateLang].locale;
 
     document.title = title;
     document.documentElement.lang = language;
