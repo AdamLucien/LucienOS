@@ -145,50 +145,67 @@ const translations = {
   }
 };
 
-const seoContent = {
-  en: {
-    titles: {
-      CORE: 'Adam Karl Lucien | System Architect & AI Engineer',
-      MODULES: 'Projects & Modules | Adam Karl Lucien',
-      CAPABILITIES: 'Capabilities | Adam Karl Lucien',
-      ARCHIVE: 'Archive Timeline | Adam Karl Lucien',
-      DIAGNOSTICS: 'Diagnostics | Adam Karl Lucien',
-      RESONANCE: 'Resonance | Adam Karl Lucien',
-      SIGNAL: 'Signal / Contact | Adam Karl Lucien'
+const normalizeBrand = (value: string) => value.trim();
+const titleCase = (value: string) =>
+  value
+    .split(/[-_]/g)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+
+const getBrandName = () => {
+  if (typeof window === 'undefined') return 'Adam Karl Lucien';
+  const hostname = window.location.hostname || '';
+  const subdomain = hostname.split('.')[0] || '';
+  if (!subdomain || subdomain === 'www') return 'Lucien Technology';
+  if (subdomain === 'adamkarl') return 'Adam Karl Lucien';
+  return normalizeBrand(titleCase(subdomain));
+};
+
+const buildSeoContent = (brand: string) =>
+  ({
+    en: {
+      titles: {
+        CORE: `${brand} | System Architect & AI Engineer`,
+        MODULES: `${brand} | Projects & Modules`,
+        CAPABILITIES: `${brand} | Capabilities`,
+        ARCHIVE: `${brand} | Archive Timeline`,
+        DIAGNOSTICS: `${brand} | Diagnostics`,
+        RESONANCE: `${brand} | Resonance`,
+        SIGNAL: `${brand} | Signal / Contact`
+      },
+      descriptions: {
+        CORE: `${brand} — System Architect, AI Engineer, and strategic systems auditor. Explore Lucien OS v2.0, a dual-mode digital twin with projects, mission, and operations.`,
+        MODULES: `${brand} — Projects and systems: NOXIS, ARCHΞON, Lucien Control, industrial operations, and robotics protocols.`,
+        CAPABILITIES: `${brand} — Capability matrix across AI, OSINT fusion, systems architecture, logistics optimization, automation, and industrial engineering.`,
+        ARCHIVE: `${brand} — Career timeline and mission log across AI systems, logistics, and industrial operations.`,
+        DIAGNOSTICS: `${brand} — Cognitive diagnostics, system profile, and analytical telemetry for the Lucien OS persona.`,
+        RESONANCE: `${brand} — Interests and resonance: systems dynamics, inner practices, philosophy, and curated media.`,
+        SIGNAL: `${brand} — Contact and secure signal channel to initiate collaboration or a systems audit.`
+      },
+      locale: 'en_US'
     },
-    descriptions: {
-      CORE: 'System Architect, AI Engineer, and strategic systems auditor. Explore Lucien OS v2.0, a dual-mode digital twin with projects, mission, and operations.',
-      MODULES: 'Projects and systems: NOXIS, ARCHΞON, Lucien Control, industrial operations, and robotics protocols.',
-      CAPABILITIES: 'Capability matrix across AI, OSINT fusion, systems architecture, logistics optimization, automation, and industrial engineering.',
-      ARCHIVE: 'Career timeline and mission log across AI systems, logistics, and industrial operations.',
-      DIAGNOSTICS: 'Cognitive diagnostics, system profile, and analytical telemetry for the Lucien OS persona.',
-      RESONANCE: 'Interests and resonance: systems dynamics, inner practices, philosophy, and curated media.',
-      SIGNAL: 'Contact and secure signal channel to initiate collaboration or a systems audit.'
-    },
-    locale: 'en_US'
-  },
-  cs: {
-    titles: {
-      CORE: 'Adam Karl Lucien | Systémový architekt & AI inženýr',
-      MODULES: 'Projekty a moduly | Adam Karl Lucien',
-      CAPABILITIES: 'Schopnosti | Adam Karl Lucien',
-      ARCHIVE: 'Archiv a časová osa | Adam Karl Lucien',
-      DIAGNOSTICS: 'Diagnostika | Adam Karl Lucien',
-      RESONANCE: 'Rezonance | Adam Karl Lucien',
-      SIGNAL: 'Signál / Kontakt | Adam Karl Lucien'
-    },
-    descriptions: {
-      CORE: 'Systémový architekt, AI inženýr a auditor strategických systémů. Lucien OS v2.0 jako digitální profil s projekty, misí a operacemi.',
-      MODULES: 'Projekty a systémy: NOXIS, ARCHΞON, Lucien Control, průmyslové operace a robotika.',
-      CAPABILITIES: 'Matice schopností napříč AI, OSINT fúzí, architekturou systémů, logistikou, automatizací a průmyslovým inženýrstvím.',
-      ARCHIVE: 'Kariérní časová osa a log misí napříč AI, logistikou a průmyslovými operacemi.',
-      DIAGNOSTICS: 'Diagnostika kognitivního profilu, systémová telemetrie a analytické charakteristiky.',
-      RESONANCE: 'Rezonance a zájmy: systémová dynamika, vnitřní disciplíny, filozofie a kurátorské odkazy.',
-      SIGNAL: 'Kontakt a šifrovaný signální kanál pro spolupráci nebo audit systému.'
-    },
-    locale: 'cs_CZ'
-  }
-} as const;
+    cs: {
+      titles: {
+        CORE: `${brand} | Systémový architekt & AI inženýr`,
+        MODULES: `${brand} | Projekty a moduly`,
+        CAPABILITIES: `${brand} | Schopnosti`,
+        ARCHIVE: `${brand} | Archiv a časová osa`,
+        DIAGNOSTICS: `${brand} | Diagnostika`,
+        RESONANCE: `${brand} | Rezonance`,
+        SIGNAL: `${brand} | Signál / Kontakt`
+      },
+      descriptions: {
+        CORE: `${brand} — Systémový architekt, AI inženýr a auditor strategických systémů. Lucien OS v2.0 jako digitální profil s projekty, misí a operacemi.`,
+        MODULES: `${brand} — Projekty a systémy: NOXIS, ARCHΞON, Lucien Control, průmyslové operace a robotika.`,
+        CAPABILITIES: `${brand} — Matice schopností napříč AI, OSINT fúzí, architekturou systémů, logistikou, automatizací a průmyslovým inženýrstvím.`,
+        ARCHIVE: `${brand} — Kariérní časová osa a log misí napříč AI, logistikou a průmyslovými operacemi.`,
+        DIAGNOSTICS: `${brand} — Diagnostika kognitivního profilu, systémová telemetrie a analytické charakteristiky.`,
+        RESONANCE: `${brand} — Rezonance a zájmy: systémová dynamika, vnitřní disciplíny, filozofie a kurátorské odkazy.`,
+        SIGNAL: `${brand} — Kontakt a šifrovaný signální kanál pro spolupráci nebo audit systému.`
+      },
+      locale: 'cs_CZ'
+    }
+  } as const);
 
 const sectionCopy = {
   en: {
@@ -303,7 +320,8 @@ const App: React.FC = () => {
   const handleBootComplete = useCallback(() => setIsBooting(false), []);
   const primaryColor = mode === 'raw' ? '#ff003c' : '#6366f1';
   const t = translations[language];
-  const seo = seoContent[language];
+  const brand = getBrandName();
+  const seo = buildSeoContent(brand)[language];
 
   useEffect(() => {
     const { lang, section } = parseLocation(window.location.pathname);

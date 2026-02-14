@@ -2,6 +2,15 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://adamkarl.lucien.technology').replace(/\/+$/, '');
+const SITE_BRAND = (process.env.SITE_BRAND || process.env.VITE_SITE_BRAND || '').trim();
+const deriveBrand = (url) => {
+  const host = url.replace(/^https?:\/\//, '').split('/')[0];
+  const sub = host.split('.')[0] || '';
+  if (!sub || sub === 'www') return 'Lucien Technology';
+  if (sub === 'adamkarl') return 'Adam Karl Lucien';
+  return sub.replace(/[-_]/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase());
+};
+const BRAND = SITE_BRAND || deriveBrand(SITE_URL);
 
 const joinUrl = (base, path) => {
   const normalizedBase = base.replace(/\/+$/, '');
@@ -23,43 +32,43 @@ const seo = {
   en: {
     locale: 'en_US',
     titles: {
-      CORE: 'Adam Karl Lucien | System Architect & AI Engineer',
-      MODULES: 'Projects & Modules | Adam Karl Lucien',
-      CAPABILITIES: 'Capabilities | Adam Karl Lucien',
-      ARCHIVE: 'Archive Timeline | Adam Karl Lucien',
-      DIAGNOSTICS: 'Diagnostics | Adam Karl Lucien',
-      RESONANCE: 'Resonance | Adam Karl Lucien',
-      SIGNAL: 'Signal / Contact | Adam Karl Lucien'
+      CORE: `${BRAND} | System Architect & AI Engineer`,
+      MODULES: `${BRAND} | Projects & Modules`,
+      CAPABILITIES: `${BRAND} | Capabilities`,
+      ARCHIVE: `${BRAND} | Archive Timeline`,
+      DIAGNOSTICS: `${BRAND} | Diagnostics`,
+      RESONANCE: `${BRAND} | Resonance`,
+      SIGNAL: `${BRAND} | Signal / Contact`
     },
     descriptions: {
-      CORE: 'System Architect, AI Engineer, and strategic systems auditor. Explore Lucien OS v2.0, a dual-mode digital twin with projects, mission, and operations.',
-      MODULES: 'Projects and systems: NOXIS, ARCHΞON, Lucien Control, industrial operations, and robotics protocols.',
-      CAPABILITIES: 'Capability matrix across AI, OSINT fusion, systems architecture, logistics optimization, automation, and industrial engineering.',
-      ARCHIVE: 'Career timeline and mission log across AI systems, logistics, and industrial operations.',
-      DIAGNOSTICS: 'Cognitive diagnostics, system profile, and analytical telemetry for the Lucien OS persona.',
-      RESONANCE: 'Interests and resonance: systems dynamics, inner practices, philosophy, and curated media.',
-      SIGNAL: 'Contact and secure signal channel to initiate collaboration or a systems audit.'
+      CORE: `${BRAND} — System Architect, AI Engineer, and strategic systems auditor. Explore Lucien OS v2.0, a dual-mode digital twin with projects, mission, and operations.`,
+      MODULES: `${BRAND} — Projects and systems: NOXIS, ARCHΞON, Lucien Control, industrial operations, and robotics protocols.`,
+      CAPABILITIES: `${BRAND} — Capability matrix across AI, OSINT fusion, systems architecture, logistics optimization, automation, and industrial engineering.`,
+      ARCHIVE: `${BRAND} — Career timeline and mission log across AI systems, logistics, and industrial operations.`,
+      DIAGNOSTICS: `${BRAND} — Cognitive diagnostics, system profile, and analytical telemetry for the Lucien OS persona.`,
+      RESONANCE: `${BRAND} — Interests and resonance: systems dynamics, inner practices, philosophy, and curated media.`,
+      SIGNAL: `${BRAND} — Contact and secure signal channel to initiate collaboration or a systems audit.`
     }
   },
   cs: {
     locale: 'cs_CZ',
     titles: {
-      CORE: 'Adam Karl Lucien | Systémový architekt & AI inženýr',
-      MODULES: 'Projekty a moduly | Adam Karl Lucien',
-      CAPABILITIES: 'Schopnosti | Adam Karl Lucien',
-      ARCHIVE: 'Archiv a časová osa | Adam Karl Lucien',
-      DIAGNOSTICS: 'Diagnostika | Adam Karl Lucien',
-      RESONANCE: 'Rezonance | Adam Karl Lucien',
-      SIGNAL: 'Signál / Kontakt | Adam Karl Lucien'
+      CORE: `${BRAND} | Systémový architekt & AI inženýr`,
+      MODULES: `${BRAND} | Projekty a moduly`,
+      CAPABILITIES: `${BRAND} | Schopnosti`,
+      ARCHIVE: `${BRAND} | Archiv a časová osa`,
+      DIAGNOSTICS: `${BRAND} | Diagnostika`,
+      RESONANCE: `${BRAND} | Rezonance`,
+      SIGNAL: `${BRAND} | Signál / Kontakt`
     },
     descriptions: {
-      CORE: 'Systémový architekt, AI inženýr a auditor strategických systémů. Lucien OS v2.0 jako digitální profil s projekty, misí a operacemi.',
-      MODULES: 'Projekty a systémy: NOXIS, ARCHΞON, Lucien Control, průmyslové operace a robotika.',
-      CAPABILITIES: 'Matice schopností napříč AI, OSINT fúzí, architekturou systémů, logistikou, automatizací a průmyslovým inženýrstvím.',
-      ARCHIVE: 'Kariérní časová osa a log misí napříč AI, logistikou a průmyslovými operacemi.',
-      DIAGNOSTICS: 'Diagnostika kognitivního profilu, systémová telemetrie a analytické charakteristiky.',
-      RESONANCE: 'Rezonance a zájmy: systémová dynamika, vnitřní disciplíny, filozofie a kurátorské odkazy.',
-      SIGNAL: 'Kontakt a šifrovaný signální kanál pro spolupráci nebo audit systému.'
+      CORE: `${BRAND} — Systémový architekt, AI inženýr a auditor strategických systémů. Lucien OS v2.0 jako digitální profil s projekty, misí a operacemi.`,
+      MODULES: `${BRAND} — Projekty a systémy: NOXIS, ARCHΞON, Lucien Control, průmyslové operace a robotika.`,
+      CAPABILITIES: `${BRAND} — Matice schopností napříč AI, OSINT fúzí, architekturou systémů, logistikou, automatizací a průmyslovým inženýrstvím.`,
+      ARCHIVE: `${BRAND} — Kariérní časová osa a log misí napříč AI, logistikou a průmyslovými operacemi.`,
+      DIAGNOSTICS: `${BRAND} — Diagnostika kognitivního profilu, systémová telemetrie a analytické charakteristiky.`,
+      RESONANCE: `${BRAND} — Rezonance a zájmy: systémová dynamika, vnitřní disciplíny, filozofie a kurátorské odkazy.`,
+      SIGNAL: `${BRAND} — Kontakt a šifrovaný signální kanál pro spolupráci nebo audit systému.`
     }
   }
 };
@@ -261,5 +270,46 @@ for (const lang of Object.keys(seo)) {
     writeFileSync(outputPath, html, 'utf8');
   }
 }
+
+const buildSitemap = () => {
+  const entries = [];
+  const sectionKeys = Object.keys(sections);
+  for (const section of sectionKeys) {
+    const locCs = buildUrl(section, 'cs');
+    const locEn = buildUrl(section, 'en');
+    entries.push({
+      loc: locCs,
+      alternates: [
+        { lang: 'cs', href: locCs },
+        { lang: 'en', href: locEn },
+        { lang: 'x-default', href: locCs }
+      ]
+    });
+  }
+
+  const urls = entries
+    .map((entry) => {
+      const alternates = entry.alternates
+        .map((alt) => `    <xhtml:link rel="alternate" hreflang="${alt.lang}" href="${alt.href}" />`)
+        .join('\n');
+      return `  <url>\n    <loc>${entry.loc}</loc>\n${alternates}\n  </url>`;
+    })
+    .join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls}\n</urlset>\n`;
+};
+
+const writeSitemap = () => {
+  const sitemap = buildSitemap();
+  writeFileSync(join(distDir, 'sitemap.xml'), sitemap, 'utf8');
+};
+
+const writeRobots = () => {
+  const robots = `User-agent: *\nAllow: /\nSitemap: ${joinUrl(SITE_URL, '/sitemap.xml')}\n`;
+  writeFileSync(join(distDir, 'robots.txt'), robots, 'utf8');
+};
+
+writeSitemap();
+writeRobots();
 
 console.log('SEO HTML pages generated.');
