@@ -19,9 +19,21 @@ export type Language = 'en' | 'cs';
 export type SectionKey = 'CORE' | 'MODULES' | 'CAPABILITIES' | 'ARCHIVE' | 'DIAGNOSTICS' | 'RESONANCE' | 'SIGNAL';
 
 const DEFAULT_SITE_URL = 'https://adamkarl.lucien.technology';
+const normalizeOrigin = (origin: string) => {
+  try {
+    const url = new URL(origin);
+    if (url.hostname.startsWith('www.')) {
+      url.hostname = url.hostname.slice(4);
+    }
+    return url.origin;
+  } catch {
+    return origin.replace(/^https?:\/\/www\./, 'https://');
+  }
+};
+
 const getSiteOrigin = () => {
   if (typeof window !== 'undefined' && window.location?.origin) {
-    return window.location.origin;
+    return normalizeOrigin(window.location.origin);
   }
   return DEFAULT_SITE_URL;
 };
@@ -324,6 +336,11 @@ const App: React.FC = () => {
   const seo = buildSeoContent(brand)[language];
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.location?.hostname?.startsWith('www.')) {
+      const target = `${window.location.protocol}//${window.location.hostname.slice(4)}${window.location.pathname}${window.location.search}${window.location.hash}`;
+      window.location.replace(target);
+      return;
+    }
     const { lang, section } = parseLocation(window.location.pathname);
     setLanguage(lang);
     setCurrentSection(section);

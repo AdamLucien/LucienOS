@@ -1,7 +1,20 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
-const SITE_URL = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://adamkarl.lucien.technology').replace(/\/+$/, '');
+const SITE_URL_RAW = (process.env.SITE_URL || process.env.VITE_SITE_URL || 'https://adamkarl.lucien.technology');
+const normalizeSiteUrl = (value) => {
+  try {
+    const url = new URL(value);
+    if (url.hostname.startsWith('www.')) {
+      url.hostname = url.hostname.slice(4);
+    }
+    return url.toString().replace(/\/+$/, '');
+  } catch {
+    return value.replace(/^https?:\/\/www\./, 'https://').replace(/\/+$/, '');
+  }
+};
+
+const SITE_URL = normalizeSiteUrl(SITE_URL_RAW);
 const SITE_BRAND = (process.env.SITE_BRAND || process.env.VITE_SITE_BRAND || '').trim();
 const deriveBrand = (url) => {
   const host = url.replace(/^https?:\/\//, '').split('/')[0];
