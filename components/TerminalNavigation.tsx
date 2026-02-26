@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Terminal as TerminalIcon } from 'lucide-react';
+import { Navigation as NavigationIcon, Terminal as TerminalIcon } from 'lucide-react';
 import { AppMode, Language, SectionKey } from '../App';
 
 interface TerminalNavigationProps {
@@ -12,8 +12,8 @@ interface TerminalNavigationProps {
 }
 
 const navTranslations = {
-  en: { CORE: 'CORE', MODULES: 'MODULES', CAPABILITIES: 'CAPABILITIES', ARCHIVE: 'ARCHIVE', DIAGNOSTICS: 'DIAGNOSTICS', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNAL', prompt: 'ENTER_NODE_ID...' },
-  cs: { CORE: 'JÁDRO', MODULES: 'MODULY', CAPABILITIES: 'SCHOPNOSTI', ARCHIVE: 'ARCHIV', DIAGNOSTICS: 'DIAGNOSTIKA', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNÁL', prompt: 'ZADEJ_ID_NODU...' }
+  en: { CORE: 'CORE', MODULES: 'MODULES', CAPABILITIES: 'CAPABILITIES', ARCHIVE: 'ARCHIVE', DIAGNOSTICS: 'DIAGNOSTICS', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNAL', prompt: 'ENTER_NODE_ID...', title: 'PRIMARY NAVIGATION', hint: 'Click a section to navigate' },
+  cs: { CORE: 'JÁDRO', MODULES: 'MODULY', CAPABILITIES: 'SCHOPNOSTI', ARCHIVE: 'ARCHIV', DIAGNOSTICS: 'DIAGNOSTIKA', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNÁL', prompt: 'ZADEJ_ID_NODU...', title: 'HLAVNÍ NAVIGACE', hint: 'Klikněte na sekci pro přechod' }
 };
 
 export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({ 
@@ -26,6 +26,13 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
 
   return (
     <nav className="w-full space-y-4" aria-label="Section navigation">
+      <div className="flex items-center justify-between gap-4 border border-white/15 bg-black/70 px-4 py-2 industrial-clip">
+        <div className="flex items-center gap-2">
+          <NavigationIcon className="w-4 h-4" style={{ color: accentColor }} />
+          <span className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/80">{t.title}</span>
+        </div>
+        <span className="hidden lg:inline text-[9px] font-mono uppercase tracking-[0.2em] text-white/45">{t.hint}</span>
+      </div>
       <div className="flex flex-wrap items-center justify-between gap-2">
         {navOptions.map((opt, i) => (
           <a

@@ -791,7 +791,7 @@ const App: React.FC = () => {
 
       {/* TACTICAL NAVIGATION DOCK (Desktop) */}
       <div className="fixed bottom-0 left-0 w-full z-50 hidden md:block px-8 pb-12">
-        <div className="max-w-6xl mx-auto bg-black/80 backdrop-blur-xl border border-white/10 p-6 industrial-clip shadow-2xl">
+        <div className="max-w-6xl mx-auto bg-black/90 backdrop-blur-xl border-2 border-white/20 p-6 industrial-clip shadow-[0_0_35px_rgba(99,102,241,0.18)]">
           <TerminalNavigation currentSection={currentSection} onNavigate={navigateTo} getHref={getSectionHref} mode={mode} lang={language} />
         </div>
       </div>
