@@ -1,16 +1,11 @@
 
-import React, { useState, useCallback, useEffect } from 'react';
-import { BootSequence } from './components/BootSequence';
+import React, { useState, useCallback, useEffect, lazy, Suspense } from 'react';
 import { NeuralNetwork } from './components/NeuralNetwork';
 import { ProjectCard } from './components/ProjectCard';
-import { Diagnostics } from './components/Diagnostics';
-import { Archive } from './components/Archive';
-import { Capabilities } from './components/Capabilities';
-import { Resonance } from './components/Resonance';
 import { TerminalNavigation } from './components/TerminalNavigation';
 import { ModeToggle } from './components/ModeToggle';
 import { 
-  Shield, Zap, Cpu, Mail, Globe, Layout, Truck, 
+  Shield, Zap, Mail, Globe, Layout, Truck, 
   Activity, Eye, Clock, MapPin, Menu, X, Terminal, Binary, Bot
 } from 'lucide-react';
 
@@ -322,14 +317,25 @@ const setLinkTag = (rel: string, href: string, extra?: Record<string, string>) =
   element.setAttribute('href', href);
 };
 
+const CapabilitiesSection = lazy(() =>
+  import('./components/Capabilities').then((module) => ({ default: module.Capabilities }))
+);
+const ArchiveSection = lazy(() =>
+  import('./components/Archive').then((module) => ({ default: module.Archive }))
+);
+const DiagnosticsSection = lazy(() =>
+  import('./components/Diagnostics').then((module) => ({ default: module.Diagnostics }))
+);
+const ResonanceSection = lazy(() =>
+  import('./components/Resonance').then((module) => ({ default: module.Resonance }))
+);
+
 const App: React.FC = () => {
-  const [isBooting, setIsBooting] = useState(true);
   const [mode, setMode] = useState<AppMode>('professional');
   const [language, setLanguage] = useState<Language>('cs');
   const [currentSection, setCurrentSection] = useState<SectionKey>('CORE');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleBootComplete = useCallback(() => setIsBooting(false), []);
   const primaryColor = mode === 'raw' ? '#ff003c' : '#6366f1';
   const t = translations[language];
   const brand = getBrandName();
@@ -509,9 +515,9 @@ const App: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
           <div className="md:col-span-8 p-10 border border-white/10 bg-black/40 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
             <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: primaryColor }} />
-            <h3 className="font-bold mb-6 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
+            <h2 className="font-bold mb-6 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Zap className="w-5 h-5" /> {mode === 'raw' ? t.hero.chaos_title : t.hero.logic_title}
-            </h3>
+            </h2>
             <p className="text-base md:text-lg opacity-70 leading-relaxed font-light">
               {mode === 'raw' ? t.hero.chaos_desc : t.hero.logic_desc}
             </p>
@@ -524,9 +530,9 @@ const App: React.FC = () => {
           </div>
           
           <div className="md:col-span-4 p-10 border border-white/10 bg-black/40 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
-            <h3 className="font-bold mb-8 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
+            <h2 className="font-bold mb-8 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Shield className="w-5 h-5" /> OPERATIONS_BASE
-            </h3>
+            </h2>
             <div className="space-y-8 opacity-80 text-xs font-mono">
               <div className="flex flex-col gap-2">
                 <span className="opacity-30 text-[9px]">GEOGRAPHIC_NODES</span>
@@ -620,10 +626,26 @@ const App: React.FC = () => {
         </div>
       </section>
     ),
-    CAPABILITIES: <Capabilities mode={mode} lang={language} />,
-    ARCHIVE: <Archive mode={mode} lang={language} />,
-    DIAGNOSTICS: <Diagnostics mode={mode} lang={language} />,
-    RESONANCE: <Resonance mode={mode} lang={language} />,
+    CAPABILITIES: (
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading capabilities...' : 'Načítání schopností...'}</div>}>
+        <CapabilitiesSection mode={mode} lang={language} />
+      </Suspense>
+    ),
+    ARCHIVE: (
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading archive...' : 'Načítání archivu...'}</div>}>
+        <ArchiveSection mode={mode} lang={language} />
+      </Suspense>
+    ),
+    DIAGNOSTICS: (
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading diagnostics...' : 'Načítání diagnostiky...'}</div>}>
+        <DiagnosticsSection mode={mode} lang={language} />
+      </Suspense>
+    ),
+    RESONANCE: (
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading resonance...' : 'Načítání rezonance...'}</div>}>
+        <ResonanceSection mode={mode} lang={language} />
+      </Suspense>
+    ),
     SIGNAL: (
       <section className="max-w-3xl mx-auto animate-in fade-in duration-1000 px-4 md:px-0">
         <h1 className="sr-only">{language === 'en' ? 'Signal' : 'Signál'}</h1>
@@ -680,8 +702,6 @@ const App: React.FC = () => {
     )
   };
 
-  if (isBooting) return <BootSequence onComplete={handleBootComplete} />;
-
   return (
     <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 ${mode === 'raw' ? 'bg-[#080000]' : 'bg-[#030303]'}`}>
       <NeuralNetwork mode={mode} />
@@ -703,6 +723,7 @@ const App: React.FC = () => {
           <div className="flex items-center gap-4 pointer-events-auto w-full md:w-auto justify-between md:justify-end">
             <button 
               className="md:hidden p-3 bg-white/5 border border-white/10 rounded-sm"
+              aria-label={isMobileMenuOpen ? (language === 'en' ? 'Close menu' : 'Zavřít menu') : (language === 'en' ? 'Open menu' : 'Otevřít menu')}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X style={{ color: primaryColor }} /> : <Menu style={{ color: primaryColor }} />}
@@ -746,7 +767,7 @@ const App: React.FC = () => {
         <div className="fixed inset-0 z-[100] bg-[#030303]/98 backdrop-blur-2xl flex flex-col p-8 md:hidden animate-in fade-in zoom-in duration-300">
           <div className="flex justify-between items-center mb-16">
             <div className="text-[10px] font-mono opacity-40 uppercase tracking-[0.5em]">System_Node_Map</div>
-            <button onClick={() => setIsMobileMenuOpen(false)}><X className="w-8 h-8 opacity-60" /></button>
+            <button aria-label={language === 'en' ? 'Close menu' : 'Zavřít menu'} onClick={() => setIsMobileMenuOpen(false)}><X className="w-8 h-8 opacity-60" /></button>
           </div>
           <div className="flex flex-col gap-4">
             {SECTION_ORDER.map((key) => (
