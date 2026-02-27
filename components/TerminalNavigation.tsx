@@ -44,7 +44,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
             }}
             className={`flex-1 text-[10px] font-bold uppercase tracking-[0.2em] transition-all duration-300 py-3 px-2 border relative group overflow-hidden ${
               currentSection === opt 
-                ? 'bg-white/10 border-white/30' 
+                ? 'bg-white/25 border-white/30' 
                 : 'border-white/5 hover:border-white/20 hover:bg-white/[0.02]'
             }`}
             style={{ color: currentSection === opt ? accentColor : 'rgba(255,255,255,0.4)' }}
@@ -58,7 +58,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
           </a>
         ))}
       </div>
-      <div className="relative group flex items-center gap-4 border border-white/10 bg-[#081426]/60 p-3 industrial-clip">
+      <div className="relative group flex items-center gap-4 border border-white/10 bg-[#081426]/95 p-3 industrial-clip">
         <input 
           type="text" 
           value={inputValue}

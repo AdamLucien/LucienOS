@@ -180,7 +180,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
         {/* TACTICAL VIDEO MODULE */}
         <div className="md:col-span-8 space-y-8">
-          <div className="border border-white/10 bg-black/60 backdrop-blur-xl p-6 md:p-10 industrial-clip relative group overflow-hidden transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.06)]">
+          <div className="border border-white/10 bg-[#081426]/95 backdrop-blur-xl p-6 md:p-10 industrial-clip relative group overflow-hidden transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_40px_rgba(255,255,255,0.06)]">
             <div className="absolute top-0 left-0 w-2 h-full" style={{ backgroundColor: primaryColor }} />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
               <div className="absolute -left-1/2 top-0 h-full w-1/2 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[scan_6s_infinite]" />
@@ -201,7 +201,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
 
                 {/* Technical frame */}
                 <div className="max-w-3xl mx-auto">
-                  <div className="relative border border-white/10 bg-black/80 industrial-clip p-4 shadow-2xl transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_35px_rgba(90,118,150,0.24)]">
+                  <div className="relative border border-white/10 bg-[#081426]/95 industrial-clip p-4 shadow-2xl transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_35px_rgba(90,118,150,0.24)]">
                     <div className="absolute top-2 left-2 text-[7px] font-mono opacity-50 uppercase tracking-widest">
                       STREAM_MODULE: 0x1A
                     </div>
@@ -214,7 +214,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                         const hasVideo = Boolean(video.videoUrl);
                         const isActive = activeVideoId === video.id;
                         return (
-                          <div key={video.id} className="relative border border-white/10 bg-black/90 industrial-clip p-2 transition-all duration-500 hover:border-white/30 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]">
+                          <div key={video.id} className="relative border border-white/10 bg-[#081426]/95 industrial-clip p-2 transition-all duration-500 hover:border-white/30 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]">
                             <div className="absolute top-2 left-2 text-[7px] font-mono opacity-50 uppercase tracking-widest">
                               {video.label}
                             </div>
@@ -293,7 +293,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-             <div className="border border-white/10 bg-black/40 p-8 industrial-clip relative group overflow-hidden transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.06)]">
+             <div className="border border-white/10 bg-[#081426]/95 p-8 industrial-clip relative group overflow-hidden transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.06)]">
                <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
                <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-20">
                   <FlowerOfLifePattern color={primaryColor} />
@@ -344,7 +344,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                </div>
              </div>
 
-             <div className="border border-white/10 bg-black/40 p-8 industrial-clip relative group transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.06)]">
+             <div className="border border-white/10 bg-[#081426]/95 p-8 industrial-clip relative group transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.06)]">
                <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
                <h3 className="text-xs font-bold uppercase tracking-[0.3em] mb-8 border-b border-white/5 pb-4 flex items-center gap-3">
                  <Music className="w-4 h-4" style={{ color: primaryColor }} /> LIFESTYLE
@@ -381,7 +381,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
 
         {/* SIDEBAR TACTICS */}
         <div className="md:col-span-4 space-y-8">
-          <div className="border border-white/10 bg-black/60 p-8 industrial-clip relative card-hover">
+          <div className="border border-white/10 bg-[#081426]/95 p-8 industrial-clip relative card-hover">
              <h3 className="text-sm font-bold uppercase tracking-[0.3em] mb-10 border-b border-white/5 pb-6">
                <Compass className="w-4 h-4 inline-block mr-2" style={{ color: primaryColor }} />
                SYSTEM_DYNAMICS
