@@ -71,7 +71,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </h3>
           <div className="flex items-center gap-3">
             <div className="h-[1px] w-4" style={{ backgroundColor: displayAccent }}></div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40" style={{ color: displayAccent }}>
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-60" style={{ color: displayAccent }}>
               {subtitle}
             </p>
           </div>
@@ -87,7 +87,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className={`mt-8 space-y-6 overflow-hidden transition-all duration-700 ease-in-out ${isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <div className="grid grid-cols-2 gap-4 border-y border-white/10 py-6">
             <div className="space-y-1">
-              <span className="text-[8px] font-mono opacity-30 uppercase tracking-widest">{isEn ? 'TECH_ARRAY' : 'TECH_POLE'}</span>
+              <span className="text-[8px] font-mono opacity-50 uppercase tracking-widest">{isEn ? 'TECH_ARRAY' : 'TECH_POLE'}</span>
               <div className="flex flex-wrap gap-1.5 mt-2">
                 {techStack.map(tech => (
                   <span key={tech} className="text-[8px] px-1.5 py-0.5 border border-white/10 bg-white/5 font-mono uppercase">
@@ -97,7 +97,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               </div>
             </div>
             <div className="space-y-1 flex flex-col justify-center border-l border-white/10 pl-4">
-              <span className="text-[8px] font-mono opacity-30 uppercase tracking-widest">{isEn ? 'STATUS_CODE' : 'STAVOVÝ_KÓD'}</span>
+              <span className="text-[8px] font-mono opacity-50 uppercase tracking-widest">{isEn ? 'STATUS_CODE' : 'STAVOVÝ_KÓD'}</span>
               <div className="text-[10px] font-bold font-mono tracking-widest mt-1 text-white/80">
                 ACTIVE_VER: 0.94-STABLE
               </div>
@@ -115,7 +115,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {!isExpanded && (
           <div className="mt-4 flex items-center justify-end">
-            <div className="text-[8px] font-mono opacity-20 uppercase tracking-widest group-hover:opacity-40 transition-opacity">
+            <div className="text-[8px] font-mono opacity-20 uppercase tracking-widest group-hover:opacity-60 transition-opacity">
               [ Click_to_decrypt_data ]
             </div>
           </div>

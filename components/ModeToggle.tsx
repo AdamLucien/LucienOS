@@ -37,7 +37,7 @@ export const ModeToggle: React.FC<ModeToggleProps> = ({ mode, lang, onToggle }) 
         </span>
         <Power className={`w-4 h-4 relative z-10 ${mode === 'raw' ? 'animate-pulse' : ''}`} />
       </button>
-      <div className="text-[9px] uppercase font-bold opacity-30 flex items-center gap-2">
+      <div className="text-[9px] uppercase font-bold opacity-50 flex items-center gap-2">
         {/* Using localized labels */}
         <span>{t.syncing}</span>
         <div className="flex gap-1">

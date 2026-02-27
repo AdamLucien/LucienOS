@@ -160,7 +160,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
   return (
     <div className="max-w-6xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Archive' : 'Archiv'}</h1>
-      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-12">
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed mb-12">
         {seoIntro.map((line) => (
           <p key={line}>{line}</p>
         ))}
@@ -168,7 +168,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
       {/* HEADER */}
       <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-white/10 pb-12 relative overflow-hidden">
         <div className="relative z-10">
-          <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40">
+          <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60">
             <History className="w-3 h-3" />
             <span>FULL_LIFECYCLE_SYNCHRONIZATION</span>
           </div>
@@ -196,10 +196,10 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
                       <h3 className="text-xl md:text-3xl font-bold tracking-widest uppercase" style={{ color: phaseColor }}>
                         {phase.phaseName}
                       </h3>
-                      <p className="text-[10px] font-mono opacity-40 mt-1 uppercase tracking-widest">{phase.tagline}</p>
+                      <p className="text-[10px] font-mono opacity-60 mt-1 uppercase tracking-widest">{phase.tagline}</p>
                     </div>
                  </div>
-                 <div className="px-6 py-2 border border-white/10 font-mono text-xs opacity-40 uppercase tracking-widest bg-white/5">
+                 <div className="px-6 py-2 border border-white/10 font-mono text-xs opacity-60 uppercase tracking-widest bg-white/5">
                     {phase.era}
                  </div>
               </div>
@@ -224,7 +224,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
                     </div>
                     
                     <div className="flex flex-col md:flex-row md:items-center gap-6 mb-10">
-                       <span className="text-[10px] font-mono font-bold opacity-30 px-3 py-1 border border-white/10 uppercase tracking-[0.2em]">
+                       <span className="text-[10px] font-mono font-bold opacity-50 px-3 py-1 border border-white/10 uppercase tracking-[0.2em]">
                           {item.period}
                        </span>
                        <h4 className="text-xl sm:text-2xl md:text-4xl font-bold uppercase tracking-tighter transition-transform duration-300 group-hover/card:translate-x-2">
@@ -236,14 +236,14 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
                        <div className="text-lg sm:text-xl md:text-2xl font-bold text-white/90 border-l-2 pl-8 mb-6 transition-all" style={{ borderColor: phaseColor }}>
                           {item.role}
                        </div>
-                       <p className="text-sm md:text-lg opacity-50 leading-relaxed font-light italic">
+                       <p className="text-sm md:text-lg opacity-70 leading-relaxed font-light italic">
                           "{item.mission}"
                        </p>
                     </div>
 
                     <div className="flex flex-wrap gap-2 pt-8 border-t border-white/5">
                        {item.tech.map((t) => (
-                         <span key={t} className="text-[9px] md:text-[10px] font-mono opacity-30 px-4 py-1.5 bg-white/5 border border-white/5 uppercase hover:opacity-100 hover:text-white transition-all cursor-default hover:bg-white/10">
+                         <span key={t} className="text-[9px] md:text-[10px] font-mono opacity-50 px-4 py-1.5 bg-white/5 border border-white/5 uppercase hover:opacity-100 hover:text-white transition-all cursor-default hover:bg-white/10">
                            {t}
                          </span>
                        ))}
@@ -264,7 +264,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
          <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-8 leading-tight">
            {isEn ? 'THE_SYSTEM_IS_COMPLETE' : 'SYSTÉM_JE_KOMPLETNÍ'}
          </h3>
-         <p className="text-[11px] md:text-sm font-mono opacity-40 max-w-3xl mx-auto uppercase tracking-[0.3em] leading-loose">
+         <p className="text-[11px] md:text-sm font-mono opacity-60 max-w-3xl mx-auto uppercase tracking-[0.3em] leading-loose">
            {isEn 
              ? "From mechanical horology to state-level governance architectures. A decade and a half of relentless system optimization and logical scaling." 
              : "Od mechanické hodinařiny po státní vládní architektury. Patnáct let neúnavné optimalizace systémů a logického škálování."

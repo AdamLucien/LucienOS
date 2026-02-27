@@ -50,7 +50,7 @@ export const BootSequence: React.FC<BootSequenceProps> = ({ onComplete }) => {
               key={i}
               className={`transition-opacity duration-200 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
             >
-              <span className="opacity-40 tracking-tighter mr-4 font-bold">{parts[0]}]</span>
+              <span className="opacity-60 tracking-tighter mr-4 font-bold">{parts[0]}]</span>
               <span className="tracking-widest uppercase text-xs md:text-sm">{parts[1] || ''}</span>
             </div>
           );

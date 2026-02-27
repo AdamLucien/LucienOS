@@ -12,16 +12,16 @@ const getCapabilitiesData = (lang: Language, mode: AppMode) => {
   const isEn = lang === 'en';
   const palettes = mode === 'raw'
     ? {
-        neural: ['#8f3a52', '#9b5f63', '#a67a66', '#b39a76'],
-        industrial: ['#8f3a52', '#946a66', '#9b816d', '#ab9679'],
-        digital: ['#8f3a52', '#8f6d77', '#9a7d69', '#ab9277'],
-        tactical: ['#8f3a52', '#98745f', '#a38b67', '#b29b76']
+        neural: ['#d04c75', '#ff7e57', '#ffb347', '#ffd166'],
+        industrial: ['#d04c75', '#ff8a66', '#f7b955', '#ffe08a'],
+        digital: ['#d04c75', '#d86f8a', '#ff9d5c', '#ffc978'],
+        tactical: ['#d04c75', '#ff8b5a', '#ffb347', '#ffd166']
       }
     : {
-        neural: ['#5a7696', '#5f8f9f', '#7c8f70', '#6f9785'],
-        industrial: ['#6b7f95', '#7f9071', '#669287', '#768faa'],
-        digital: ['#5f7698', '#6e917a', '#6f8fa8', '#8d7f68'],
-        tactical: ['#786d7b', '#8e8867', '#779272', '#678d9a']
+        neural: ['#5a7696', '#39bdf8', '#f59e0b', '#22c55e'],
+        industrial: ['#4f8ff7', '#f6c453', '#22b8a5', '#60a5fa'],
+        digital: ['#6366f1', '#34d399', '#38bdf8', '#fb923c'],
+        tactical: ['#ef5b7a', '#f59e0b', '#84cc16', '#06b6d4']
       };
 
   const tags = isEn
@@ -165,7 +165,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
   return (
     <div className="max-w-7xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Capabilities' : 'Schopnosti'}</h1>
-      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-12">
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed mb-12">
         {seoIntro.map((line) => (
           <p key={line}>{line}</p>
         ))}
@@ -174,7 +174,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
       <div className="mb-24 relative overflow-hidden group">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-12">
           <div>
-            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40">
+            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60">
               <Terminal className="w-3 h-3" />
               <span>CAPABILITY_SYNC_PROTOCOL_2.0</span>
             </div>
@@ -182,7 +182,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
               {isEn ? 'SKILL_MATR' : 'MATICE_'}
               <span style={{ color: accentColor }}>{isEn ? 'IX' : 'SCHOPNOSTÍ'}</span>
             </h2>
-            <div className="flex gap-4 text-[9px] font-mono opacity-50 uppercase tracking-widest">
+            <div className="flex gap-4 text-[9px] font-mono opacity-70 uppercase tracking-widest">
               <span>{labels.scanState}</span>
               <span className="animate-pulse">|</span>
               <span>{labels.integrity}</span>
@@ -216,7 +216,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
                   <h3 className={`${headingClass} break-words leading-tight`}>
                     {data[0].category}
                   </h3>
-                  <p className="text-[9px] md:text-[10px] font-mono opacity-40 tracking-[0.2em] md:tracking-[0.3em] mt-1">{data[0].tag}</p>
+                  <p className="text-[9px] md:text-[10px] font-mono opacity-60 tracking-[0.2em] md:tracking-[0.3em] mt-1">{data[0].tag}</p>
                 </div>
               </div>
 
@@ -226,7 +226,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
                     <div className="flex justify-between items-baseline gap-2">
                       <div className="flex flex-col min-w-0">
                         <span className="text-[11px] md:text-[12px] font-bold uppercase tracking-widest group-hover/skill:text-white transition-colors truncate">{skill.name}</span>
-                        <span className="text-[8px] md:text-[9px] font-mono opacity-30 mt-1 uppercase italic tracking-tighter truncate">{skill.meta}</span>
+                        <span className="text-[8px] md:text-[9px] font-mono opacity-50 mt-1 uppercase italic tracking-tighter truncate">{skill.meta}</span>
                       </div>
                       <span className="text-[10px] md:text-[11px] font-mono font-bold shrink-0" style={{ color: skill.color }}>{skill.level}%</span>
                     </div>
@@ -241,7 +241,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
               </div>
 
               <div className="mt-10 pt-8 border-t border-white/10">
-                <div className="text-[8px] font-mono opacity-40 uppercase tracking-[0.35em]">{labels.signature}</div>
+                <div className="text-[8px] font-mono opacity-60 uppercase tracking-[0.35em]">{labels.signature}</div>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {data[0].stack.map((item) => (
                     <span
@@ -262,7 +262,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
                 <div className="absolute inset-0 border-4 border-dashed border-white/5 rounded-full animate-[spin_20s_linear_infinite]" />
                 <div className="absolute inset-2 border border-white/10 rounded-full" />
                 <Brain className="w-12 h-12 opacity-20" />
-                <div className="absolute bottom-[-20px] text-[10px] font-mono opacity-40">{labels.load}</div>
+                <div className="absolute bottom-[-20px] text-[10px] font-mono opacity-60">{labels.load}</div>
               </div>
               <div className="w-full space-y-2">
                 {[...Array(5)].map((_, i) => (
@@ -293,13 +293,13 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
                 <div className="h-1 bg-white/5 overflow-hidden">
                    <div className="h-full transition-all duration-1000" style={{ width: `${skill.level}%`, backgroundColor: skill.color }} />
                 </div>
-                <div className="mt-2 text-[7px] sm:text-[8px] font-mono opacity-20 uppercase tracking-tighter group-hover/s:opacity-50 transition-opacity truncate">{labels.paramId}: {skill.meta}</div>
+                <div className="mt-2 text-[7px] sm:text-[8px] font-mono opacity-20 uppercase tracking-tighter group-hover/s:opacity-70 transition-opacity truncate">{labels.paramId}: {skill.meta}</div>
               </div>
             ))}
           </div>
 
           <div className="mt-8 pt-6 border-t border-white/10">
-            <div className="text-[8px] font-mono opacity-40 uppercase tracking-[0.35em]">{labels.signature}</div>
+            <div className="text-[8px] font-mono opacity-60 uppercase tracking-[0.35em]">{labels.signature}</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {data[1].stack.map((item) => (
                 <span
@@ -333,7 +333,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-[11px] md:text-[12px] font-bold uppercase tracking-widest mb-1 text-white/90 truncate">{skill.name}</div>
-                  <div className="text-[9px] md:text-[10px] font-mono opacity-50 uppercase tracking-tighter truncate">{skill.meta}</div>
+                  <div className="text-[9px] md:text-[10px] font-mono opacity-70 uppercase tracking-tighter truncate">{skill.meta}</div>
                 </div>
                 <div className="hidden sm:flex gap-1 shrink-0">
                   {[...Array(3)].map((_, i) => (
@@ -345,7 +345,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
           </div>
 
           <div className="mt-8 pt-6 border-t border-white/10">
-            <div className="text-[8px] font-mono opacity-40 uppercase tracking-[0.35em]">{labels.signature}</div>
+            <div className="text-[8px] font-mono opacity-60 uppercase tracking-[0.35em]">{labels.signature}</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {data[2].stack.map((item) => (
                 <span
@@ -375,10 +375,10 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
                   <h3 className={`${headingClass} leading-tight`}>
                     {data[3].category}
                   </h3>
-                  <div className="text-[9px] font-mono opacity-40 mt-1 uppercase tracking-widest">{labels.staging}</div>
+                  <div className="text-[9px] font-mono opacity-60 mt-1 uppercase tracking-widest">{labels.staging}</div>
                 </div>
               </div>
-              <div className="inline-flex items-center gap-2 text-[9px] font-mono uppercase tracking-widest px-3 py-1 border border-white/10 bg-white/5 opacity-40">
+              <div className="inline-flex items-center gap-2 text-[9px] font-mono uppercase tracking-widest px-3 py-1 border border-white/10 bg-white/5 opacity-60">
                 <Shield className="w-3 h-3" />
                 {labels.staging}
               </div>
@@ -387,25 +387,25 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {data[3].skills.map((skill, idx) => (
                 <div key={idx} className="relative border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] transition-all p-5 industrial-clip group/skill">
-                  <div className="absolute top-3 right-4 text-[7px] font-mono opacity-30 uppercase tracking-widest">NODE_0{idx + 1}</div>
+                  <div className="absolute top-3 right-4 text-[7px] font-mono opacity-50 uppercase tracking-widest">NODE_0{idx + 1}</div>
                   
                   <div className="flex items-end justify-between gap-4">
                     <div className="min-w-0">
                       <div className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white/90 truncate">{skill.name}</div>
-                      <div className="text-[8px] font-mono opacity-40 uppercase tracking-widest mt-1">UNIT_%</div>
+                      <div className="text-[8px] font-mono opacity-60 uppercase tracking-widest mt-1">UNIT_%</div>
                     </div>
                     <div className="flex items-end gap-2">
                       <div className="text-2xl md:text-3xl font-mono font-bold leading-none" style={{ color: skill.color }}>
                         {skill.level}
                       </div>
-                      <div className="text-[8px] font-mono opacity-40 uppercase tracking-widest pb-1">UNIT_%</div>
+                      <div className="text-[8px] font-mono opacity-60 uppercase tracking-widest pb-1">UNIT_%</div>
                     </div>
                   </div>
 
                   <div className="mt-4 h-[2px] bg-white/10 overflow-hidden">
                     <div className="h-full transition-all duration-700" style={{ width: `${skill.level}%`, backgroundColor: skill.color }} />
                   </div>
-                  <div className="mt-3 flex gap-1 opacity-30">
+                  <div className="mt-3 flex gap-1 opacity-50">
                     {[...Array(12)].map((_, i) => (
                       <div key={i} className="h-1 w-2 bg-white/10" style={{ backgroundColor: i < Math.round(skill.level / 10) ? skill.color : undefined }} />
                     ))}
@@ -415,7 +415,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
             </div>
 
             <div className="mt-8 pt-6 border-t border-white/10">
-              <div className="text-[8px] font-mono opacity-40 uppercase tracking-[0.35em]">{labels.signature}</div>
+              <div className="text-[8px] font-mono opacity-60 uppercase tracking-[0.35em]">{labels.signature}</div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {data[3].stack.map((item) => (
                   <span
@@ -429,7 +429,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-[8px] font-mono opacity-30 uppercase tracking-[0.25em]">
+            <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-[8px] font-mono opacity-50 uppercase tracking-[0.25em]">
               <span>{labels.hardwareRevision}</span>
               <span>{labels.manualOverride}</span>
             </div>
@@ -440,8 +440,8 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
       {/* FOOTER CALLOUT - REWORKED */}
       <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div className="p-6 border border-white/5 bg-black/40 industrial-clip text-center flex flex-col items-center justify-center gap-2 card-hover-soft">
-          <Database className="w-5 h-5 opacity-40 mb-2" />
-          <span className="text-[9px] font-mono opacity-30 uppercase tracking-[0.2em]">Data_Lake_Integrity</span>
+          <Database className="w-5 h-5 opacity-60 mb-2" />
+          <span className="text-[9px] font-mono opacity-50 uppercase tracking-[0.2em]">Data_Lake_Integrity</span>
           <span className="text-sm font-bold tracking-widest">99.98% OK</span>
         </div>
         <div className="p-8 border-2 border-dashed border-white/10 bg-white/[0.02] text-center flex flex-col justify-center gap-2 group hover:bg-white/[0.05] transition-all sm:col-span-2 md:col-span-1 card-hover-soft">
@@ -455,8 +455,8 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
           </div>
         </div>
         <div className="p-6 border border-white/5 bg-black/40 industrial-clip text-center flex flex-col items-center justify-center gap-2 hidden md:flex card-hover-soft">
-          <Shield className="w-5 h-5 opacity-40 mb-2" />
-          <span className="text-[9px] font-mono opacity-30 uppercase tracking-[0.2em]">Security_Layer</span>
+          <Shield className="w-5 h-5 opacity-60 mb-2" />
+          <span className="text-[9px] font-mono opacity-50 uppercase tracking-[0.2em]">Security_Layer</span>
           <span className="text-sm font-bold tracking-widest">ENCRYPTED</span>
         </div>
       </div>

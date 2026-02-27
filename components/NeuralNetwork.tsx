@@ -107,7 +107,7 @@ export const NeuralNetwork: React.FC<NeuralNetworkProps> = ({ mode }) => {
   return (
     <canvas 
       ref={canvasRef} 
-      className="fixed inset-0 w-full h-full pointer-events-none opacity-40 z-0 transition-all duration-1000"
+      className="fixed inset-0 w-full h-full pointer-events-none opacity-60 z-0 transition-all duration-1000"
     />
   );
 };

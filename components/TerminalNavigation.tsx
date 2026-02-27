@@ -60,7 +60,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
       </div>
       <div className="relative group flex items-center gap-4 border border-white/10 bg-black/60 p-3 industrial-clip">
         <TerminalIcon className="w-4 h-4" style={{ color: accentColor }} />
-        <span className="text-[10px] font-bold opacity-30 shrink-0 font-mono tracking-widest hidden sm:inline">ROOT@LUCIEN_SYSTEMS:~$</span>
+        <span className="text-[10px] font-bold opacity-50 shrink-0 font-mono tracking-widest hidden sm:inline">ROOT@LUCIEN_SYSTEMS:~$</span>
         <input 
           type="text" 
           value={inputValue}

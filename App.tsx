@@ -401,7 +401,7 @@ const App: React.FC = () => {
     setMetaTag('name', 'robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
     setMetaTag('name', 'author', 'Adam Karl Lucien');
     setMetaTag('name', 'application-name', 'Lucien OS v2.0');
-    setMetaTag('name', 'theme-color', '#08101b');
+    setMetaTag('name', 'theme-color', '#061327');
 
     setMetaTag('property', 'og:title', title);
     setMetaTag('property', 'og:description', description);
@@ -479,7 +479,7 @@ const App: React.FC = () => {
         <div className="relative group overflow-hidden border-b border-white/10 pb-16">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 relative z-10">
             <div>
-              <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40 uppercase">
+              <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60 uppercase">
                 <Terminal className="w-3 h-3" />
                 <span>IDENTITY_INITIALIZATION_PROTOCOL</span>
               </div>
@@ -506,7 +506,7 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed">
+        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed">
           {sectionCopy[language].CORE.map((line) => (
             <p key={line}>{line}</p>
           ))}
@@ -521,7 +521,7 @@ const App: React.FC = () => {
             <p className="text-base md:text-lg opacity-70 leading-relaxed font-light">
               {mode === 'raw' ? t.hero.chaos_desc : t.hero.logic_desc}
             </p>
-            <div className="mt-12 pt-8 border-t border-white/5 grid grid-cols-2 md:grid-cols-4 gap-4 opacity-30 text-[9px] font-mono tracking-widest uppercase">
+            <div className="mt-12 pt-8 border-t border-white/5 grid grid-cols-2 md:grid-cols-4 gap-4 opacity-50 text-[9px] font-mono tracking-widest uppercase">
                <span>Integrity: High</span>
                <span>Sensitivity: Extreme</span>
                <span>Mode: {mode}</span>
@@ -535,16 +535,16 @@ const App: React.FC = () => {
             </h2>
             <div className="space-y-8 opacity-80 text-xs font-mono">
               <div className="flex flex-col gap-2">
-                <span className="opacity-30 text-[9px]">GEOGRAPHIC_NODES</span>
-                <div className="flex items-center gap-3 text-white/70"><MapPin className="w-4 h-4 opacity-40" /> EMEA / AMERICAS / APAC</div>
+                <span className="opacity-50 text-[9px]">GEOGRAPHIC_NODES</span>
+                <div className="flex items-center gap-3 text-white/70"><MapPin className="w-4 h-4 opacity-60" /> EMEA / AMERICAS / APAC</div>
               </div>
               <div className="flex flex-col gap-2">
-                <span className="opacity-30 text-[9px]">ENCRYPTED_SIGNAL</span>
-                <div className="flex items-center gap-3 text-white/70"><Mail className="w-4 h-4 opacity-40" /> adam.karl.lucien@lucien.technology</div>
+                <span className="opacity-50 text-[9px]">ENCRYPTED_SIGNAL</span>
+                <div className="flex items-center gap-3 text-white/70"><Mail className="w-4 h-4 opacity-60" /> adam.karl.lucien@lucien.technology</div>
               </div>
               <div className="flex flex-col gap-2">
-                <span className="opacity-30 text-[9px]">TEMPORAL_OFFSET</span>
-                <div className="flex items-center gap-3 text-white/70"><Clock className="w-4 h-4 opacity-40" /> UTC+1 / MST / UTC+1</div>
+                <span className="opacity-50 text-[9px]">TEMPORAL_OFFSET</span>
+                <div className="flex items-center gap-3 text-white/70"><Clock className="w-4 h-4 opacity-60" /> UTC+1 / MST / UTC+1</div>
               </div>
             </div>
           </div>
@@ -557,7 +557,7 @@ const App: React.FC = () => {
         <div>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-white/10 pb-12 group relative overflow-hidden">
             <div className="relative z-10">
-              <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40">
+              <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60">
                 <Terminal className="w-3 h-3" />
                 <span>INIT_SEQUENCE: ARCHITECT_CORE</span>
               </div>
@@ -565,7 +565,7 @@ const App: React.FC = () => {
                 {language === 'en' ? 'CATEGORY' : 'KATEGORIE'}
                 <span style={{ color: primaryColor }}>_I</span>
               </h2>
-              <p className="text-xs font-mono opacity-40 mt-4 tracking-widest uppercase">{t.sections.sys_arch}</p>
+              <p className="text-xs font-mono opacity-60 mt-4 tracking-widest uppercase">{t.sections.sys_arch}</p>
             </div>
             <div className="hidden md:flex flex-col items-end gap-1 opacity-20">
                <span className="text-[8px] font-mono uppercase tracking-widest">ENCRYPTED_PAYLOAD_READY</span>
@@ -581,7 +581,7 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-10">
+          <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed mb-10">
             {sectionCopy[language].MODULES.map((line) => (
               <p key={line}>{line}</p>
             ))}
@@ -603,7 +603,7 @@ const App: React.FC = () => {
         <div>
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-white/10 pb-12 group relative overflow-hidden">
             <div className="relative z-10">
-              <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40">
+              <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60">
                 <Terminal className="w-3 h-3" />
                 <span>INIT_SEQUENCE: FIELD_OPERATIONS</span>
               </div>
@@ -611,9 +611,9 @@ const App: React.FC = () => {
                 {language === 'en' ? 'CATEGORY' : 'KATEGORIE'}
                 <span style={{ color: primaryColor }}>_II</span>
               </h2>
-              <p className="text-xs font-mono opacity-40 mt-4 tracking-widest uppercase">{t.sections.field_ops}</p>
+              <p className="text-xs font-mono opacity-60 mt-4 tracking-widest uppercase">{t.sections.field_ops}</p>
             </div>
-            <div className="text-[10px] font-mono opacity-40 animate-pulse hidden md:block uppercase tracking-widest">
+            <div className="text-[10px] font-mono opacity-60 animate-pulse hidden md:block uppercase tracking-widest">
                SYSTEM_ACTIVE_NODES: 03
             </div>
           </div>
@@ -627,22 +627,22 @@ const App: React.FC = () => {
       </section>
     ),
     CAPABILITIES: (
-      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading capabilities...' : 'Načítání schopností...'}</div>}>
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-70">{language === 'en' ? 'Loading capabilities...' : 'Načítání schopností...'}</div>}>
         <CapabilitiesSection mode={mode} lang={language} />
       </Suspense>
     ),
     ARCHIVE: (
-      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading archive...' : 'Načítání archivu...'}</div>}>
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-70">{language === 'en' ? 'Loading archive...' : 'Načítání archivu...'}</div>}>
         <ArchiveSection mode={mode} lang={language} />
       </Suspense>
     ),
     DIAGNOSTICS: (
-      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading diagnostics...' : 'Načítání diagnostiky...'}</div>}>
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-70">{language === 'en' ? 'Loading diagnostics...' : 'Načítání diagnostiky...'}</div>}>
         <DiagnosticsSection mode={mode} lang={language} />
       </Suspense>
     ),
     RESONANCE: (
-      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-50">{language === 'en' ? 'Loading resonance...' : 'Načítání rezonance...'}</div>}>
+      <Suspense fallback={<div className="max-w-3xl mx-auto text-xs opacity-70">{language === 'en' ? 'Loading resonance...' : 'Načítání rezonance...'}</div>}>
         <ResonanceSection mode={mode} lang={language} />
       </Suspense>
     ),
@@ -650,7 +650,7 @@ const App: React.FC = () => {
       <section className="max-w-3xl mx-auto animate-in fade-in duration-1000 px-4 md:px-0">
         <h1 className="sr-only">{language === 'en' ? 'Signal' : 'Signál'}</h1>
         <div className="mb-16 border-b border-white/10 pb-12">
-            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40 uppercase">
+            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60 uppercase">
               <Mail className="w-3 h-3" />
               <span>SIGNAL_TRANSMISSION_PROTOCOL</span>
             </div>
@@ -660,7 +660,7 @@ const App: React.FC = () => {
             </h2>
         </div>
 
-        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-10">
+        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed mb-10">
           {sectionCopy[language].SIGNAL.map((line) => (
             <p key={line}>{line}</p>
           ))}
@@ -671,11 +671,11 @@ const App: React.FC = () => {
           <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-3">
-                <label className="block text-[10px] uppercase opacity-40 font-bold tracking-[0.3em]">{t.sections.signal_name}</label>
+                <label className="block text-[10px] uppercase opacity-60 font-bold tracking-[0.3em]">{t.sections.signal_name}</label>
                 <input type="text" placeholder="USER_IDENTIFICATION" className="w-full bg-white/5 border border-white/10 p-5 focus:outline-none focus:border-slate-400 transition-all font-mono text-xs tracking-widest uppercase" />
               </div>
               <div className="space-y-3">
-                <label className="block text-[10px] uppercase opacity-40 font-bold tracking-[0.3em]">{t.sections.signal_protocol}</label>
+                <label className="block text-[10px] uppercase opacity-60 font-bold tracking-[0.3em]">{t.sections.signal_protocol}</label>
                 <select className="w-full bg-white/5 border border-white/10 p-5 focus:outline-none focus:border-slate-400 appearance-none font-mono text-xs tracking-widest uppercase">
                   <option className="bg-black">COLLABORATION_R&D</option>
                   <option className="bg-black">SYSTEM_AUDIT</option>
@@ -684,7 +684,7 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="space-y-3">
-              <label className="block text-[10px] uppercase opacity-40 font-bold tracking-[0.3em]">{t.sections.signal_payload}</label>
+              <label className="block text-[10px] uppercase opacity-60 font-bold tracking-[0.3em]">{t.sections.signal_payload}</label>
               <textarea rows={6} placeholder="INPUT_DATA_STREAM" className="w-full bg-white/5 border border-white/10 p-5 focus:outline-none focus:border-slate-400 transition-all font-mono text-xs tracking-widest uppercase" />
             </div>
             <button className={`w-full py-6 font-bold uppercase tracking-[0.4em] transition-all relative overflow-hidden group border border-white/10 hover:border-white/40`} style={{ backgroundColor: primaryColor, color: 'white' }}>
@@ -693,7 +693,7 @@ const App: React.FC = () => {
             </button>
           </form>
           
-          <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 opacity-40 text-[9px] font-mono uppercase tracking-[0.2em]">
+          <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 opacity-60 text-[9px] font-mono uppercase tracking-[0.2em]">
              <span>Direct: adam.karl.lucien@lucien.technology</span>
              <span className="animate-pulse">Waiting for signal...</span>
           </div>
@@ -703,17 +703,17 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 ${mode === 'raw' ? 'bg-[#12080c]' : 'bg-[#040b15]'}`}>
+    <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 ${mode === 'raw' ? 'bg-[#0b1426]' : 'bg-[#061125]'}`}>
       <NeuralNetwork mode={mode} />
       
       {/* HUD OVERLAY - Controlled Transparency */}
       <div className="fixed top-0 left-0 w-full z-[60] pointer-events-none">
         {/* Transparent Background on desktop, solid-ish on mobile for clarity */}
-        <div className="absolute inset-0 bg-[#040b15]/40 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0 border-b border-white/5 h-[80px] md:h-[112px] pointer-events-none transition-all duration-500" />
+        <div className="absolute inset-0 bg-[#07162c]/50 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0 border-b border-white/5 h-[80px] md:h-[112px] pointer-events-none transition-all duration-500" />
         
         <div className="relative p-4 md:p-8 flex justify-between items-start">
           <div className="space-y-2 hidden md:block pointer-events-auto">
-            <div className="text-[11px] font-bold opacity-30 uppercase tracking-[0.5em]">Lucien_OS_v2.0.5</div>
+            <div className="text-[11px] font-bold opacity-50 uppercase tracking-[0.5em]">Lucien_OS_v2.0.5</div>
             <div className="flex items-center gap-3">
               <div className={`w-2 h-2 rounded-full ${mode === 'raw' ? 'bg-[#8f3a52]' : 'bg-[#5a7696]'} animate-pulse shadow-[0_0_8px_currentColor]`}></div>
               <span className="text-[10px] uppercase font-bold tracking-widest opacity-60">{t.hud.status}: {mode === 'raw' ? t.hud.unstable : t.hud.stable}</span>
@@ -737,7 +737,7 @@ const App: React.FC = () => {
                     event.preventDefault();
                     navigateTo(currentSection, 'en');
                   }}
-                  className={`px-3 py-1.5 text-[10px] font-bold font-mono tracking-widest transition-all ${language === 'en' ? 'bg-slate-500/20 text-white border-b-2 border-slate-400' : 'text-white/30 hover:text-white/60'}`}
+                  className={`px-3 py-1.5 text-[10px] font-bold font-mono tracking-widest transition-all ${language === 'en' ? 'bg-slate-500/20 text-white border-b-2 border-slate-400' : 'text-white/70 hover:text-white/90'}`}
                 >
                   EN
                 </a>
@@ -747,7 +747,7 @@ const App: React.FC = () => {
                     event.preventDefault();
                     navigateTo(currentSection, 'cs');
                   }}
-                  className={`px-3 py-1.5 text-[10px] font-bold font-mono tracking-widest transition-all ${language === 'cs' ? 'bg-slate-500/20 text-white border-b-2 border-slate-400' : 'text-white/30 hover:text-white/60'}`}
+                  className={`px-3 py-1.5 text-[10px] font-bold font-mono tracking-widest transition-all ${language === 'cs' ? 'bg-slate-500/20 text-white border-b-2 border-slate-400' : 'text-white/70 hover:text-white/90'}`}
                 >
                   CS
                 </a>
@@ -764,9 +764,9 @@ const App: React.FC = () => {
 
       {/* MOBILE TACTICAL MENU */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[100] bg-[#040b15]/98 backdrop-blur-2xl flex flex-col p-8 md:hidden animate-in fade-in zoom-in duration-300">
+        <div className="fixed inset-0 z-[100] bg-[#061125]/98 backdrop-blur-2xl flex flex-col p-8 md:hidden animate-in fade-in zoom-in duration-300">
           <div className="flex justify-between items-center mb-16">
-            <div className="text-[10px] font-mono opacity-40 uppercase tracking-[0.5em]">System_Node_Map</div>
+            <div className="text-[10px] font-mono opacity-60 uppercase tracking-[0.5em]">System_Node_Map</div>
             <button aria-label={language === 'en' ? 'Close menu' : 'Zavřít menu'} onClick={() => setIsMobileMenuOpen(false)}><X className="w-8 h-8 opacity-60" /></button>
           </div>
           <div className="flex flex-col gap-4">

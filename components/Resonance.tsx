@@ -145,7 +145,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
   return (
     <div className="max-w-7xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Resonance' : 'Rezonance'}</h1>
-      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-50 leading-relaxed mb-12">
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed mb-12">
         {seoIntro.map((line) => (
           <p key={line}>{line}</p>
         ))}
@@ -154,7 +154,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
       <div className="mb-24 relative overflow-hidden group">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-12">
           <div>
-            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-40 uppercase">
+            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60 uppercase">
               <Terminal className="w-3 h-3" />
               <span>RESONANCE_HUB_v2.3.5_STABLE</span>
             </div>
@@ -162,7 +162,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
               {isEn ? 'RESONA' : 'REZO'}
               <span style={{ color: primaryColor }}>{isEn ? 'NCE' : 'NANCE'}</span>
             </h2>
-            <div className="flex gap-4 text-[9px] font-mono opacity-50 uppercase tracking-widest">
+            <div className="flex gap-4 text-[9px] font-mono opacity-70 uppercase tracking-widest">
               <span>PATTERN_SYNC: ACTIVE</span>
               <span className="animate-pulse">|</span>
               <span>AI_NEURAL_LINK: READY</span>
@@ -191,7 +191,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
               <div className="w-full space-y-6">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-lg font-bold uppercase tracking-widest flex items-center gap-3">
-                    <Video className="w-5 h-5 opacity-40" /> {data.categories[1].title}
+                    <Video className="w-5 h-5 opacity-60" /> {data.categories[1].title}
                   </h3>
                   <div className="flex gap-1">
                     <div className="w-1 h-3 bg-red-500/20"></div>
@@ -202,10 +202,10 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                 {/* Technical frame */}
                 <div className="max-w-3xl mx-auto">
                   <div className="relative border border-white/10 bg-black/80 industrial-clip p-4 shadow-2xl transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_35px_rgba(90,118,150,0.24)]">
-                    <div className="absolute top-2 left-2 text-[7px] font-mono opacity-30 uppercase tracking-widest">
+                    <div className="absolute top-2 left-2 text-[7px] font-mono opacity-50 uppercase tracking-widest">
                       STREAM_MODULE: 0x1A
                     </div>
-                    <div className="absolute top-2 right-2 text-[7px] font-mono opacity-30 uppercase tracking-widest">
+                    <div className="absolute top-2 right-2 text-[7px] font-mono opacity-50 uppercase tracking-widest">
                       SIGNAL: STABLE
                     </div>
 
@@ -215,10 +215,10 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                         const isActive = activeVideoId === video.id;
                         return (
                           <div key={video.id} className="relative border border-white/10 bg-black/90 industrial-clip p-2 transition-all duration-500 hover:border-white/30 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)]">
-                            <div className="absolute top-2 left-2 text-[7px] font-mono opacity-30 uppercase tracking-widest">
+                            <div className="absolute top-2 left-2 text-[7px] font-mono opacity-50 uppercase tracking-widest">
                               {video.label}
                             </div>
-                            <div className="absolute top-2 right-2 text-[7px] font-mono opacity-30 uppercase tracking-widest">
+                            <div className="absolute top-2 right-2 text-[7px] font-mono opacity-50 uppercase tracking-widest">
                               FEED_0{idx + 1}
                             </div>
 
@@ -253,7 +253,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                               </div>
                             </div>
 
-                            <div className="mt-2 flex items-center justify-between text-[7px] font-mono uppercase tracking-widest opacity-30">
+                            <div className="mt-2 flex items-center justify-between text-[7px] font-mono uppercase tracking-widest opacity-50">
                               <span>CODEC: H.264</span>
                               {video.videoLink ? (
                                 <a href={video.videoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-white transition-colors" style={{ color: primaryColor }}>
@@ -282,7 +282,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                       <div className="text-[10px] font-bold uppercase tracking-[0.3em]" style={{ color: primaryColor }}>
                         {desc.title}
                       </div>
-                      <div className="text-[9px] font-mono opacity-50 mt-2 leading-relaxed">
+                      <div className="text-[9px] font-mono opacity-70 mt-2 leading-relaxed">
                         {desc.body}
                       </div>
                     </div>
@@ -305,38 +305,38 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                    <>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">uGear Peaclock</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Design of high-precision mechanical timepieces.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Design of high-precision mechanical timepieces.</div>
                      </div>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">Software as Art</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Architecture as aesthetic and functional expression.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Architecture as aesthetic and functional expression.</div>
                      </div>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">3D Modeling</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Spatial design, industrial geometry, and rapid iteration.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Spatial design, industrial geometry, and rapid iteration.</div>
                      </div>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">AI as Medium</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Generative systems used as creative and analytical tools.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Generative systems used as creative and analytical tools.</div>
                      </div>
                    </>
                  ) : (
                    <>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">uGear Peaclock</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Design precizních mechanických hodinek.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Design precizních mechanických hodinek.</div>
                      </div>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">Software jako umění</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Architektura jako estetický i funkční výraz.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Architektura jako estetický i funkční výraz.</div>
                      </div>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">3D modelování</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Prostorový design, průmyslová geometrie, rychlé iterace.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Prostorový design, průmyslová geometrie, rychlé iterace.</div>
                      </div>
                      <div>
                        <div className="text-[11px] font-bold uppercase tracking-widest text-white/80">AI jako médium</div>
-                       <div className="text-[9px] opacity-30 font-mono mt-1">Generativní systémy jako kreativní a analytický nástroj.</div>
+                       <div className="text-[9px] opacity-50 font-mono mt-1">Generativní systémy jako kreativní a analytický nástroj.</div>
                      </div>
                    </>
                  )}
@@ -348,27 +348,27 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
                  <Music className="w-4 h-4" style={{ color: primaryColor }} /> LIFESTYLE
                </h3>
                <div className="space-y-6">
-                 <div className="flex items-center justify-between opacity-40 hover:opacity-100 transition-opacity">
+                 <div className="flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity">
                     <span className="text-[10px] font-mono">ACOUSTICS</span>
                     <span className="text-[9px] font-bold uppercase tracking-widest">METAL / TRANCE</span>
                  </div>
-                 <div className="flex items-center justify-between opacity-40 hover:opacity-100 transition-opacity">
+                 <div className="flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity">
                     <span className="text-[10px] font-mono">FLOW_STATE</span>
                     <span className="text-[9px] font-bold uppercase tracking-widest">SKIING / SWIMMING</span>
                  </div>
-                 <div className="flex items-center justify-between opacity-40 hover:opacity-100 transition-opacity">
+                 <div className="flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity">
                     <span className="text-[10px] font-mono">REGENERATION</span>
                     <span className="text-[9px] font-bold uppercase tracking-widest">WINE / SLEEP_PROT.</span>
                  </div>
-                 <div className="flex items-center justify-between opacity-40 hover:opacity-100 transition-opacity">
+                 <div className="flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity">
                     <span className="text-[10px] font-mono">MIND_BODY</span>
                     <span className="text-[9px] font-bold uppercase tracking-widest">TAI CHI / MOBILITY</span>
                  </div>
-                 <div className="flex items-center justify-between opacity-40 hover:opacity-100 transition-opacity">
+                 <div className="flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity">
                     <span className="text-[10px] font-mono">FOCUS</span>
                     <span className="text-[9px] font-bold uppercase tracking-widest">DEEP_WORK / FLOW</span>
                  </div>
-                 <div className="flex items-center justify-between opacity-40 hover:opacity-100 transition-opacity">
+                 <div className="flex items-center justify-between opacity-60 hover:opacity-100 transition-opacity">
                     <span className="text-[10px] font-mono">RECOVERY</span>
                     <span className="text-[9px] font-bold uppercase tracking-widest">BREATH / COLD</span>
                  </div>
@@ -387,22 +387,22 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
              <div className="space-y-10">
                 <div className="relative pl-6 border-l border-white/10">
                    <div className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: primaryColor }}>AI_AUTOMATION</div>
-                   <div className="text-[9px] font-mono opacity-30 italic">"Heuristic neural nets & vision."</div>
+                   <div className="text-[9px] font-mono opacity-50 italic">"Heuristic neural nets & vision."</div>
                 </div>
                 <div className="relative pl-6 border-l border-white/10">
                    <div className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: primaryColor }}>OSINT_OPS</div>
-                   <div className="text-[9px] font-mono opacity-30 italic">"Darknet & technical surveillance."</div>
+                   <div className="text-[9px] font-mono opacity-50 italic">"Darknet & technical surveillance."</div>
                 </div>
                 <div className="relative pl-6 border-l border-white/10">
                    <div className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: primaryColor }}>PROCESS_FLOW</div>
-                   <div className="text-[9px] font-mono opacity-30 italic">"Lean 6Σ industrial precision."</div>
+                   <div className="text-[9px] font-mono opacity-50 italic">"Lean 6Σ industrial precision."</div>
                 </div>
              </div>
           </div>
 
           <div className="p-10 border-2 border-dashed border-white/10 bg-white/[0.01] text-center relative overflow-hidden group card-hover-soft">
              <Moon className="w-8 h-8 mx-auto opacity-10 mb-8" />
-             <p className="text-[11px] font-mono opacity-30 uppercase tracking-[0.2em] leading-loose">
+             <p className="text-[11px] font-mono opacity-50 uppercase tracking-[0.2em] leading-loose">
                {isEn 
                  ? "Syncing cognitive performance with deep internal recovery protocols." 
                  : "Synchronizace kognitivního výkonu s hlubokými vnitřními protokoly obnovy."}
