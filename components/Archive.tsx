@@ -142,7 +142,7 @@ const getArchiveData = (lang: Language) => {
 };
 
 export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
-  const accentColor = mode === 'raw' ? '#ff003c' : '#6366f1';
+  const accentColor = mode === 'raw' ? '#8f3a52' : '#5a7696';
   const data = getArchiveData(lang);
   const isEn = lang === 'en';
   const seoIntro = isEn
@@ -184,7 +184,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
 
       <div className="space-y-40">
         {data.map((phase, phaseIdx) => {
-          const phaseColor = phaseIdx === 0 ? accentColor : phaseIdx === 1 ? "#4fd1ff" : "#3dff9c";
+          const phaseColor = phaseIdx === 0 ? accentColor : phaseIdx === 1 ? "#6f8fa8" : "#7a947d";
           return (
           <div key={phase.phaseId} className="relative group/phase">
             {/* Phase Sticky Header */}

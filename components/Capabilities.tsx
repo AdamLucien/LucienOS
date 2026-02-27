@@ -12,16 +12,16 @@ const getCapabilitiesData = (lang: Language, mode: AppMode) => {
   const isEn = lang === 'en';
   const palettes = mode === 'raw'
     ? {
-        neural: ['#ff003c', '#ff5a3c', '#ff8c1a', '#ffd166'],
-        industrial: ['#ff003c', '#ff6b6b', '#ff9f1c', '#ffe66d'],
-        digital: ['#ff003c', '#ff4d6d', '#ff7a00', '#ffc857'],
-        tactical: ['#ff003c', '#ff6b00', '#ffa800', '#ffd166']
+        neural: ['#8f3a52', '#9b5f63', '#a67a66', '#b39a76'],
+        industrial: ['#8f3a52', '#946a66', '#9b816d', '#ab9679'],
+        digital: ['#8f3a52', '#8f6d77', '#9a7d69', '#ab9277'],
+        tactical: ['#8f3a52', '#98745f', '#a38b67', '#b29b76']
       }
     : {
-        neural: ['#6366f1', '#22d3ee', '#f59e0b', '#22c55e'],
-        industrial: ['#f97316', '#facc15', '#14b8a6', '#60a5fa'],
-        digital: ['#8b5cf6', '#22c55e', '#38bdf8', '#f97316'],
-        tactical: ['#ef4444', '#f59e0b', '#84cc16', '#06b6d4']
+        neural: ['#5a7696', '#5f8f9f', '#7c8f70', '#6f9785'],
+        industrial: ['#6b7f95', '#7f9071', '#669287', '#768faa'],
+        digital: ['#5f7698', '#6e917a', '#6f8fa8', '#8d7f68'],
+        tactical: ['#786d7b', '#8e8867', '#779272', '#678d9a']
       };
 
   const tags = isEn
@@ -125,7 +125,7 @@ const getCapabilitiesData = (lang: Language, mode: AppMode) => {
 };
 
 export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
-  const accentColor = mode === 'raw' ? '#ff003c' : '#6366f1';
+  const accentColor = mode === 'raw' ? '#8f3a52' : '#5a7696';
   const data = getCapabilitiesData(lang, mode);
   const isEn = lang === 'en';
   const headingClass = "text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-white/80";
@@ -204,7 +204,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* PRIMARY MODULE - ASYMMETRIC LARGE CARD */}
         <div className="md:col-span-8 group relative border border-white/10 bg-black/40 backdrop-blur-xl p-6 sm:p-8 md:p-12 industrial-clip overflow-hidden transition-all duration-500 hover:border-white/30 card-hover">
-          <div className="absolute top-0 left-0 w-2 h-full transition-all duration-500 group-hover:w-4" style={{ backgroundColor: data[0].id === 'neural' && mode === 'raw' ? '#ff003c' : accentColor }} />
+          <div className="absolute top-0 left-0 w-2 h-full transition-all duration-500 group-hover:w-4" style={{ backgroundColor: data[0].id === 'neural' && mode === 'raw' ? '#8f3a52' : accentColor }} />
           
           <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 relative z-10">
             <div className="flex-1 min-w-0">
@@ -450,7 +450,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
           </p>
           <div className="flex justify-center gap-1">
             {[...Array(10)].map((_, i) => (
-              <div key={i} className={`w-2 md:w-3 h-1 ${i < 8 ? 'bg-indigo-500' : 'bg-white/10'} animate-pulse`} style={{ animationDelay: `${i * 0.1}s`, backgroundColor: i < 8 ? accentColor : '' }} />
+              <div key={i} className={`w-2 md:w-3 h-1 ${i < 8 ? 'bg-slate-500' : 'bg-white/10'} animate-pulse`} style={{ animationDelay: `${i * 0.1}s`, backgroundColor: i < 8 ? accentColor : '' }} />
             ))}
           </div>
         </div>

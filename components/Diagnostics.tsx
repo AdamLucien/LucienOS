@@ -21,10 +21,10 @@ const getLocalizedData = (lang: Language) => {
       { subject: isEn ? 'Si INTEGRITY' : 'Si INTEGRITA', A: 82 },
     ],
     telemetry: [
-      { label: isEn ? 'INTROVERSION (I)' : 'INTROVERZE (I)', value: 93, status: isEn ? 'EXTREME_AUTONOMY' : 'EXTRÉMNÍ_AUTONOMIE', color: '#ff3333' },
-      { label: isEn ? 'INTUITION (N)' : 'INTUICE (N)', value: 89, status: isEn ? 'PREDICTIVE_SIMULATION' : 'PREDIKTIVNÍ_SIMULACE', color: '#6366f1' },
-      { label: isEn ? 'THINKING (T)' : 'MYŠLENÍ (T)', value: 98, status: isEn ? 'ABSOLUTE_GOVERNANCE' : 'ABSOLUTNÍ_VLÁDA', color: '#4ade80' },
-      { label: isEn ? 'PERCEIVING (P)' : 'VNÍMÁNÍ (P)', value: 58, status: isEn ? 'FLUID_OPERATIONS' : 'FLUIDNÍ_OPERACE', color: '#f59e0b' },
+      { label: isEn ? 'INTROVERSION (I)' : 'INTROVERZE (I)', value: 93, status: isEn ? 'EXTREME_AUTONOMY' : 'EXTRÉMNÍ_AUTONOMIE', color: '#8f3a52' },
+      { label: isEn ? 'INTUITION (N)' : 'INTUICE (N)', value: 89, status: isEn ? 'PREDICTIVE_SIMULATION' : 'PREDIKTIVNÍ_SIMULACE', color: '#5a7696' },
+      { label: isEn ? 'THINKING (T)' : 'MYŠLENÍ (T)', value: 98, status: isEn ? 'ABSOLUTE_GOVERNANCE' : 'ABSOLUTNÍ_VLÁDA', color: '#6f9785' },
+      { label: isEn ? 'PERCEIVING (P)' : 'VNÍMÁNÍ (P)', value: 58, status: isEn ? 'FLUID_OPERATIONS' : 'FLUIDNÍ_OPERACE', color: '#ab9277' },
     ],
     flow: [
       { stage: isEn ? 'INPUT (Feeling/Chaos)' : 'VSTUP (Pocity/Chaos)', load: 95, detail: isEn ? 'Raw emotional data / Entropy' : 'Syrová data / Entropie' },
@@ -110,7 +110,7 @@ const getLocalizedData = (lang: Language) => {
 };
 
 export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
-  const primaryColor = mode === 'raw' ? '#ff003c' : '#6366f1';
+  const primaryColor = mode === 'raw' ? '#8f3a52' : '#5a7696';
   const data = getLocalizedData(lang);
   const isEn = lang === 'en';
   const headingClass = "text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.3em]";
@@ -247,12 +247,12 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
           {data.flow.map((step, idx) => (
             <div key={idx} className="relative group">
-              <div className="p-6 sm:p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-300 h-full border-l-2" style={{ borderLeftColor: idx === 0 ? '#ff3333' : (idx === 3 ? '#4ade80' : primaryColor) }}>
+              <div className="p-6 sm:p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-300 h-full border-l-2" style={{ borderLeftColor: idx === 0 ? '#8f3a52' : (idx === 3 ? '#6f9785' : primaryColor) }}>
                 <div className="text-[9px] font-mono opacity-20 mb-6 tracking-widest uppercase">NODE_REF_0{idx+1}</div>
-                <div className="text-[11px] font-bold uppercase tracking-[0.2em] mb-4" style={{ color: idx === 0 ? '#ff3333' : (idx === 3 ? '#4ade80' : primaryColor) }}>{step.stage}</div>
+                <div className="text-[11px] font-bold uppercase tracking-[0.2em] mb-4" style={{ color: idx === 0 ? '#8f3a52' : (idx === 3 ? '#6f9785' : primaryColor) }}>{step.stage}</div>
                 <div className="text-[10px] opacity-40 font-mono italic leading-relaxed">{step.detail}</div>
                 <div className="mt-8 h-[2px] bg-white/5 overflow-hidden">
-                  <div className="h-full animate-pulse" style={{ width: `${step.load}%`, backgroundColor: idx === 0 ? '#ff3333' : primaryColor }} />
+                  <div className="h-full animate-pulse" style={{ width: `${step.load}%`, backgroundColor: idx === 0 ? '#8f3a52' : primaryColor }} />
                 </div>
               </div>
               {idx < 3 && (

@@ -21,7 +21,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
   const isEn = lang === 'en';
   const isDragon = archetype === 'THE DRAGON';
-  const displayAccent = mode === 'raw' && isDragon ? '#ff003c' : '#6366f1';
+  const displayAccent = mode === 'raw' && isDragon ? '#8f3a52' : accentColor;
 
   return (
     <div 
@@ -59,7 +59,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 <div key={i} className={`w-1 h-3 ${i <= (isExpanded ? 3 : 1) ? 'opacity-100' : 'opacity-20'}`} style={{ backgroundColor: displayAccent }}></div>
               ))}
             </div>
-            <span className={`text-[8px] font-mono tracking-[0.3em] font-bold ${isDragon ? 'text-[#ff003c]' : 'text-indigo-400'}`}>
+            <span className="text-[8px] font-mono tracking-[0.3em] font-bold" style={{ color: displayAccent }}>
               {archetype || 'MODULE_NODE'}
             </span>
           </div>

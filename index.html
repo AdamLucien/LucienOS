@@ -8,7 +8,7 @@
     <meta name="description" content="Systémový architekt, AI inženýr a auditor strategických systémů. Lucien OS v2.0 jako digitální profil s projekty, misí a operacemi.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="Adam Karl Lucien">
-    <meta name="theme-color" content="#030303">
+    <meta name="theme-color" content="#08101b">
     <link rel="canonical" href="https://adamkarl.lucien.technology/">
     <link rel="alternate" hreflang="cs" href="https://adamkarl.lucien.technology/">
     <link rel="alternate" hreflang="en" href="https://adamkarl.lucien.technology/en/">
@@ -34,32 +34,33 @@
     <link rel="manifest" href="/public/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Syncopate:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Syncopate:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Syncopate:wght@400;700&display=swap"></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"></noscript>
     <style>
         :root {
-            --primary-indigo: #6366f1;
-            --primary-glow: rgba(99, 102, 241, 0.4);
-            --raw-red: #ff003c;
-            --raw-glow: rgba(255, 0, 60, 0.4);
+            --primary-indigo: #5a7696;
+            --primary-glow: rgba(90, 118, 150, 0.32);
+            --raw-red: #8f3a52;
+            --raw-glow: rgba(143, 58, 82, 0.3);
         }
 
         body {
             margin: 0;
             padding: 0;
-            background-color: #030303;
-            color: #ececec;
-            font-family: 'Fira Code', monospace;
+            background-color: #08101b;
+            color: #dce5ef;
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             overflow-x: hidden;
+            letter-spacing: 0.01em;
         }
 
         @keyframes glitch {
             0% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(-2px, -2px); }
-            60% { transform: translate(2px, 2px); }
-            80% { transform: translate(2px, -2px); }
+            20% { transform: translate(-1px, 1px); }
+            40% { transform: translate(-1px, -1px); }
+            60% { transform: translate(1px, 1px); }
+            80% { transform: translate(1px, -1px); }
             100% { transform: translate(0); }
         }
 
@@ -82,9 +83,9 @@
             left: 0;
             bottom: 0;
             right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            background: linear-gradient(rgba(12, 19, 31, 0) 50%, rgba(9, 14, 23, 0.07) 50%), linear-gradient(90deg, rgba(90, 118, 150, 0.018), rgba(143, 58, 82, 0.012), rgba(132, 154, 178, 0.016));
             z-index: 1000;
-            background-size: 100% 3px, 3px 100%;
+            background-size: 100% 4px, 4px 100%;
             pointer-events: none;
         }
 
@@ -93,27 +94,31 @@
         }
 
         .btn-techno {
-            background: rgba(99, 102, 241, 0.05);
-            border: 1px solid rgba(99, 102, 241, 0.2);
+            background: rgba(90, 118, 150, 0.06);
+            border: 1px solid rgba(90, 118, 150, 0.24);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
 
         .btn-techno:hover {
-            background: rgba(99, 102, 241, 0.15);
+            background: rgba(90, 118, 150, 0.15);
             border-color: var(--primary-indigo);
             box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .font-mono {
+            font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace !important;
         }
 
         ::-webkit-scrollbar {
             width: 4px;
         }
         ::-webkit-scrollbar-track {
-            background: #050505;
+            background: #0a121f;
         }
         ::-webkit-scrollbar-thumb {
-            background: #222;
+            background: #2a3d56;
         }
         ::-webkit-scrollbar-thumb:hover {
             background: var(--primary-indigo);
@@ -134,28 +139,28 @@
 <body class="crt">
     <div id="root">
       <!-- SEO_FALLBACK_START -->
-      <div class="seo-fallback" style="padding: 48px; max-width: 960px; margin: 0 auto; color: #ececec; font-family: 'Fira Code', monospace;">
+      <div class="seo-fallback" style="padding: 48px; max-width: 960px; margin: 0 auto; color: #dce5ef; font-family: 'Manrope', sans-serif;">
         <h1 style="font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase;">Adam Karl Lucien</h1>
         <p style="opacity: 0.75; margin-top: 12px;">
           System Architect, AI Engineer, and strategic systems auditor. Lucien OS v2.0 is a dual-mode digital twin with projects, capabilities, archive, diagnostics, resonance, and a signal channel.
         </p>
         <nav style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 12px;">
-          <a href="/" style="color: #6366f1; text-decoration: none;">Core</a>
-          <a href="/modules/" style="color: #6366f1; text-decoration: none;">Modules</a>
-          <a href="/capabilities/" style="color: #6366f1; text-decoration: none;">Capabilities</a>
-          <a href="/archive/" style="color: #6366f1; text-decoration: none;">Archive</a>
-          <a href="/diagnostics/" style="color: #6366f1; text-decoration: none;">Diagnostics</a>
-          <a href="/resonance/" style="color: #6366f1; text-decoration: none;">Resonance</a>
-          <a href="/signal/" style="color: #6366f1; text-decoration: none;">Signal</a>
+          <a href="/" style="color: #5a7696; text-decoration: none;">Core</a>
+          <a href="/modules/" style="color: #5a7696; text-decoration: none;">Modules</a>
+          <a href="/capabilities/" style="color: #5a7696; text-decoration: none;">Capabilities</a>
+          <a href="/archive/" style="color: #5a7696; text-decoration: none;">Archive</a>
+          <a href="/diagnostics/" style="color: #5a7696; text-decoration: none;">Diagnostics</a>
+          <a href="/resonance/" style="color: #5a7696; text-decoration: none;">Resonance</a>
+          <a href="/signal/" style="color: #5a7696; text-decoration: none;">Signal</a>
         </nav>
         <div style="margin-top: 20px; font-size: 12px; opacity: 0.6;">
-          English: <a href="/en/" style="color: #6366f1; text-decoration: none;">Home</a>,
-          <a href="/en/modules/" style="color: #6366f1; text-decoration: none;">Modules</a>,
-          <a href="/en/capabilities/" style="color: #6366f1; text-decoration: none;">Capabilities</a>,
-          <a href="/en/archive/" style="color: #6366f1; text-decoration: none;">Archive</a>,
-          <a href="/en/diagnostics/" style="color: #6366f1; text-decoration: none;">Diagnostics</a>,
-          <a href="/en/resonance/" style="color: #6366f1; text-decoration: none;">Resonance</a>,
-          <a href="/en/signal/" style="color: #6366f1; text-decoration: none;">Signal</a>
+          English: <a href="/en/" style="color: #5a7696; text-decoration: none;">Home</a>,
+          <a href="/en/modules/" style="color: #5a7696; text-decoration: none;">Modules</a>,
+          <a href="/en/capabilities/" style="color: #5a7696; text-decoration: none;">Capabilities</a>,
+          <a href="/en/archive/" style="color: #5a7696; text-decoration: none;">Archive</a>,
+          <a href="/en/diagnostics/" style="color: #5a7696; text-decoration: none;">Diagnostics</a>,
+          <a href="/en/resonance/" style="color: #5a7696; text-decoration: none;">Resonance</a>,
+          <a href="/en/signal/" style="color: #5a7696; text-decoration: none;">Signal</a>
         </div>
       </div>
       <!-- SEO_FALLBACK_END -->

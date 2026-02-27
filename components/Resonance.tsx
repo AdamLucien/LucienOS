@@ -127,7 +127,7 @@ const FlowerOfLifePattern = ({ color }: { color: string }) => (
 export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
   
-  const primaryColor = mode === 'raw' ? '#ff003c' : '#6366f1';
+  const primaryColor = mode === 'raw' ? '#8f3a52' : '#5a7696';
   const data = getResonanceData(lang);
   const isEn = lang === 'en';
   const seoIntro = isEn
@@ -201,7 +201,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
 
                 {/* Technical frame */}
                 <div className="max-w-3xl mx-auto">
-                  <div className="relative border border-white/10 bg-black/80 industrial-clip p-4 shadow-2xl transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_35px_rgba(99,102,241,0.25)]">
+                  <div className="relative border border-white/10 bg-black/80 industrial-clip p-4 shadow-2xl transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_35px_rgba(90,118,150,0.24)]">
                     <div className="absolute top-2 left-2 text-[7px] font-mono opacity-30 uppercase tracking-widest">
                       STREAM_MODULE: 0x1A
                     </div>

@@ -22,11 +22,11 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
   const [inputValue, setInputValue] = useState('');
   const t = navTranslations[lang];
   const navOptions: SectionKey[] = ['CORE', 'MODULES', 'CAPABILITIES', 'ARCHIVE', 'DIAGNOSTICS', 'RESONANCE', 'SIGNAL'];
-  const accentColor = mode === 'raw' ? '#ff003c' : '#6366f1';
+  const accentColor = mode === 'raw' ? '#8f3a52' : '#5a7696';
 
   return (
     <nav className="w-full space-y-4" aria-label="Section navigation">
-      <div className="flex items-center justify-between gap-4 border border-white/15 bg-black/70 px-4 py-2 industrial-clip">
+      <div className="flex items-center justify-between gap-4 border border-white/15 bg-[#0d1828]/80 px-4 py-2 industrial-clip">
         <div className="flex items-center gap-2">
           <NavigationIcon className="w-4 h-4" style={{ color: accentColor }} />
           <span className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/80">{t.title}</span>

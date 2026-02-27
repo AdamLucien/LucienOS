@@ -48,8 +48,7 @@ export const NeuralNetwork: React.FC<NeuralNetworkProps> = ({ mode }) => {
         if (!ctx) return;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        // Using Indigo (99, 102, 241) instead of Cyan
-        ctx.fillStyle = mode === 'raw' ? 'rgba(255, 0, 60, 0.4)' : 'rgba(99, 102, 241, 0.3)';
+        ctx.fillStyle = mode === 'raw' ? 'rgba(143, 58, 82, 0.34)' : 'rgba(90, 118, 150, 0.28)';
         ctx.fill();
       }
     }
@@ -79,10 +78,9 @@ export const NeuralNetwork: React.FC<NeuralNetworkProps> = ({ mode }) => {
 
           if (distance < connectionDistance) {
             ctx.beginPath();
-            // Using Indigo (99, 102, 241) instead of Cyan
             ctx.strokeStyle = mode === 'raw' 
-              ? `rgba(255, 0, 60, ${1 - distance / connectionDistance})` 
-              : `rgba(99, 102, 241, ${0.4 - distance / connectionDistance})`;
+              ? `rgba(143, 58, 82, ${0.75 - distance / connectionDistance})` 
+              : `rgba(90, 118, 150, ${0.34 - distance / connectionDistance})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);

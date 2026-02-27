@@ -25,8 +25,8 @@ export const ModeToggle: React.FC<ModeToggleProps> = ({ mode, lang, onToggle }) 
         onClick={onToggle}
         className={`group relative flex items-center gap-3 px-4 py-2 border transition-all duration-500 overflow-hidden ${
           mode === 'raw' 
-            ? 'border-[#ff003c] bg-[#ff003c]/10 text-[#ff003c]' 
-            : 'border-[#6366f1] bg-[#6366f1]/10 text-[#6366f1]'
+            ? 'border-[#8f3a52] bg-[#8f3a52]/10 text-[#8f3a52]' 
+            : 'border-[#5a7696] bg-[#5a7696]/10 text-[#5a7696]'
         }`}
       >
         <div className={`absolute top-0 left-[-100%] w-full h-full bg-white/10 skew-x-[45deg] transition-all duration-1000 group-hover:left-[100%]`} />
@@ -42,7 +42,7 @@ export const ModeToggle: React.FC<ModeToggleProps> = ({ mode, lang, onToggle }) 
         <span>{t.syncing}</span>
         <div className="flex gap-1">
           {[1,2,3].map(i => (
-            <div key={i} className={`w-1 h-1 rounded-full ${mode === 'raw' ? 'bg-[#ff003c]' : 'bg-[#6366f1]'} animate-bounce`} style={{ animationDelay: `${i * 0.2}s` }} />
+            <div key={i} className={`w-1 h-1 rounded-full ${mode === 'raw' ? 'bg-[#8f3a52]' : 'bg-[#5a7696]'} animate-bounce`} style={{ animationDelay: `${i * 0.2}s` }} />
           ))}
         </div>
       </div>
