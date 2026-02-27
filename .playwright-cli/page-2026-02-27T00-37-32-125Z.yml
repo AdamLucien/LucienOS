@@ -1,0 +1,247 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/resonance/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /resonance/
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e76]:
+      - heading "Rezonance" [level=1] [ref=e77]
+      - generic [ref=e78]:
+        - paragraph [ref=e79]: Rezonance zachycuje dlouhodobé zájmy v systémové dynamice, filozofii a praxi.
+        - paragraph [ref=e80]: Kurátorská média přinášejí kontext pro rozhodovací rámce a design pozornosti.
+        - paragraph [ref=e81]: Sekce podporuje spolupráce, kde je shoda stejně důležitá jako schopnost.
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e88]: RESONANCE_HUB_v2.3.5_STABLE
+          - heading "REZONANCE" [level=2] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: "PATTERN_SYNC: ACTIVE"
+            - generic [ref=e92]: "|"
+            - generic [ref=e93]: "AI_NEURAL_LINK: READY"
+        - generic [ref=e95]:
+          - text: INTERNAL_AFFAIRS
+          - text: "LOG_ID: 0x7A_FLOW"
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e101]:
+            - heading "VNITŘNÍ_HRA" [level=3] [ref=e103]:
+              - img [ref=e104]
+              - text: VNITŘNÍ_HRA
+            - generic [ref=e111]:
+              - generic [ref=e112]: "STREAM_MODULE: 0x1A"
+              - generic [ref=e113]: "SIGNAL: STABLE"
+              - generic [ref=e114]:
+                - generic [ref=e115]:
+                  - generic [ref=e116]: TAI_CHI
+                  - generic [ref=e117]: FEED_01
+                  - generic [ref=e119]:
+                    - img [ref=e121]
+                    - generic [ref=e124]: INICIALIZOVAT_FEED
+                    - button [ref=e125] [cursor=pointer]
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: "CODEC: H.264"
+                    - link "EXTERNAL" [ref=e128] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=z4tMNB0Qy-U
+                      - img [ref=e129]
+                      - text: EXTERNAL
+                - generic [ref=e133]:
+                  - generic [ref=e134]: FEED_02
+                  - generic [ref=e135]: FEED_02
+                  - generic [ref=e137]:
+                    - img [ref=e139]
+                    - generic [ref=e142]: INICIALIZOVAT_FEED
+                    - button [ref=e143] [cursor=pointer]
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: "CODEC: H.264"
+                    - link "EXTERNAL" [ref=e146] [cursor=pointer]:
+                      - /url: https://youtu.be/nxNZTgPzfsg
+                      - img [ref=e147]
+                      - text: EXTERNAL
+                - generic [ref=e151]:
+                  - generic [ref=e152]: FEED_03
+                  - generic [ref=e153]: FEED_03
+                  - generic [ref=e155]:
+                    - img [ref=e157]
+                    - generic [ref=e160]: INICIALIZOVAT_FEED
+                    - button [ref=e161] [cursor=pointer]
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: "CODEC: H.264"
+                    - link "EXTERNAL" [ref=e164] [cursor=pointer]:
+                      - /url: https://youtube.com/shorts/wQdcBRAzgCg
+                      - img [ref=e165]
+                      - text: EXTERNAL
+                - generic [ref=e169]:
+                  - generic [ref=e170]: FEED_04
+                  - generic [ref=e171]: FEED_04
+                  - generic [ref=e173]:
+                    - img [ref=e175]
+                    - generic [ref=e178]: INICIALIZOVAT_FEED
+                    - button [ref=e179] [cursor=pointer]
+                  - generic [ref=e180]:
+                    - generic [ref=e181]: "CODEC: H.264"
+                    - link "EXTERNAL" [ref=e182] [cursor=pointer]:
+                      - /url: https://youtube.com/shorts/qKuXMyfqWQk
+                      - img [ref=e183]
+                      - text: EXTERNAL
+                - generic [ref=e187]:
+                  - generic [ref=e188]: FEED_05
+                  - generic [ref=e189]: FEED_05
+                  - generic [ref=e191]:
+                    - img [ref=e193]
+                    - generic [ref=e196]: INICIALIZOVAT_FEED
+                    - button [ref=e197] [cursor=pointer]
+                  - generic [ref=e198]:
+                    - generic [ref=e199]: "CODEC: H.264"
+                    - link "EXTERNAL" [ref=e200] [cursor=pointer]:
+                      - /url: https://youtube.com/shorts/Dk43FiLuZIE
+                      - img [ref=e201]
+                      - text: EXTERNAL
+                - generic [ref=e205]:
+                  - generic [ref=e206]: FEED_06
+                  - generic [ref=e207]: FEED_06
+                  - generic [ref=e209]:
+                    - img [ref=e211]
+                    - generic [ref=e214]: INICIALIZOVAT_FEED
+                    - button [ref=e215] [cursor=pointer]
+                  - generic [ref=e216]:
+                    - generic [ref=e217]: "CODEC: H.264"
+                    - link "EXTERNAL" [ref=e218] [cursor=pointer]:
+                      - /url: https://youtube.com/shorts/ovO6UI_YZVE
+                      - img [ref=e219]
+                      - text: EXTERNAL
+            - generic [ref=e227]:
+              - generic [ref=e228]:
+                - generic [ref=e229]: TAI CHI
+                - generic [ref=e230]: Vektorově stabilní pomalé formy se zaměřením na osu těla, dechové rytmy a kontrolovaný tok energie.
+              - generic [ref=e231]:
+                - generic [ref=e232]: INNER POWER MARTIAL ARTS
+                - generic [ref=e233]: Explozivní vnitřní síla skrze práci se šlachami, uvolnění tlaku a strukturální integritu.
+          - generic [ref=e234]:
+            - generic [ref=e235]:
+              - generic:
+                - img
+              - heading "TVORBA" [level=3] [ref=e236]:
+                - img [ref=e237]
+                - text: TVORBA
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]: uGear Peaclock
+                  - generic [ref=e245]: Design precizních mechanických hodinek.
+                - generic [ref=e246]:
+                  - generic [ref=e247]: Software jako umění
+                  - generic [ref=e248]: Architektura jako estetický i funkční výraz.
+                - generic [ref=e249]:
+                  - generic [ref=e250]: 3D modelování
+                  - generic [ref=e251]: Prostorový design, průmyslová geometrie, rychlé iterace.
+                - generic [ref=e252]:
+                  - generic [ref=e253]: AI jako médium
+                  - generic [ref=e254]: Generativní systémy jako kreativní a analytický nástroj.
+            - generic [ref=e255]:
+              - heading "LIFESTYLE" [level=3] [ref=e256]:
+                - img [ref=e257]
+                - text: LIFESTYLE
+              - generic [ref=e261]:
+                - generic [ref=e262]:
+                  - generic [ref=e263]: ACOUSTICS
+                  - generic [ref=e264]: METAL / TRANCE
+                - generic [ref=e265]:
+                  - generic [ref=e266]: FLOW_STATE
+                  - generic [ref=e267]: SKIING / SWIMMING
+                - generic [ref=e268]:
+                  - generic [ref=e269]: REGENERATION
+                  - generic [ref=e270]: WINE / SLEEP_PROT.
+                - generic [ref=e271]:
+                  - generic [ref=e272]: MIND_BODY
+                  - generic [ref=e273]: TAI CHI / MOBILITY
+                - generic [ref=e274]:
+                  - generic [ref=e275]: FOCUS
+                  - generic [ref=e276]: DEEP_WORK / FLOW
+                - generic [ref=e277]:
+                  - generic [ref=e278]: RECOVERY
+                  - generic [ref=e279]: BREATH / COLD
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - heading "SYSTEM_DYNAMICS" [level=3] [ref=e282]:
+              - img [ref=e283]
+              - text: SYSTEM_DYNAMICS
+            - generic [ref=e286]:
+              - generic [ref=e287]:
+                - generic [ref=e288]: AI_AUTOMATION
+                - generic [ref=e289]: "\"Heuristic neural nets & vision.\""
+              - generic [ref=e290]:
+                - generic [ref=e291]: OSINT_OPS
+                - generic [ref=e292]: "\"Darknet & technical surveillance.\""
+              - generic [ref=e293]:
+                - generic [ref=e294]: PROCESS_FLOW
+                - generic [ref=e295]: "\"Lean 6Σ industrial precision.\""
+          - generic [ref=e296]:
+            - img [ref=e297]
+            - paragraph [ref=e299]: Synchronizace kognitivního výkonu s hlubokými vnitřními protokoly obnovy.
+            - generic [ref=e300]:
+              - img [ref=e301]
+              - img [ref=e303]
+              - img [ref=e305]
+  - navigation "Section navigation" [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - generic [ref=e35]: HLAVNÍ NAVIGACE
+      - generic [ref=e36]: Klikněte na sekci pro přechod
+    - generic [ref=e37]:
+      - link "JÁDRO 00" [ref=e38] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e39]: "00"
+      - link "MODULY 01" [ref=e40] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e41]: "01"
+      - link "SCHOPNOSTI 02" [ref=e42] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e43]: "02"
+      - link "ARCHIV 03" [ref=e44] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e45]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e46] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e47]: "04"
+      - link "RESONANCE 05" [ref=e48] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e49]: "05"
+      - link "SIGNÁL 06" [ref=e51] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e52]: "06"
+    - generic [ref=e53]:
+      - img [ref=e54]
+      - generic [ref=e56]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e57]
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]: © 2026 Lucien Technology
+    - generic [ref=e69]:
+      - generic [ref=e70]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e72] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e73] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e74] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e75]: "LATENCY: 12ms"

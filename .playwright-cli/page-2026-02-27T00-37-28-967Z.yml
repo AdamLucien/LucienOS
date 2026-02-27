@@ -1,0 +1,300 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/archive/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /archive/
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e76]:
+      - heading "Archiv" [level=1] [ref=e77]
+      - generic [ref=e78]:
+        - paragraph [ref=e79]: Archiv konsoliduje historii misí, role a systémové milníky napříč sektory.
+        - paragraph [ref=e80]: Záznamy shrnují rozsah, odpovědnosti a výsledky pro ověření zkušeností.
+        - paragraph [ref=e81]: Časová osa ukazuje dlouhodobý růst kompetencí a doménové zkušenosti.
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - img [ref=e85]
+            - generic [ref=e89]: FULL_LIFECYCLE_SYNCHRONIZATION
+          - heading "KOMPLETNÍ_ČASOVÁ_OSA" [level=2] [ref=e90]
+        - generic [ref=e92]:
+          - text: "SYSTEM_INTEGRITY: OPTIMAL"
+          - text: "ARCHIVE_LOAD: 15_YEARS"
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: P_01
+              - generic [ref=e99]:
+                - 'heading "FÁZE I: SYNTÉZA" [level=3] [ref=e100]'
+                - paragraph [ref=e101]: Propojení digitálních dvojčat, AI sledování a státní správy.
+            - generic [ref=e102]: 2024 – PRESENT
+          - generic [ref=e103]:
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - generic [ref=e109]: "NODE_STATUS: ACTIVE"
+                - img [ref=e110]
+              - generic [ref=e113]:
+                - generic [ref=e114]: 2026 – PRESENT
+                - heading "LUCIEN CONTROL" [level=4] [ref=e115]
+              - generic [ref=e116]:
+                - generic [ref=e117]: Hlavní systémový architekt
+                - paragraph [ref=e118]: "\"Vývoj jednotného 'Operačního systému' pro interim management. Konceptualizace 'Single Value Flow' pro eliminaci sil v prodeji, HR a delivery.\""
+              - generic [ref=e119]:
+                - generic [ref=e120]: Next.js
+                - generic [ref=e121]: TypeScript
+                - generic [ref=e122]: DDD
+                - generic [ref=e123]: Prisma
+                - generic [ref=e124]: PostgreSQL
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: CORE_INTEL
+                - img [ref=e130]
+              - generic [ref=e133]:
+                - generic [ref=e134]: 2025 – PRESENT
+                - heading "NOXIS & ARCHΞON (Lucien Systems)" [level=4] [ref=e135]
+              - generic [ref=e136]:
+                - generic [ref=e137]: Hlavní architekt
+                - paragraph [ref=e138]: "\"Vedení vývoje AI 'imunitních systémů' pro informační integritu a státních digitálních dvojčat (Neo4j).\""
+              - generic [ref=e139]:
+                - generic [ref=e140]: AI Surveillance
+                - generic [ref=e141]: Graph Tiles
+                - generic [ref=e142]: OSINT
+                - generic [ref=e143]: Causal AI
+        - generic [ref=e144]:
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e148]: P_02
+              - generic [ref=e149]:
+                - 'heading "FÁZE II: PRŮMYSLOVÁ VÝHEŇ" [level=3] [ref=e150]'
+                - paragraph [ref=e151]: Průmyslové škálování, optimalizace logistiky a automotive systémy.
+            - generic [ref=e152]: 2020 – 2024
+          - generic [ref=e153]:
+            - generic [ref=e157]:
+              - generic [ref=e158]:
+                - generic [ref=e159]: "FIELD_OPS: MECHERNICH"
+                - img [ref=e160]
+              - generic [ref=e163]:
+                - generic [ref=e164]: 2023 – 2024
+                - heading "DEUTSCHE MECHATRONICS (DE)" [level=4] [ref=e165]
+              - generic [ref=e166]:
+                - generic [ref=e167]: Interim projektový konzultant
+                - paragraph [ref=e168]: "\"Krizový management pro AI infrastrukturu. Optimalizace výrobních procesů pro datacentra nové generace.\""
+              - generic [ref=e169]:
+                - generic [ref=e170]: Lean 6Σ
+                - generic [ref=e171]: Crisis Mgmt
+                - generic [ref=e172]: Automation
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]: "INFRA: HAGENBACH"
+                - img [ref=e178]
+              - generic [ref=e181]:
+                - generic [ref=e182]: 2023 – 2023
+                - heading "LINDE + WIEMANN Group" [level=4] [ref=e183]
+              - generic [ref=e184]:
+                - generic [ref=e185]: Interim konzultant
+                - paragraph [ref=e186]: "\"Vývoj aplikací pro digitální plánování výroby a real-time integraci dat.\""
+              - generic [ref=e187]:
+                - generic [ref=e188]: Process Analysis
+                - generic [ref=e189]: Architecture Design
+                - generic [ref=e190]: UI/UX
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e195]: LOGISTICS_SYNC
+                - img [ref=e196]
+              - generic [ref=e199]:
+                - generic [ref=e200]: 2021 – 2023
+                - heading "L.I.T. GRUPPE" [level=4] [ref=e201]
+              - generic [ref=e202]:
+                - generic [ref=e203]: Průmyslový a IT inženýr / Datový analytik
+                - paragraph [ref=e204]: "\"Integrace průmyslových systémů pro výrobu VW ID. Prediktivní analytika a ETL pipeline pro transparentnost řetězce.\""
+              - generic [ref=e205]:
+                - generic [ref=e206]: SQL
+                - generic [ref=e207]: VSM
+                - generic [ref=e208]: SAP MES
+                - generic [ref=e209]: Power BI
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - generic [ref=e214]: TALLINN_NODE
+                - img [ref=e215]
+              - generic [ref=e218]:
+                - generic [ref=e219]: 2021 – 2022
+                - heading "LUCIEN R&D (Estonia)" [level=4] [ref=e220]
+              - generic [ref=e221]:
+                - generic [ref=e222]: Majitel
+                - paragraph [ref=e223]: "\"Vedení výzkumu a vývoje v oblasti AI, počítačového vidění a škálovatelných výrobních řešení.\""
+              - generic [ref=e224]:
+                - generic [ref=e225]: AI
+                - generic [ref=e226]: Computer Vision
+                - generic [ref=e227]: Process Control
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e232]: LONDON_HQ
+                - img [ref=e233]
+              - generic [ref=e236]:
+                - generic [ref=e237]: 2020 – 2021
+                - heading "DUSKERN LIMITED (UK)" [level=4] [ref=e238]
+              - generic [ref=e239]:
+                - generic [ref=e240]: Zakladatel a CEO
+                - paragraph [ref=e241]: "\"Strategické vedení v sektorech obrany a pokročilých technologií. Dohled nad R&D softwaru a AI.\""
+              - generic [ref=e242]:
+                - generic [ref=e243]: Defense Tech
+                - generic [ref=e244]: Business Development
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - generic [ref=e249]: SYSTEM_SUPPORT
+                - img [ref=e250]
+              - generic [ref=e253]:
+                - generic [ref=e254]: 2020 – 2020
+                - heading "FOXCONN / TELEPERFORMANCE" [level=4] [ref=e255]
+              - generic [ref=e256]:
+                - generic [ref=e257]: SAP Technik / Apple Advisor
+                - paragraph [ref=e258]: "\"Podpora MES/SAP systémů. Technická podpora pro Tier 1 Apple infrastrukturu.\""
+              - generic [ref=e259]:
+                - generic [ref=e260]: SAP
+                - generic [ref=e261]: MES
+                - generic [ref=e262]: Customer Logic
+        - generic [ref=e263]:
+          - generic [ref=e265]:
+            - generic [ref=e266]:
+              - generic [ref=e267]: P_03
+              - generic [ref=e268]:
+                - 'heading "FÁZE III: ZÁKLADY SYSTÉMU" [level=3] [ref=e269]'
+                - paragraph [ref=e270]: Filozofie lidského potenciálu, mechanický design a strukturální fondy.
+            - generic [ref=e271]: 2010 – 2020
+          - generic [ref=e272]:
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - generic [ref=e278]: LONG_TERM_STUDY
+                - img [ref=e279]
+              - generic [ref=e282]:
+                - generic [ref=e283]: 2013 – 2020
+                - heading "INDEPENDENT RESEARCH PROJECT" [level=4] [ref=e284]
+              - generic [ref=e285]:
+                - generic [ref=e286]: Výzkumník systémů
+                - paragraph [ref=e287]: "\"Průsečík lidského potenciálu, systémového myšlení a organizační kultury. Zaměření na vědomý leadership.\""
+              - generic [ref=e288]:
+                - generic [ref=e289]: Systems Thinking
+                - generic [ref=e290]: Psychology
+                - generic [ref=e291]: Soft Skills
+            - generic [ref=e294]:
+              - generic [ref=e295]:
+                - generic [ref=e296]: INFRA_GOV
+                - img [ref=e297]
+              - generic [ref=e300]:
+                - generic [ref=e301]: 2015 – 2016
+                - heading "JVK OPS / STRUCTURAL FUNDS" [level=4] [ref=e302]
+              - generic [ref=e303]:
+                - generic [ref=e304]: Projektový manažer / Web developer
+                - paragraph [ref=e305]: "\"Management projektů financovaných z EU. Full-stack vývoj interních webových aplikací (PHP/JS).\""
+              - generic [ref=e306]:
+                - generic [ref=e307]: EU Funds
+                - generic [ref=e308]: PHP
+                - generic [ref=e309]: JavaScript
+                - generic [ref=e310]: HTML/CSS
+            - generic [ref=e313]:
+              - generic [ref=e314]:
+                - generic [ref=e315]: MECHANICAL_PRECISION
+                - img [ref=e316]
+              - generic [ref=e319]:
+                - generic [ref=e320]: 2014 – 2015
+                - heading "uGEAR PEACLOCK" [level=4] [ref=e321]
+              - generic [ref=e322]:
+                - generic [ref=e323]: Produktový designér a vizionář
+                - paragraph [ref=e324]: "\"Konceptualizace a design inovativních mechanických hodinek. Tradiční řemeslo vs. moderní estetika.\""
+              - generic [ref=e325]:
+                - generic [ref=e326]: CAD
+                - generic [ref=e327]: Mechanical Design
+                - generic [ref=e328]: Prototyping
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - generic [ref=e333]: ADMIN_FLOW
+                - img [ref=e334]
+              - generic [ref=e337]:
+                - generic [ref=e338]: 2014 – 2014
+                - heading "EUROPLUS FINANCE / AGENTURA SMS" [level=4] [ref=e339]
+              - generic [ref=e340]:
+                - generic [ref=e341]: Manažer administrativy / Dobrovolník
+                - paragraph [ref=e342]: "\"Řízení kancelářských operací a databázových systémů. Návrhy telemarketingových strategií.\""
+              - generic [ref=e343]:
+                - generic [ref=e344]: DB Management
+                - generic [ref=e345]: Admin
+                - generic [ref=e346]: ICT
+            - generic [ref=e349]:
+              - generic [ref=e350]:
+                - generic [ref=e351]: SECURITY_INIT
+                - img [ref=e352]
+              - generic [ref=e355]:
+                - generic [ref=e356]: 2010 – 2011
+                - heading "IT FREELANCE (Madrid)" [level=4] [ref=e357]
+              - generic [ref=e358]:
+                - generic [ref=e359]: Bezpečnostní konzultant
+                - paragraph [ref=e360]: "\"OSVČ IT profesionál zaměřený na bezpečnostní protokoly ve španělských technologických clusterech.\""
+              - generic [ref=e361]:
+                - generic [ref=e362]: IT Security
+                - generic [ref=e363]: Consulting
+      - generic [ref=e364]:
+        - img [ref=e366]
+        - heading "SYSTÉM_JE_KOMPLETNÍ" [level=3] [ref=e370]
+        - paragraph [ref=e371]: Od mechanické hodinařiny po státní vládní architektury. Patnáct let neúnavné optimalizace systémů a logického škálování.
+  - navigation "Section navigation" [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - generic [ref=e35]: HLAVNÍ NAVIGACE
+      - generic [ref=e36]: Klikněte na sekci pro přechod
+    - generic [ref=e37]:
+      - link "JÁDRO 00" [ref=e38] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e39]: "00"
+      - link "MODULY 01" [ref=e40] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e41]: "01"
+      - link "SCHOPNOSTI 02" [ref=e42] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e43]: "02"
+      - link "ARCHIV 03" [ref=e44] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e45]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e47] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e48]: "04"
+      - link "RESONANCE 05" [ref=e49] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e50]: "05"
+      - link "SIGNÁL 06" [ref=e51] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e52]: "06"
+    - generic [ref=e53]:
+      - img [ref=e54]
+      - generic [ref=e56]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e57]
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]: © 2026 Lucien Technology
+    - generic [ref=e69]:
+      - generic [ref=e70]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e72] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e73] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e74] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e75]: "LATENCY: 12ms"

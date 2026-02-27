@@ -294,6 +294,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
              <div className="border border-white/10 bg-black/40 p-8 industrial-clip relative group overflow-hidden transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.06)]">
+               <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
                <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-20">
                   <FlowerOfLifePattern color={primaryColor} />
                </div>
@@ -344,6 +345,7 @@ export const Resonance: React.FC<ResonanceProps> = ({ mode, lang }) => {
              </div>
 
              <div className="border border-white/10 bg-black/40 p-8 industrial-clip relative group transition-all duration-700 hover:border-white/30 hover:shadow-[0_0_30px_rgba(255,255,255,0.06)]">
+               <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
                <h3 className="text-xs font-bold uppercase tracking-[0.3em] mb-8 border-b border-white/5 pb-4 flex items-center gap-3">
                  <Music className="w-4 h-4" style={{ color: primaryColor }} /> LIFESTYLE
                </h3>

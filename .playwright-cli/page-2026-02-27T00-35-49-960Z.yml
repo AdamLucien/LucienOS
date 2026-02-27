@@ -1,0 +1,121 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - link "Lucien Systems" [ref=e7] [cursor=pointer]:
+        - /url: /?lang=cs
+        - img "Lucien Systems" [ref=e8]
+      - navigation "Hlavní navigace" [ref=e9]:
+        - link "Identita" [ref=e10] [cursor=pointer]:
+          - /url: /identity.html?lang=cs
+        - link "Kapacity" [ref=e11] [cursor=pointer]:
+          - /url: /capabilities.html?lang=cs
+        - link "Metodika" [ref=e12] [cursor=pointer]:
+          - /url: /methodology.html?lang=cs
+        - link "Ekosystém" [ref=e13] [cursor=pointer]:
+          - /url: /ecosystem.html?lang=cs
+      - generic [ref=e14]:
+        - generic [ref=e16]:
+          - img
+          - combobox "Vyberte jazyk webu" [ref=e17]:
+            - option "Čeština" [selected]
+            - option "English"
+            - option "Deutsch"
+            - option "Українська"
+            - option "简体中文"
+            - option "繁體中文"
+          - img
+        - link "Kontakt" [ref=e18] [cursor=pointer]:
+          - /url: /contact.html?lang=cs
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - iframe [ref=e21]:
+        
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: Lucien Systems
+        - heading "Inženýrství důvěry v kritických prostředích" [level=1] [ref=e24]
+        - paragraph [ref=e25]: Budujeme robustní a auditovatelné systémy, které propojují AI, řídicí inteligenci a průmyslové inženýrství pro obranu, logistiku a kritickou infrastrukturu.
+        - generic [ref=e26]:
+          - link "Požádat o úvodní konzultaci" [ref=e27] [cursor=pointer]:
+            - /url: /contact.html?lang=cs
+          - link "Prozkoumat kapacity" [ref=e28] [cursor=pointer]:
+            - /url: /capabilities.html?lang=cs
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Klíčové oblasti kompetencí" [level=2] [ref=e32]
+        - paragraph [ref=e33]: Specializovaná expertiza pro komplexní operační výzvy.
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - heading "AI systémové inženýrství" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Nasazujeme agentní a kauzální AI pro lepší rozhodování a automatizaci složitých procesů v kritických systémech.
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - heading "Řízení a strategická inteligence" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Vytváříme auditovatelné rámce s důrazem na práva a odpovědnost pro narativní analýzu a reakci na hybridní hrozby.
+        - generic [ref=e45]:
+          - img [ref=e47]
+          - heading "Průmyslové operace" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Navrhujeme odolnou automatizaci a systémy podpory rozhodování pro výrobu a logistiku dodavatelských řetězců.
+        - generic [ref=e50]:
+          - img [ref=e52]
+          - heading "Odolné dodávání softwaru" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Budujeme a provozujeme robustní softwarové platformy s řídicími kontrolami a automatizovaným životním cyklem.
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - 'heading "Náš přístup: od návrhu k dodání" [level=2] [ref=e58]'
+        - paragraph [ref=e59]: Transparentní a strukturovaná metodika pro úspěšnou realizaci.
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e65]: "1"
+          - heading "Vymezení rozsahu a architektura" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Definujeme cíle, mapujeme omezení a navrhujeme systémovou architekturu s jasným vlastnictvím a řídicími pravidly.
+        - generic [ref=e68]:
+          - generic [ref=e70]: "2"
+          - heading "Implementace a integrace" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Řídíme výstavbu iterativně přes kontrolní body tak, aby systém hladce zapadl do vašeho provozního prostředí.
+        - generic [ref=e73]:
+          - generic [ref=e75]: "3"
+          - heading "Nasazení a stabilizace" [level=3] [ref=e76]
+          - paragraph [ref=e77]: Řídíme nasazení, validujeme výsledky vůči cílům a zajišťujeme stabilizaci i předání do provozu.
+    - generic [ref=e79]:
+      - heading "Připraveni na strategickou konverzaci?" [level=2] [ref=e80]
+      - paragraph [ref=e81]: Pokud řešíte komplexní provozní výzvu, která vyžaduje robustní inženýrský přístup od prvních principů, jsme připraveni naslouchat.
+      - link "Kontaktujte nás" [ref=e82] [cursor=pointer]:
+        - /url: /contact.html?lang=cs
+  - contentinfo [ref=e83]:
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - link "Lucien Systems" [ref=e87] [cursor=pointer]:
+            - /url: /?lang=cs
+            - img "Lucien Systems" [ref=e88]
+          - paragraph [ref=e89]: Inženýrství důvěry v kritických prostředích.
+        - generic [ref=e90]:
+          - heading "Navigace" [level=2] [ref=e91]
+          - generic [ref=e92]:
+            - link "Identita" [ref=e93] [cursor=pointer]:
+              - /url: /identity.html?lang=cs
+            - link "Kapacity" [ref=e94] [cursor=pointer]:
+              - /url: /capabilities.html?lang=cs
+            - link "Metodika" [ref=e95] [cursor=pointer]:
+              - /url: /methodology.html?lang=cs
+            - link "Ekosystém" [ref=e96] [cursor=pointer]:
+              - /url: /ecosystem.html?lang=cs
+        - generic [ref=e97]:
+          - heading "Právní informace" [level=2] [ref=e98]
+          - generic [ref=e99]:
+            - link "Zásady ochrany soukromí" [ref=e100] [cursor=pointer]:
+              - /url: /privacy.html?lang=cs
+            - link "Podmínky použití" [ref=e101] [cursor=pointer]:
+              - /url: /terms.html?lang=cs
+            - link "Bezpečnost" [ref=e102] [cursor=pointer]:
+              - /url: /security.html?lang=cs
+            - link "Zpracování dat" [ref=e103] [cursor=pointer]:
+              - /url: /dpa.html?lang=cs
+        - generic [ref=e104]:
+          - heading "Kontakt" [level=2] [ref=e105]
+          - link "company@luciensystems.io" [ref=e107] [cursor=pointer]:
+            - /url: mailto:company@luciensystems.io
+      - generic [ref=e108]:
+        - paragraph [ref=e109]: © 2026 Adam Karl Lucien
+        - paragraph [ref=e110]: Soukromí na prvním místě · Edge-native architektura · Připraveno na audit

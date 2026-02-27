@@ -1,0 +1,268 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/capabilities/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /capabilities/
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e76]:
+      - heading "Schopnosti" [level=1] [ref=e77]
+      - generic [ref=e78]:
+        - paragraph [ref=e79]: Matice schopností zahrnuje AI inženýrství, OSINT fúzi, architekturu systémů a průmyslové operace.
+        - paragraph [ref=e80]: Každá schopnost je mapována na měřitelné výstupy a nástrojový stack.
+        - paragraph [ref=e81]: Sekce slouží k posouzení strategické připravenosti a integračního fitu.
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e88]: CAPABILITY_SYNC_PROTOCOL_2.0
+          - heading "MATICE_SCHOPNOSTÍ" [level=2] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: "STAV_SKENU: NOMINÁLNÍ"
+            - generic [ref=e92]: "|"
+            - generic [ref=e93]: "INTEGRITA: 94.8%"
+        - generic [ref=e95]:
+          - text: 0x42 0x55 0x49 0x4C 0x44 0x45 0x52
+          - text: 0x44 0x52 0x41 0x47 0x4F 0x4E
+      - generic [ref=e96]:
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - img [ref=e103]
+              - generic [ref=e111]:
+                - heading "NEURÁLNÍ_SYNTETICKÁ_INTELIGENCE" [level=3] [ref=e112]
+                - paragraph [ref=e113]: JÁDRO_PROCESORU
+            - generic [ref=e114]:
+              - generic [ref=e116]:
+                - generic [ref=e117]:
+                  - generic [ref=e118]: AI Modding
+                  - generic [ref=e119]: LLM / CV / DIFUZE
+                - generic [ref=e120]: 83%
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - generic [ref=e126]: MLOps
+                  - generic [ref=e127]: FASTAPI / DOCKER / CI-CD
+                - generic [ref=e128]: 85%
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]: OSINT Fúze
+                  - generic [ref=e135]: SATELIT / DARKNET / MULTI-SENSOR
+                - generic [ref=e136]: 92%
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Kauzální AI
+                  - generic [ref=e143]: KAUZÁLNÍ AI / SIM ENGINES / DIGI_TWINS
+                - generic [ref=e144]: 80%
+            - generic [ref=e147]:
+              - generic [ref=e148]: SIGNATURNÍ_STACK
+              - generic [ref=e149]:
+                - generic [ref=e150]: LLM
+                - generic [ref=e151]: Počítačové vidění
+                - generic [ref=e152]: Difuze
+                - generic [ref=e153]: OSINT
+                - generic [ref=e154]: Kauzální AI
+                - generic [ref=e155]: FastAPI
+                - generic [ref=e156]: Docker
+          - generic [ref=e158]:
+            - img [ref=e161]
+            - generic [ref=e169]: "ZÁTĚŽ: 88%"
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - img [ref=e184]
+            - heading "PRŮMYSLOVÉ_SYSTÉMY" [level=3] [ref=e195]
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]:
+                - generic [ref=e199]: Lean Six Sigma
+                - generic [ref=e200]: 75%
+              - generic [ref=e203]: "PARAM_ID: LEAN 6Σ / VSM / KAIZEN"
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]: Interim Mgmt
+                - generic [ref=e207]: 75%
+              - generic [ref=e210]: "PARAM_ID: INTERIM / KRIZE / SCALE"
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - generic [ref=e213]: Systémová dynamika
+                - generic [ref=e214]: 88%
+              - generic [ref=e217]: "PARAM_ID: SYS_DYNAMIKA / FLOW / OPS"
+            - generic [ref=e218]:
+              - generic [ref=e219]:
+                - generic [ref=e220]: Optimalizace logistiky
+                - generic [ref=e221]: 94%
+              - generic [ref=e224]: "PARAM_ID: SAP MES / POWER BI / ETL"
+          - generic [ref=e225]:
+            - generic [ref=e226]: SIGNATURNÍ_STACK
+            - generic [ref=e227]:
+              - generic [ref=e228]: Lean 6Σ
+              - generic [ref=e229]: Systémová dynamika
+              - generic [ref=e230]: VSM
+              - generic [ref=e231]: SAP MES
+              - generic [ref=e232]: Procesní mining
+              - generic [ref=e233]: Power BI
+        - generic [ref=e234]:
+          - generic [ref=e235]: "NODE_REF: 09-ARCH"
+          - heading "DIGITÁLNÍ_ARCHITEKTURA" [level=3] [ref=e236]:
+            - img [ref=e237]
+            - text: DIGITÁLNÍ_ARCHITEKTURA
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - generic [ref=e242]: 80%
+              - generic [ref=e243]:
+                - generic [ref=e244]: Fullstack
+                - generic [ref=e245]: NEXTJS / TS / PRISMA / POSTGRES
+            - generic [ref=e250]:
+              - generic [ref=e252]: 92%
+              - generic [ref=e253]:
+                - generic [ref=e254]: Grafové DB
+                - generic [ref=e255]: NEO4J / GRAPH TILES
+            - generic [ref=e260]:
+              - generic [ref=e262]: 96%
+              - generic [ref=e263]:
+                - generic [ref=e264]: Systémová arch.
+                - generic [ref=e265]: DDD / GLASS_BOX / API
+            - generic [ref=e270]:
+              - generic [ref=e272]: 90%
+              - generic [ref=e273]:
+                - generic [ref=e274]: SQL modelování
+                - generic [ref=e275]: SQL / ETL / INTEGRITA_DAT
+          - generic [ref=e280]:
+            - generic [ref=e281]: SIGNATURNÍ_STACK
+            - generic [ref=e282]:
+              - generic [ref=e283]: Next.js
+              - generic [ref=e284]: TypeScript
+              - generic [ref=e285]: Prisma
+              - generic [ref=e286]: PostgreSQL
+              - generic [ref=e287]: Neo4j
+              - generic [ref=e288]: DDD
+              - generic [ref=e289]: Graf DB
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - generic [ref=e295]:
+              - img [ref=e297]
+              - generic [ref=e299]:
+                - heading "TAKTICKÝ_HARDWARE" [level=3] [ref=e300]
+                - generic [ref=e301]: STAGING_AUTORIZOVÁNO
+            - generic [ref=e302]:
+              - img [ref=e303]
+              - text: STAGING_AUTORIZOVÁNO
+          - generic [ref=e305]:
+            - generic [ref=e306]:
+              - generic [ref=e307]: NODE_01
+              - generic [ref=e308]:
+                - generic [ref=e309]:
+                  - generic [ref=e310]: CAD / Fusion 360
+                  - generic [ref=e311]: UNIT_%
+                - generic [ref=e312]:
+                  - generic [ref=e313]: "82"
+                  - generic [ref=e314]: UNIT_%
+            - generic [ref=e330]:
+              - generic [ref=e331]: NODE_02
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - generic [ref=e334]: Mechatronika
+                  - generic [ref=e335]: UNIT_%
+                - generic [ref=e336]:
+                  - generic [ref=e337]: "65"
+                  - generic [ref=e338]: UNIT_%
+            - generic [ref=e354]:
+              - generic [ref=e355]: NODE_03
+              - generic [ref=e356]:
+                - generic [ref=e357]:
+                  - generic [ref=e358]: Rychlé prototypy
+                  - generic [ref=e359]: UNIT_%
+                - generic [ref=e360]:
+                  - generic [ref=e361]: "63"
+                  - generic [ref=e362]: UNIT_%
+            - generic [ref=e378]:
+              - generic [ref=e379]: NODE_04
+              - generic [ref=e380]:
+                - generic [ref=e381]:
+                  - generic [ref=e382]: Průmyslové IoT
+                  - generic [ref=e383]: UNIT_%
+                - generic [ref=e384]:
+                  - generic [ref=e385]: "80"
+                  - generic [ref=e386]: UNIT_%
+          - generic [ref=e402]:
+            - generic [ref=e403]: SIGNATURNÍ_STACK
+            - generic [ref=e404]:
+              - generic [ref=e405]: CAD/F360
+              - generic [ref=e406]: Mechatronika
+              - generic [ref=e407]: VDA 5050
+              - generic [ref=e408]: ROS2
+              - generic [ref=e409]: MQTT
+              - generic [ref=e410]: Průmyslové IoT
+          - generic [ref=e411]:
+            - generic [ref=e412]: "REVIZE_HARDWARU: R2-B"
+            - generic [ref=e413]: "MANUÁLNÍ_OVERRIDE: VYPNUTO"
+      - generic [ref=e414]:
+        - generic [ref=e415]:
+          - img [ref=e416]
+          - generic [ref=e420]: Data_Lake_Integrity
+          - generic [ref=e421]: 99.98% OK
+        - paragraph [ref=e423]: SYNERGIE_SYSTÉMU_NOMINÁLNÍ
+        - generic [ref=e435]:
+          - img [ref=e436]
+          - generic [ref=e438]: Security_Layer
+          - generic [ref=e439]: ENCRYPTED
+  - navigation "Section navigation" [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - generic [ref=e35]: HLAVNÍ NAVIGACE
+      - generic [ref=e36]: Klikněte na sekci pro přechod
+    - generic [ref=e37]:
+      - link "JÁDRO 00" [ref=e38] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e39]: "00"
+      - link "MODULY 01" [ref=e40] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e41]: "01"
+      - link "SCHOPNOSTI 02" [ref=e42] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e43]: "02"
+      - link "ARCHIV 03" [ref=e45] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e46]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e47] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e48]: "04"
+      - link "RESONANCE 05" [ref=e49] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e50]: "05"
+      - link "SIGNÁL 06" [ref=e51] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e52]: "06"
+    - generic [ref=e53]:
+      - img [ref=e54]
+      - generic [ref=e56]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e57]
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]: © 2026 Lucien Technology
+    - generic [ref=e69]:
+      - generic [ref=e70]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e72] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e73] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e74] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e75]: "LATENCY: 12ms"

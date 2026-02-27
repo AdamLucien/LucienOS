@@ -184,12 +184,12 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
 
       <div className="space-y-40">
         {data.map((phase, phaseIdx) => {
-          const phaseColor = phaseIdx === 0 ? accentColor : phaseIdx === 1 ? "#6f8fa8" : "#7a947d";
+          const phaseColor = phaseIdx === 0 ? accentColor : phaseIdx === 1 ? "#82a6cb" : "#a2bca5";
           return (
           <div key={phase.phaseId} className="relative group/phase">
             {/* Phase Sticky Header */}
             <div className="sticky top-20 md:top-28 z-30 mb-16 transition-all duration-500">
-              <div className="industrial-clip border border-white/10 bg-black/95 backdrop-blur-xl p-6 md:p-10 flex flex-col md:flex-row justify-between items-center gap-6 border-l-4 group-hover/phase:border-white/30 card-hover-soft" style={{ borderLeftColor: phaseColor }}>
+              <div className="industrial-clip border border-white/10 bg-black/95 backdrop-blur-xl p-6 md:p-10 flex flex-col md:flex-row justify-between items-center gap-6 border-l-8 group-hover/phase:border-white/30 card-hover-soft" style={{ borderLeftColor: phaseColor }}>
                  <div className="flex items-center gap-8">
                     <div className="text-3xl font-bold opacity-10 font-mono tracking-tighter">{phase.phaseId}</div>
                     <div>
@@ -208,7 +208,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
             {/* Timeline Items */}
             <div className="relative space-y-32 pl-6 md:pl-24">
               {/* Vertical line */}
-              <div className="absolute left-[3px] md:left-[23px] top-0 bottom-0 w-[1px] bg-white/5" />
+              <div className="absolute left-[3px] md:left-[23px] top-0 bottom-0 w-[2px]" style={{ backgroundColor: phaseColor, opacity: 0.3 }}/>
 
               {phase.items.map((item, idx) => (
                 <div key={idx} className="relative group/item">

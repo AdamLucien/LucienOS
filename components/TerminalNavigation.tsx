@@ -13,7 +13,7 @@ interface TerminalNavigationProps {
 
 const navTranslations = {
   en: { CORE: 'CORE', MODULES: 'MODULES', CAPABILITIES: 'CAPABILITIES', ARCHIVE: 'ARCHIVE', DIAGNOSTICS: 'DIAGNOSTICS', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNAL', prompt: 'ENTER_NODE_ID...', title: 'PRIMARY NAVIGATION', hint: 'Click a section to navigate' },
-  cs: { CORE: 'JÁDRO', MODULES: 'MODULY', CAPABILITIES: 'SCHOPNOSTI', ARCHIVE: 'ARCHIV', DIAGNOSTICS: 'DIAGNOSTIKA', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNÁL', prompt: 'ZADEJ_ID_NODU...', title: 'HLAVNÍ NAVIGACE', hint: 'Klikněte na sekci pro přechod' }
+  cs: { CORE: 'ARCHITEKTURA', MODULES: 'DOMÉNY ŘÍZENÍ', CAPABILITIES: 'EXEKUČNÍ KAPACITY', ARCHIVE: 'PROGRAMY A MISE', DIAGNOSTICS: 'SYSTÉMOVÁ TELEMETRIE', RESONANCE: 'STRATEGICKÝ KONTEXT', SIGNAL: 'EXEKUTIVNÍ KONTAKT', prompt: 'ZADEJ_ID_NODU...', title: 'ARCHITEKTONICKÁ NAVIGACE', hint: 'Klikněte na sekci pro přechod' }
 };
 
 export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({ 
@@ -58,9 +58,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
           </a>
         ))}
       </div>
-      <div className="relative group flex items-center gap-4 border border-white/10 bg-black/60 p-3 industrial-clip">
-        <TerminalIcon className="w-4 h-4" style={{ color: accentColor }} />
-        <span className="text-[10px] font-bold opacity-50 shrink-0 font-mono tracking-widest hidden sm:inline">ROOT@LUCIEN_SYSTEMS:~$</span>
+      <div className="relative group flex items-center gap-4 border border-white/10 bg-[#081426]/60 p-3 industrial-clip">
         <input 
           type="text" 
           value={inputValue}
@@ -68,11 +66,6 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
           placeholder={t.prompt}
           className="w-full bg-transparent border-none outline-none text-xs font-mono tracking-[0.1em] uppercase text-white/70"
         />
-        <div className="hidden lg:flex items-center gap-1 opacity-20">
-           {[...Array(8)].map((_, i) => (
-             <div key={i} className="w-1 h-2 bg-white" />
-           ))}
-        </div>
       </div>
     </nav>
   );

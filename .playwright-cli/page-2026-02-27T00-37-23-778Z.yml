@@ -1,0 +1,120 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - generic [ref=e31]:
+              - img [ref=e32]
+              - generic [ref=e34]: IDENTITY_INITIALIZATION_PROTOCOL
+            - heading "ADAM KARL LUCIEN" [level=1] [ref=e35]
+            - paragraph [ref=e36]:
+              - text: Systémový architekt. AI inženýr. Auditor strategických systémů.
+              - generic [ref=e37]: NARUŠOVÁNÍ KONVENČNÍCH SYSTÉMŮ POMOCÍ AI A LOGIKY
+          - generic [ref=e39]:
+            - text: "ARCHTYPE: BUILDER_LOGIC"
+            - text: "NODE_ID: 0x25_LUCIEN"
+            - text: "STATE: AUTHORIZED"
+        - generic:
+          - img
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Systémový architekt a AI inženýr se zaměřením na odolné a auditovatelné systémy.
+        - paragraph [ref=e42]: Lucien OS v2.0 mapuje principy strategie, obrany a exekuce v komplexním prostředí.
+        - paragraph [ref=e43]: Prozkoumejte moduly, schopnosti, archiv, diagnostiku, rezonanci a signál.
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "Stavitel (Logika)" [level=2] [ref=e47]:
+            - img [ref=e48]
+            - text: Stavitel (Logika)
+          - paragraph [ref=e50]: Specialista na strukturální integritu. Lean Six Sigma aplikovaná na digitální i fyzické architektury. Kovaný v průmyslové logistice.
+          - generic [ref=e51]:
+            - generic [ref=e52]: "Integrity: High"
+            - generic [ref=e53]: "Sensitivity: Extreme"
+            - generic [ref=e54]: "Mode: professional"
+            - generic [ref=e55]: "Reset: Success"
+        - generic [ref=e56]:
+          - heading "OPERATIONS_BASE" [level=2] [ref=e57]:
+            - img [ref=e58]
+            - text: OPERATIONS_BASE
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]: GEOGRAPHIC_NODES
+              - generic [ref=e63]:
+                - img [ref=e64]
+                - text: EMEA / AMERICAS / APAC
+            - generic [ref=e67]:
+              - generic [ref=e68]: ENCRYPTED_SIGNAL
+              - generic [ref=e69]:
+                - img [ref=e70]
+                - text: adam.karl.lucien@lucien.technology
+            - generic [ref=e73]:
+              - generic [ref=e74]: TEMPORAL_OFFSET
+              - generic [ref=e75]:
+                - img [ref=e76]
+                - text: UTC+1 / MST / UTC+1
+  - navigation "Section navigation" [ref=e81]:
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - img [ref=e84]
+        - generic [ref=e86]: HLAVNÍ NAVIGACE
+      - generic [ref=e87]: Klikněte na sekci pro přechod
+    - generic [ref=e88]:
+      - link "JÁDRO 00" [ref=e89] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e90]: "00"
+      - link "MODULY 01" [ref=e92] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e93]: "01"
+      - link "SCHOPNOSTI 02" [ref=e94] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e95]: "02"
+      - link "ARCHIV 03" [ref=e96] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e97]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e98] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e99]: "04"
+      - link "RESONANCE 05" [ref=e100] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e101]: "05"
+      - link "SIGNÁL 06" [ref=e102] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e103]: "06"
+    - generic [ref=e104]:
+      - img [ref=e105]
+      - generic [ref=e107]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e108]
+  - contentinfo [ref=e118]:
+    - generic [ref=e119]: © 2026 Lucien Technology
+    - generic [ref=e120]:
+      - generic [ref=e121]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e123] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e124] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e125] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e126]: "LATENCY: 12ms"

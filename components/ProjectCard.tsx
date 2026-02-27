@@ -25,7 +25,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div 
-      className={`group relative bg-black/40 backdrop-blur-md border border-white/10 transition-all duration-500 cursor-pointer overflow-hidden card-hover ${
+      className={`group relative bg-[#081426]/60 backdrop-blur-md border border-white/10 transition-all duration-500 cursor-pointer overflow-hidden card-hover ${
         isExpanded ? 'ring-1 ring-white/20' : 'hover:border-white/20'
       }`}
       onClick={() => setIsExpanded(!isExpanded)}
@@ -41,7 +41,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       
       {/* Side bar status indicator */}
       <div 
-        className="absolute top-0 left-0 w-[2px] h-full transition-all duration-500 group-hover:w-[4px]" 
+        className="absolute top-0 left-0 w-[3px] h-full transition-all duration-500 group-hover:w-[4px]" 
         style={{ backgroundColor: displayAccent, boxShadow: isExpanded ? `0 0 15px ${displayAccent}` : 'none' }} 
       />
 
@@ -71,14 +71,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </h3>
           <div className="flex items-center gap-3">
             <div className="h-[1px] w-4" style={{ backgroundColor: displayAccent }}></div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-60" style={{ color: displayAccent }}>
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80" style={{ color: displayAccent }}>
               {subtitle}
             </p>
           </div>
         </div>
 
         <div className="mt-6">
-          <p className={`text-xs md:text-sm leading-relaxed font-light transition-opacity duration-300 ${isExpanded ? 'opacity-100' : 'opacity-60 line-clamp-3'}`}>
+          <p className={`text-xs md:text-sm leading-relaxed font-light transition-opacity duration-300 ${isExpanded ? 'opacity-100' : 'opacity-75 line-clamp-3'}`}>
             {description}
           </p>
         </div>
@@ -105,7 +105,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
 
           <div className="flex items-center justify-between group/action pt-2">
-            <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest opacity-60 group-hover/action:opacity-100 transition-opacity">
+            <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest opacity-80 group-hover/action:opacity-100 transition-opacity">
               <Terminal className="w-3 h-3" style={{ color: displayAccent }} />
               {isEn ? 'INITIALIZE_DETAILED_REPORT' : 'INICIALIZOVAT_REPORT'}
             </div>
@@ -115,7 +115,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {!isExpanded && (
           <div className="mt-4 flex items-center justify-end">
-            <div className="text-[8px] font-mono opacity-20 uppercase tracking-widest group-hover:opacity-60 transition-opacity">
+            <div className="text-[8px] font-mono opacity-50 uppercase tracking-widest group-hover:opacity-60 transition-opacity">
               [ Click_to_decrypt_data ]
             </div>
           </div>
@@ -123,7 +123,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       {/* Background metadata */}
-      <div className="absolute top-2 right-4 text-[7px] font-mono opacity-5 pointer-events-none uppercase tracking-tighter">
+      <div className="absolute top-2 right-4 text-[7px] font-mono opacity-10 pointer-events-none uppercase tracking-tighter">
         SHA-256: 3c9b...f4a1 // SEC: O5-LEVEL
       </div>
     </div>

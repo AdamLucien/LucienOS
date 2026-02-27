@@ -55,7 +55,15 @@ const SECTION_PATHS: Record<SectionKey, string> = {
 
 const translations = {
   en: {
-    nav: { CORE: 'CORE', MODULES: 'MODULES', CAPABILITIES: 'CAPABILITIES', ARCHIVE: 'ARCHIVE', DIAGNOSTICS: 'DIAGNOSTICS', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNAL' },
+    nav: {
+      CORE: 'ARCHITECTURE',
+      MODULES: 'GOVERNANCE DOMAINS',
+      CAPABILITIES: 'EXECUTION CAPACITY',
+      ARCHIVE: 'PROGRAMS & MISSIONS',
+      DIAGNOSTICS: 'SYSTEM TELEMETRY',
+      RESONANCE: 'STRATEGIC CONTEXT',
+      SIGNAL: 'EXECUTIVE CONTACT'
+    },
     hud: { status: 'System Status', stable: 'ARCHITECT_NOMINAL', unstable: 'BUNKER_SHIELDED', mode: 'MODE', stableMode: 'STABLE', unstableMode: 'UNSTABLE' },
     hero: { 
       tagline: 'System Architect. AI Engineer. Strategic Systems Auditor.',
@@ -103,7 +111,15 @@ const translations = {
     }
   },
   cs: {
-    nav: { CORE: 'JÁDRO', MODULES: 'MODULY', CAPABILITIES: 'SCHOPNOSTI', ARCHIVE: 'ARCHIV', DIAGNOSTICS: 'DIAGNOSTIKA', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNÁL' },
+    nav: {
+      CORE: 'ARCHITEKTURA',
+      MODULES: 'DOMÉNY ŘÍZENÍ',
+      CAPABILITIES: 'EXEKUČNÍ KAPACITY',
+      ARCHIVE: 'PROGRAMY A MISE',
+      DIAGNOSTICS: 'SYSTÉMOVÁ TELEMETRIE',
+      RESONANCE: 'STRATEGICKÝ KONTEXT',
+      SIGNAL: 'EXEKUTIVNÍ KONTAKT'
+    },
     hud: { status: 'Stav systému', stable: 'ARCHITEKT_NOMINÁLNÍ', unstable: 'BUNK_STÍNĚNÝ', mode: 'MÓD', stableMode: 'STABILNÍ', unstableMode: 'NESTABILNÍ' },
     hero: { 
       tagline: 'Systémový architekt. AI inženýr. Auditor strategických systémů.',
@@ -336,7 +352,7 @@ const App: React.FC = () => {
   const [currentSection, setCurrentSection] = useState<SectionKey>('CORE');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const primaryColor = mode === 'raw' ? '#8f3a52' : '#5a7696';
+  const primaryColor = mode === 'raw' ? '#d04c75' : '#4f8ff7';
   const t = translations[language];
   const brand = getBrandName();
   const seo = buildSeoContent(brand)[language];
@@ -401,7 +417,7 @@ const App: React.FC = () => {
     setMetaTag('name', 'robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
     setMetaTag('name', 'author', 'Adam Karl Lucien');
     setMetaTag('name', 'application-name', 'Lucien OS v2.0');
-    setMetaTag('name', 'theme-color', '#061327');
+    setMetaTag('name', 'theme-color', '#020306');
 
     setMetaTag('property', 'og:title', title);
     setMetaTag('property', 'og:description', description);
@@ -513,7 +529,7 @@ const App: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
-          <div className="md:col-span-8 p-10 border border-white/10 bg-black/40 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+          <div className="md:col-span-8 p-10 border border-white/10 bg-[#081426]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
             <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: primaryColor }} />
             <h2 className="font-bold mb-6 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Zap className="w-5 h-5" /> {mode === 'raw' ? t.hero.chaos_title : t.hero.logic_title}
@@ -529,7 +545,8 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="md:col-span-4 p-10 border border-white/10 bg-black/40 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+          <div className="md:col-span-4 p-10 border border-white/10 bg-[#081426]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+            <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: '#ff9f43' }} />
             <h2 className="font-bold mb-8 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Shield className="w-5 h-5" /> OPERATIONS_BASE
             </h2>
@@ -589,13 +606,13 @@ const App: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
             <div className="md:col-span-12 lg:col-span-7 h-full">
-               <ProjectCard title="NOXIS" subtitle={t.projects.noxis.sub} description={t.projects.noxis.desc} techStack={["Python", "FastAPI", "Docker", "CV", "OSINT"]} accentColor="#8f3a52" icon={<Eye className="w-6 h-6" />} archetype="THE DRAGON" mode={mode} lang={language} />
+               <ProjectCard title="NOXIS" subtitle={t.projects.noxis.sub} description={t.projects.noxis.desc} techStack={["Python", "FastAPI", "Docker", "CV", "OSINT"]} accentColor="#29d1ff" icon={<Eye className="w-6 h-6" />} archetype="THE DRAGON" mode={mode} lang={language} />
             </div>
             <div className="md:col-span-6 lg:col-span-5 flex flex-col gap-6">
-               <ProjectCard title="ARCHΞON" subtitle={t.projects.archeon.sub} description={t.projects.archeon.desc} techStack={["Neo4j", "Causal AI", "Sim Engines", "LOD Arch"]} accentColor="#5a7696" icon={<Globe className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
+               <ProjectCard title="ARCHΞON" subtitle={t.projects.archeon.sub} description={t.projects.archeon.desc} techStack={["Neo4j", "Causal AI", "Sim Engines", "LOD Arch"]} accentColor="#8d7bff" icon={<Globe className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
             </div>
             <div className="md:col-span-6 lg:col-span-12">
-               <ProjectCard title="LUCIEN CONTROL" subtitle={t.projects.control.sub} description={t.projects.control.desc} techStack={["Next.js", "TypeScript", "Prisma", "DDD"]} accentColor="#c3d1df" icon={<Layout className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
+               <ProjectCard title="LUCIEN CONTROL" subtitle={t.projects.control.sub} description={t.projects.control.desc} techStack={["Next.js", "TypeScript", "Prisma", "DDD"]} accentColor="#8d7bff" icon={<Layout className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
             </div>
           </div>
         </div>
@@ -619,9 +636,9 @@ const App: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ProjectCard title="DEUTSCHE MECHATRONICS" subtitle={t.projects.mecha.sub} description={t.projects.mecha.desc} techStack={["Lean 6Σ", "System Dynamics", "Operations", "Collaboration"]} accentColor="#5a7696" icon={<Activity className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
-            <ProjectCard title="L.I.T. GRUPPE" subtitle={t.projects.lit.sub} description={t.projects.lit.desc} techStack={["SQL", "VSM", "SAP/MES", "Industrial Eng"]} accentColor="#5a7696" icon={<Truck className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
-            <ProjectCard title="ROBOTIC SWARM COMMAND" subtitle={t.projects.robotics.sub} description={t.projects.robotics.desc} techStack={["VDA 5050", "ROS2", "MQTT", "JSON Schema"]} accentColor="#8f7b5a" icon={<Bot className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
+            <ProjectCard title="DEUTSCHE MECHATRONICS" subtitle={t.projects.mecha.sub} description={t.projects.mecha.desc} techStack={["Lean 6Σ", "System Dynamics", "Operations", "Collaboration"]} accentColor="#ff9f43" icon={<Activity className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
+            <ProjectCard title="L.I.T. GRUPPE" subtitle={t.projects.lit.sub} description={t.projects.lit.desc} techStack={["SQL", "VSM", "SAP/MES", "Industrial Eng"]} accentColor="#ff9f43" icon={<Truck className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
+            <ProjectCard title="ROBOTIC SWARM COMMAND" subtitle={t.projects.robotics.sub} description={t.projects.robotics.desc} techStack={["VDA 5050", "ROS2", "MQTT", "JSON Schema"]} accentColor="#ff9f43" icon={<Bot className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
           </div>
         </div>
       </section>
@@ -666,8 +683,8 @@ const App: React.FC = () => {
           ))}
         </div>
         
-        <div className="border border-white/10 bg-black/60 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">
-          <div className="absolute top-0 left-0 w-2 h-full" style={{ backgroundColor: primaryColor }} />
+        <div className="border border-white/10 bg-[#081426]/90 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">
+          <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
           <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-3">
@@ -703,13 +720,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 ${mode === 'raw' ? 'bg-[#0b1426]' : 'bg-[#061125]'}`}>
+    <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 ${mode === 'raw' ? 'bg-[#04070b]' : 'bg-[#020306]'}`}>
       <NeuralNetwork mode={mode} />
       
       {/* HUD OVERLAY - Controlled Transparency */}
       <div className="fixed top-0 left-0 w-full z-[60] pointer-events-none">
         {/* Transparent Background on desktop, solid-ish on mobile for clarity */}
-        <div className="absolute inset-0 bg-[#07162c]/50 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0 border-b border-white/5 h-[80px] md:h-[112px] pointer-events-none transition-all duration-500" />
+        <div className="absolute inset-0 bg-[#04070b]/65 md:bg-transparent backdrop-blur-sm md:backdrop-blur-0 border-b border-white/10 h-[80px] md:h-[112px] pointer-events-none transition-all duration-500" />
         
         <div className="relative p-4 md:p-8 flex justify-between items-start">
           <div className="space-y-2 hidden md:block pointer-events-auto">
@@ -730,7 +747,7 @@ const App: React.FC = () => {
             </button>
             
             <div className="flex gap-4 items-center">
-              <div className="flex border border-white/10 bg-black/60 backdrop-blur-md p-1 industrial-clip">
+              <div className="flex border border-white/10 bg-[#081426]/90 backdrop-blur-md p-1 industrial-clip">
                 <a 
                   href={getSectionHref(currentSection, 'en')}
                   onClick={(event) => {
@@ -764,7 +781,7 @@ const App: React.FC = () => {
 
       {/* MOBILE TACTICAL MENU */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-[100] bg-[#061125]/98 backdrop-blur-2xl flex flex-col p-8 md:hidden animate-in fade-in zoom-in duration-300">
+        <div className="fixed inset-0 z-[100] bg-[#020306]/98 backdrop-blur-2xl flex flex-col p-8 md:hidden animate-in fade-in zoom-in duration-300">
           <div className="flex justify-between items-center mb-16">
             <div className="text-[10px] font-mono opacity-60 uppercase tracking-[0.5em]">System_Node_Map</div>
             <button aria-label={language === 'en' ? 'Close menu' : 'Zavřít menu'} onClick={() => setIsMobileMenuOpen(false)}><X className="w-8 h-8 opacity-60" /></button>
@@ -791,21 +808,21 @@ const App: React.FC = () => {
 
       {/* TACTICAL NAVIGATION DOCK (Desktop) */}
       <div className="fixed bottom-0 left-0 w-full z-50 hidden md:block px-8 pb-12">
-        <div className="max-w-6xl mx-auto bg-[#0a1322]/92 backdrop-blur-xl border-2 border-[#8ba6c3]/30 p-6 industrial-clip shadow-[0_0_30px_rgba(90,118,150,0.22)]">
+        <div className="max-w-6xl mx-auto bg-[#081426]/92 backdrop-blur-xl border-2 border-[#8ba6c3]/35 p-6 industrial-clip shadow-[0_0_30px_rgba(90,118,150,0.22)]">
           <TerminalNavigation currentSection={currentSection} onNavigate={navigateTo} getHref={getSectionHref} mode={mode} lang={language} />
         </div>
       </div>
 
-      <footer className="fixed bottom-0 left-0 w-full py-3 px-8 flex justify-between items-center z-40 bg-[#08101b]/92 border-t border-white/10 text-[8px] md:text-[10px]">
-          <div className="opacity-20 font-mono tracking-widest uppercase">© 2026 Lucien Technology</div>
-          <div className="hidden lg:flex items-center gap-4 opacity-20 font-mono uppercase tracking-[0.3em]">
+      <footer className="fixed bottom-0 left-0 w-full py-3 px-8 flex justify-between items-center z-40 bg-[#020306]/92 border-t border-white/10 text-[8px] md:text-[10px]">
+          <div className="opacity-60 font-mono tracking-widest uppercase">© 2026 Lucien Technology</div>
+          <div className="hidden lg:flex items-center gap-4 opacity-60 font-mono uppercase tracking-[0.3em]">
             <span>Signal over Noise // Strategy above Chaos</span>
             <span className="h-3 w-px bg-white/10" />
             <a className="hover:opacity-60 transition-opacity" href="https://lucien.technology" target="_blank" rel="noreferrer">lucien.technology</a>
             <a className="hover:opacity-60 transition-opacity" href="https://portal.lucien.technology" target="_blank" rel="noreferrer">portal.lucien.technology</a>
             <a className="hover:opacity-60 transition-opacity" href="https://archeon.lucien.technology" target="_blank" rel="noreferrer">archeon.lucien.technology</a>
           </div>
-          <div className="opacity-20 font-mono">LATENCY: 12ms</div>
+          <div className="opacity-60 font-mono">LATENCY: 12ms</div>
       </footer>
     </div>
   );

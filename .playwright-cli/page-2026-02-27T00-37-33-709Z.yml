@@ -1,0 +1,98 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/signal/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /signal/
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - heading "Signál" [level=1] [ref=e28]
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - img [ref=e31]
+          - generic [ref=e34]: SIGNAL_TRANSMISSION_PROTOCOL
+        - heading "KONTAKT_HUB" [level=2] [ref=e35]
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: Signál je bezpečný kontaktní kanál pro spolupráci, audity a strategické požadavky.
+        - paragraph [ref=e38]: Uveďte ID původu, typ protokolu a jasný payload pro rychlou reakci.
+        - paragraph [ref=e39]: High-signal požadavky mají prioritu.
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]: ID Původu
+              - textbox "USER_IDENTIFICATION" [ref=e46]
+            - generic [ref=e47]:
+              - generic [ref=e48]: Protokol
+              - combobox [ref=e49]:
+                - option "COLLABORATION_R&D" [selected]
+                - option "SYSTEM_AUDIT"
+                - option "DEFENSE_INQUIRY"
+          - generic [ref=e50]:
+            - generic [ref=e51]: Obsah zprávy
+            - textbox "INPUT_DATA_STREAM" [ref=e52]
+          - button "Zahájit přenos" [ref=e53] [cursor=pointer]: Zahájit přenos
+        - generic [ref=e55]:
+          - generic [ref=e56]: "Direct: adam.karl.lucien@lucien.technology"
+          - generic [ref=e57]: Waiting for signal...
+  - navigation "Section navigation" [ref=e60]:
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - img [ref=e63]
+        - generic [ref=e65]: HLAVNÍ NAVIGACE
+      - generic [ref=e66]: Klikněte na sekci pro přechod
+    - generic [ref=e67]:
+      - link "JÁDRO 00" [ref=e68] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e69]: "00"
+      - link "MODULY 01" [ref=e70] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e71]: "01"
+      - link "SCHOPNOSTI 02" [ref=e72] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e73]: "02"
+      - link "ARCHIV 03" [ref=e74] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e75]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e76] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e77]: "04"
+      - link "RESONANCE 05" [ref=e78] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e79]: "05"
+      - link "SIGNÁL 06" [ref=e80] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e81]: "06"
+    - generic [ref=e83]:
+      - img [ref=e84]
+      - generic [ref=e86]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e87]
+  - contentinfo [ref=e97]:
+    - generic [ref=e98]: © 2026 Lucien Technology
+    - generic [ref=e99]:
+      - generic [ref=e100]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e102] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e103] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e104] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e105]: "LATENCY: 12ms"

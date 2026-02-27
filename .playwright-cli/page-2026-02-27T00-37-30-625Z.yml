@@ -1,0 +1,248 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/diagnostics/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /diagnostics/
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e76]:
+      - heading "Diagnostika" [level=1] [ref=e77]
+      - generic [ref=e78]:
+        - paragraph [ref=e79]: Diagnostika poskytuje strukturovaný profil kognitivních a provozních signálů.
+        - paragraph [ref=e80]: Telemetrie je prezentována pro jasnost a kontext rozhodování.
+        - paragraph [ref=e81]: Sekce zarovnává chování systému se strategickými omezeními a cíli.
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - img [ref=e86]
+            - generic [ref=e88]: KERNEL_DIAGNOSTICS_v2.0
+          - heading "DIAGNO_STIKA" [level=2] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e91]: "TYPE: INTP-A"
+            - generic [ref=e92]: "|"
+            - generic [ref=e93]: "ROLE: Logik Architekt"
+        - generic [ref=e95]:
+          - text: 0xKERNEL_DUMP
+          - text: 0xSTATUS_NOMINAL
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic:
+            - img
+          - generic [ref=e99]:
+            - img [ref=e101]
+            - heading "SPECIFIKACE_JÁDRA" [level=3] [ref=e103]
+          - paragraph [ref=e104]: "\"Vysoká analytická kapacita kombinovaná s extrémní citlivostí. Operuje na hraně strukturální dokonalosti a kreativního chaosu.\""
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - generic [ref=e108]: INTROVERZE (I)
+                - generic [ref=e109]: 93%
+              - generic [ref=e112]: EXTRÉMNÍ_AUTONOMIE
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - generic [ref=e115]: INTUICE (N)
+                - generic [ref=e116]: 89%
+              - generic [ref=e119]: PREDIKTIVNÍ_SIMULACE
+            - generic [ref=e120]:
+              - generic [ref=e121]:
+                - generic [ref=e122]: MYŠLENÍ (T)
+                - generic [ref=e123]: 98%
+              - generic [ref=e126]: ABSOLUTNÍ_VLÁDA
+            - generic [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129]: VNÍMÁNÍ (P)
+                - generic [ref=e130]: 58%
+              - generic [ref=e133]: FLUIDNÍ_OPERACE
+        - generic [ref=e134]:
+          - heading "KOGNITIVNÍ_MAPA" [level=3] [ref=e135]:
+            - img [ref=e136]
+            - text: KOGNITIVNÍ_MAPA
+          - generic [ref=e144]:
+            - application [ref=e147]:
+              - generic [ref=e167]:
+                - generic [ref=e169]: Ti LOGIKA
+                - generic [ref=e171]: Ne VZORCE
+                - generic [ref=e173]: AUTENT 4
+                - generic [ref=e175]: POZOR 5
+                - generic [ref=e177]: VIZUÁLNÍ SYN
+                - generic [ref=e179]: Si INTEGRITA
+            - generic [ref=e180]: "GRID_SCAN: SUCCESSFUL"
+          - generic [ref=e181]: "*_MEASURED_BY_INTP_A_PROTOCOL"
+      - generic [ref=e182]:
+        - 'heading "PRŮBĚH_TRANSFORMACE: ENTROPIE_K_STRATEGII" [level=3] [ref=e183]':
+          - img [ref=e184]
+          - text: "PRŮBĚH_TRANSFORMACE: ENTROPIE_K_STRATEGII"
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - generic [ref=e190]: NODE_REF_01
+              - generic [ref=e191]: VSTUP (Pocity/Chaos)
+              - generic [ref=e192]: Syrová data / Entropie
+            - generic [ref=e195]: →
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: NODE_REF_02
+              - generic [ref=e199]: FIREWALL (Bunkr)
+              - generic [ref=e200]: Logický filtr / Útlum šumu
+            - generic [ref=e203]: →
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: NODE_REF_03
+              - generic [ref=e207]: PROCESOR (Logické jádro)
+              - generic [ref=e208]: Ti / Rozpoznávání vzorců
+            - generic [ref=e211]: →
+          - generic [ref=e213]:
+            - generic [ref=e214]: NODE_REF_04
+            - generic [ref=e215]: VÝSTUP (Strategie systému)
+            - generic [ref=e216]: Efektivní akční protokol
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - generic [ref=e222]:
+            - heading "PROFILOVÁ_SYNTÉZA" [level=3] [ref=e223]:
+              - img [ref=e224]
+              - text: PROFILOVÁ_SYNTÉZA
+            - generic [ref=e226]: Manažerské shrnutí
+          - generic [ref=e227]:
+            - generic [ref=e228]: INTP 4w5
+            - generic [ref=e229]: NT TEMPERAMENT
+            - generic [ref=e230]: PRAVÁ_HEMISFÉRA
+            - generic [ref=e231]: VIZUÁLNÍ_UČENÍ
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - generic [ref=e234]: ▸
+              - generic [ref=e235]: Vysoce autonomní analytik se silnou logickou a intrapersonální inteligencí.
+            - listitem [ref=e236]:
+              - generic [ref=e237]: ▸
+              - generic [ref=e238]: Dominantní vizuální styl učení a pravostranná intuice.
+            - listitem [ref=e239]:
+              - generic [ref=e240]: ▸
+              - generic [ref=e241]: Exceluje v řešení komplexních teoretických problémů a systémovém designu.
+            - listitem [ref=e242]:
+              - generic [ref=e243]: ▸
+              - generic [ref=e244]: Nejlépe funguje v nezávislých nebo kreativních rolích s intelektuální svobodou.
+        - generic [ref=e245]:
+          - heading "KOGNITIVNÍ_STACK" [level=3] [ref=e246]:
+            - img [ref=e247]
+            - text: KOGNITIVNÍ_STACK
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - generic [ref=e257]:
+                - generic [ref=e258]: Introvertní myšlení (Ti)
+                - generic [ref=e259]: PRIMÁRNÍ
+              - generic [ref=e260]: Kategorizuje, analyzuje, odhaluje nekonzistence.
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - generic [ref=e263]: Extravertní intuice (Ne)
+                - generic [ref=e264]: SEKUNDÁRNÍ
+              - generic [ref=e265]: Vidí více cest a abstraktní souvislosti.
+            - generic [ref=e266]:
+              - generic [ref=e267]:
+                - generic [ref=e268]: Introvertní smysly (Si)
+                - generic [ref=e269]: TERCIÁRNÍ
+              - generic [ref=e270]: Propojuje současná data s uloženými detaily.
+            - generic [ref=e271]:
+              - generic [ref=e272]:
+                - generic [ref=e273]: Extravertní cítění (Fe)
+                - generic [ref=e274]: INFERIÓRNÍ
+              - generic [ref=e275]: Limitované sociální ladění; pragmatická empatie.
+      - generic [ref=e276]:
+        - generic [ref=e277]:
+          - heading "UČEBNÍ_VEKTOR" [level=3] [ref=e278]:
+            - img [ref=e279]
+            - text: UČEBNÍ_VEKTOR
+          - generic [ref=e282]:
+            - generic [ref=e284]:
+              - generic [ref=e285]: Vizuální
+              - generic [ref=e286]: PRIMÁRNÍ
+            - generic [ref=e290]:
+              - generic [ref=e291]: Kinestetický
+              - generic [ref=e292]: SEKUNDÁRNÍ
+            - generic [ref=e296]:
+              - generic [ref=e297]: Auditivní
+              - generic [ref=e298]: NÍZKÝ
+          - generic [ref=e301]:
+            - generic [ref=e302]:
+              - text: Logicko‑matematická
+              - generic [ref=e303]: VELMI VYSOKÁ
+            - generic [ref=e304]:
+              - text: Intrapersonální
+              - generic [ref=e305]: VYSOKÁ
+            - generic [ref=e306]:
+              - text: Vizuálně‑prostorová
+              - generic [ref=e307]: VYSOKÁ
+            - generic [ref=e308]:
+              - text: Přírodní
+              - generic [ref=e309]: VYSOKÁ
+        - generic [ref=e310]:
+          - heading "ENNEAGRAM_DYNAMIKA" [level=3] [ref=e311]:
+            - img [ref=e312]
+            - text: ENNEAGRAM_DYNAMIKA
+          - generic [ref=e314]: TYPE 4w5
+          - generic [ref=e315]:
+            - generic [ref=e316]: Růst → Typ 1 (disciplína, objektivita)
+            - generic [ref=e317]: Stres → Typ 2 (nadměrná validace)
+          - generic [ref=e318]:
+            - generic [ref=e319]: "SP: Odolnost, tichá výdrž"
+            - generic [ref=e320]: "SO: Pohled outsidera"
+            - generic [ref=e321]: "SX: Soutěživá intenzita"
+  - navigation "Section navigation" [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - generic [ref=e35]: HLAVNÍ NAVIGACE
+      - generic [ref=e36]: Klikněte na sekci pro přechod
+    - generic [ref=e37]:
+      - link "JÁDRO 00" [ref=e38] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e39]: "00"
+      - link "MODULY 01" [ref=e40] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e41]: "01"
+      - link "SCHOPNOSTI 02" [ref=e42] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e43]: "02"
+      - link "ARCHIV 03" [ref=e44] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e45]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e46] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e47]: "04"
+      - link "RESONANCE 05" [ref=e49] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e50]: "05"
+      - link "SIGNÁL 06" [ref=e51] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e52]: "06"
+    - generic [ref=e53]:
+      - img [ref=e54]
+      - generic [ref=e56]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e57]
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]: © 2026 Lucien Technology
+    - generic [ref=e69]:
+      - generic [ref=e70]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e72] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e73] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e74] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e75]: "LATENCY: 12ms"

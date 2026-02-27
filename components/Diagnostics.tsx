@@ -129,7 +129,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
   return (
     <div className="space-y-24 max-w-7xl mx-auto pb-40 animate-in fade-in duration-1000 px-4 md:px-0">
       <h1 className="sr-only">{isEn ? 'Diagnostics' : 'Diagnostika'}</h1>
-      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed">
+      <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-90 leading-relaxed">
         {seoIntro.map((line) => (
           <p key={line}>{line}</p>
         ))}
@@ -138,7 +138,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
       <div className="mb-24 relative overflow-hidden group">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-12">
           <div>
-            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-60 uppercase">
+            <div className="flex items-center gap-3 text-[10px] font-mono mb-4 tracking-[0.4em] opacity-80 uppercase">
               <Terminal className="w-3 h-3" />
               <span>KERNEL_DIAGNOSTICS_v2.0</span>
             </div>
@@ -146,14 +146,14 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
               {isEn ? 'CORE_SY' : 'DIAGNO_'}
               <span style={{ color: primaryColor }}>{isEn ? 'NC' : 'STIKA'}</span>
             </h2>
-            <div className="flex gap-4 text-[9px] font-mono opacity-70 uppercase tracking-widest">
+            <div className="flex gap-4 text-[9px] font-mono opacity-90 uppercase tracking-widest">
               <span>TYPE: {data.mbti.type}</span>
               <span className="animate-pulse">|</span>
               <span>ROLE: {data.mbti.role}</span>
             </div>
           </div>
           <div className="hidden md:block text-right">
-            <div className="text-[10px] font-mono opacity-20 leading-tight">
+            <div className="text-[10px] font-mono opacity-40 leading-tight">
               0xKERNEL_DUMP<br />
               0xSTATUS_NOMINAL
             </div>
@@ -198,7 +198,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
                     style={{ width: `${metric.value}%`, backgroundColor: metric.color, boxShadow: `0 0 10px ${metric.color}` }} 
                   />
                 </div>
-                <div className="text-[8px] font-mono opacity-50 uppercase tracking-tighter truncate">{metric.status}</div>
+                <div className="text-[8px] font-mono opacity-70 uppercase tracking-tighter truncate">{metric.status}</div>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
         {/* RADAR CHART CARD - Fixed Overflow */}
         <div className="lg:col-span-5 border border-white/10 bg-black/60 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all flex flex-col justify-center card-hover">
           <h3 className={`${headingClass} mb-12 border-b border-white/10 pb-6 flex items-center gap-3`}>
-            <Brain className="w-5 h-5 opacity-60" /> {isEn ? 'COGNITIVE_MAP' : 'KOGNITIVNÍ_MAPA'}
+            <Brain className="w-5 h-5 opacity-80" /> {isEn ? 'COGNITIVE_MAP' : 'KOGNITIVNÍ_MAPA'}
           </h3>
           <div className="h-72 sm:h-80 w-full relative overflow-visible">
             <ResponsiveContainer width="100%" height="100%">
@@ -215,7 +215,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
                 <PolarGrid stroke="rgba(255,255,255,0.05)" />
                 <PolarAngleAxis 
                   dataKey="subject" 
-                  tick={{ fill: 'rgba(255,255,255,0.55)', fontSize: 8, fontWeight: 700 }}
+                  tick={{ fill: 'rgba(255,255,255,0.8)', fontSize: 8, fontWeight: 700 }}
                   tickLine={false}
                 />
                 <Radar 
@@ -229,11 +229,11 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
               </RadarChart>
             </ResponsiveContainer>
             {/* Legend metadata */}
-            <div className="absolute bottom-0 right-0 p-2 text-[6px] sm:text-[7px] font-mono opacity-20 uppercase">
+            <div className="absolute bottom-0 right-0 p-2 text-[6px] sm:text-[7px] font-mono opacity-40 uppercase">
               GRID_SCAN: SUCCESSFUL
             </div>
           </div>
-          <div className="mt-8 text-[8px] font-mono opacity-20 uppercase tracking-[0.2em] text-center break-words px-4 leading-tight">
+          <div className="mt-8 text-[8px] font-mono opacity-40 uppercase tracking-[0.2em] text-center break-words px-4 leading-tight">
              *_MEASURED_BY_INTP_A_PROTOCOL
           </div>
         </div>
@@ -248,15 +248,15 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
           {data.flow.map((step, idx) => (
             <div key={idx} className="relative group">
               <div className="p-6 sm:p-8 border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-300 h-full border-l-2" style={{ borderLeftColor: idx === 0 ? '#d04c75' : (idx === 3 ? '#22c55e' : primaryColor) }}>
-                <div className="text-[9px] font-mono opacity-20 mb-6 tracking-widest uppercase">NODE_REF_0{idx+1}</div>
+                <div className="text-[9px] font-mono opacity-40 mb-6 tracking-widest uppercase">NODE_REF_0{idx+1}</div>
                 <div className="text-[11px] font-bold uppercase tracking-[0.2em] mb-4" style={{ color: idx === 0 ? '#d04c75' : (idx === 3 ? '#22c55e' : primaryColor) }}>{step.stage}</div>
-                <div className="text-[10px] opacity-60 font-mono italic leading-relaxed">{step.detail}</div>
+                <div className="text-[10px] opacity-80 font-mono italic leading-relaxed">{step.detail}</div>
                 <div className="mt-8 h-[2px] bg-white/5 overflow-hidden">
                   <div className="h-full animate-pulse" style={{ width: `${step.load}%`, backgroundColor: idx === 0 ? '#d04c75' : primaryColor }} />
                 </div>
               </div>
               {idx < 3 && (
-                <div className="hidden md:flex absolute top-1/2 right-[-14px] transform -translate-y-1/2 z-20 w-7 h-7 bg-black border border-white/10 rounded-full items-center justify-center text-[10px] opacity-20 group-hover:opacity-100 transition-opacity">
+                <div className="hidden md:flex absolute top-1/2 right-[-14px] transform -translate-y-1/2 z-20 w-7 h-7 bg-black border border-white/10 rounded-full items-center justify-center text-[10px] opacity-40 group-hover:opacity-100 transition-opacity">
                    →
                 </div>
               )}
@@ -271,21 +271,21 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
           <div className="absolute top-0 left-0 w-2 h-full" style={{ backgroundColor: primaryColor }} />
           <div className="flex items-center justify-between gap-4 mb-8 border-b border-white/10 pb-6">
             <h3 className={`${headingClass} flex items-center gap-3`}>
-              <Terminal className="w-4 h-4 opacity-60" /> {data.summary.title}
+              <Terminal className="w-4 h-4 opacity-80" /> {data.summary.title}
             </h3>
-            <div className="text-[9px] font-mono uppercase tracking-widest opacity-60">{data.summary.subtitle}</div>
+            <div className="text-[9px] font-mono uppercase tracking-widest opacity-80">{data.summary.subtitle}</div>
           </div>
           <div className="flex flex-wrap items-center gap-3 mb-8">
             <span className="text-[10px] font-mono uppercase tracking-[0.25em] px-3 py-1 border border-white/10 bg-white/5">
               {data.summary.tag}
             </span>
             {data.summary.tags.map((tag) => (
-              <span key={tag} className="text-[9px] font-mono uppercase tracking-widest px-3 py-1 border border-white/10 bg-white/[0.03] opacity-60">
+              <span key={tag} className="text-[9px] font-mono uppercase tracking-widest px-3 py-1 border border-white/10 bg-white/[0.03] opacity-80">
                 {tag}
               </span>
             ))}
           </div>
-          <ul className="space-y-3 text-sm md:text-base opacity-70 leading-relaxed">
+          <ul className="space-y-3 text-sm md:text-base opacity-90 leading-relaxed">
             {data.summary.points.map((p, i) => (
               <li key={i} className="flex gap-3">
                 <span className="text-white/70">▸</span>
@@ -297,16 +297,16 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
 
         <div className="lg:col-span-5 border border-white/10 bg-black/60 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all card-hover">
           <h3 className={`${headingClass} mb-8 border-b border-white/10 pb-6 flex items-center gap-3`}>
-            <Brain className="w-4 h-4 opacity-60" /> {data.cognitive.title}
+            <Brain className="w-4 h-4 opacity-80" /> {data.cognitive.title}
           </h3>
           <div className="space-y-6">
             {data.cognitive.functions.map((fn) => (
               <div key={fn.name} className="border-l border-white/10 pl-4">
                 <div className="flex items-baseline justify-between gap-4">
                   <div className="text-[10px] font-bold uppercase tracking-widest">{fn.name}</div>
-                  <div className="text-[9px] font-mono opacity-60 uppercase">{fn.role}</div>
+                  <div className="text-[9px] font-mono opacity-80 uppercase">{fn.role}</div>
                 </div>
-                <div className="text-[10px] font-mono opacity-60 mt-2">{fn.detail}</div>
+                <div className="text-[10px] font-mono opacity-80 mt-2">{fn.detail}</div>
               </div>
             ))}
           </div>
@@ -317,14 +317,14 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="border border-white/10 bg-black/40 p-6 md:p-8 industrial-clip card-hover">
           <h3 className={`${headingClass} mb-8 border-b border-white/10 pb-6 flex items-center gap-3`}>
-            <Cpu className="w-4 h-4 opacity-60" /> {data.learning.title}
+            <Cpu className="w-4 h-4 opacity-80" /> {data.learning.title}
           </h3>
           <div className="space-y-6">
             {data.learning.styles.map((s) => (
               <div key={s.name}>
                 <div className="flex justify-between items-baseline gap-3 mb-2">
                   <span className="text-[10px] font-bold uppercase tracking-widest">{s.name}</span>
-                  <span className="text-[9px] font-mono opacity-60 uppercase">{s.level}</span>
+                  <span className="text-[9px] font-mono opacity-80 uppercase">{s.level}</span>
                 </div>
                 <div className="h-[2px] bg-white/5">
                   <div className="h-full" style={{ width: `${s.value}%`, backgroundColor: primaryColor }} />
@@ -334,9 +334,9 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
           </div>
           <div className="mt-8 pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {data.learning.intelligences.map((it) => (
-              <div key={it.name} className="text-[10px] font-mono uppercase tracking-widest opacity-60">
+              <div key={it.name} className="text-[10px] font-mono uppercase tracking-widest opacity-80">
                 {it.name}
-                <div className="text-[9px] opacity-60 mt-1">{it.level}</div>
+                <div className="text-[9px] opacity-80 mt-1">{it.level}</div>
               </div>
             ))}
           </div>
@@ -344,16 +344,16 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
 
         <div className="border border-white/10 bg-black/40 p-6 md:p-8 industrial-clip card-hover">
           <h3 className={`${headingClass} mb-8 border-b border-white/10 pb-6 flex items-center gap-3`}>
-            <Terminal className="w-4 h-4 opacity-60" /> {data.enneagram.title}
+            <Terminal className="w-4 h-4 opacity-80" /> {data.enneagram.title}
           </h3>
-          <div className="text-[11px] font-mono uppercase tracking-[0.3em] opacity-70 mb-6">{data.enneagram.core}</div>
-          <div className="space-y-3 text-[10px] font-mono opacity-70">
+          <div className="text-[11px] font-mono uppercase tracking-[0.3em] opacity-90 mb-6">{data.enneagram.core}</div>
+          <div className="space-y-3 text-[10px] font-mono opacity-90">
             <div>{data.enneagram.growth}</div>
             <div>{data.enneagram.stress}</div>
           </div>
           <div className="mt-6 pt-4 border-t border-white/10 space-y-2">
             {data.enneagram.instincts.map((i) => (
-              <div key={i} className="text-[9px] font-mono uppercase tracking-widest opacity-60">{i}</div>
+              <div key={i} className="text-[9px] font-mono uppercase tracking-widest opacity-80">{i}</div>
             ))}
           </div>
         </div>

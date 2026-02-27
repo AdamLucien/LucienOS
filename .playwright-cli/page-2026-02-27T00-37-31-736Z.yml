@@ -1,0 +1,69 @@
+- generic [ref=e3]:
+  - generic:
+    - generic:
+      - generic [ref=e4]:
+        - generic [ref=e5]: Lucien_OS_v2.0.5
+        - generic [ref=e8]: "Stav systému: ARCHITEKT_NOMINÁLNÍ"
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - link "EN" [ref=e12] [cursor=pointer]:
+            - /url: /en/resonance/
+          - link "CS" [ref=e13] [cursor=pointer]:
+            - /url: /resonance/
+        - generic [ref=e14]:
+          - 'button "MÓD: STABILNÍ" [ref=e15] [cursor=pointer]':
+            - generic [ref=e17]: "MÓD: STABILNÍ"
+            - img [ref=e18]
+          - generic [ref=e21]: SYNCHRONIZACE_JADER
+  - main [ref=e26]:
+    - generic [ref=e27]: Načítání rezonance...
+  - navigation "Section navigation" [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - img [ref=e33]
+        - generic [ref=e35]: HLAVNÍ NAVIGACE
+      - generic [ref=e36]: Klikněte na sekci pro přechod
+    - generic [ref=e37]:
+      - link "JÁDRO 00" [ref=e38] [cursor=pointer]:
+        - /url: /
+        - text: JÁDRO
+        - generic [ref=e39]: "00"
+      - link "MODULY 01" [ref=e40] [cursor=pointer]:
+        - /url: /modules/
+        - text: MODULY
+        - generic [ref=e41]: "01"
+      - link "SCHOPNOSTI 02" [ref=e42] [cursor=pointer]:
+        - /url: /capabilities/
+        - text: SCHOPNOSTI
+        - generic [ref=e43]: "02"
+      - link "ARCHIV 03" [ref=e44] [cursor=pointer]:
+        - /url: /archive/
+        - text: ARCHIV
+        - generic [ref=e45]: "03"
+      - link "DIAGNOSTIKA 04" [ref=e46] [cursor=pointer]:
+        - /url: /diagnostics/
+        - text: DIAGNOSTIKA
+        - generic [ref=e47]: "04"
+      - link "RESONANCE 05" [ref=e48] [cursor=pointer]:
+        - /url: /resonance/
+        - text: RESONANCE
+        - generic [ref=e49]: "05"
+      - link "SIGNÁL 06" [ref=e51] [cursor=pointer]:
+        - /url: /signal/
+        - text: SIGNÁL
+        - generic [ref=e52]: "06"
+    - generic [ref=e53]:
+      - img [ref=e54]
+      - generic [ref=e56]: ROOT@LUCIEN_SYSTEMS:~$
+      - textbox "ZADEJ_ID_NODU..." [ref=e57]
+  - contentinfo [ref=e67]:
+    - generic [ref=e68]: © 2026 Lucien Technology
+    - generic [ref=e69]:
+      - generic [ref=e70]: Signal over Noise // Strategy above Chaos
+      - link "lucien.technology" [ref=e72] [cursor=pointer]:
+        - /url: https://lucien.technology
+      - link "portal.lucien.technology" [ref=e73] [cursor=pointer]:
+        - /url: https://portal.lucien.technology
+      - link "archeon.lucien.technology" [ref=e74] [cursor=pointer]:
+        - /url: https://archeon.lucien.technology
+    - generic [ref=e75]: "LATENCY: 12ms"
