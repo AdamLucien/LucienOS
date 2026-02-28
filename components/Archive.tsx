@@ -18,6 +18,14 @@ const getArchiveData = (lang: Language) => {
       items: [
         {
           period: "2026 – PRESENT",
+          title: "KRYFOR",
+          role: isEn ? "Chief System Architect" : "Hlavní systémový architekt",
+          mission: isEn ? "Architecting a deterministic decision governance layer for sovereign operations, turning AI behaviors into structured and auditable frameworks." : "Architektura deterministické vrstvy pro řízení rozhodování v suverénních operacích, přetvářející chování AI do strukturovaných a auditovatelných rámců.",
+          tech: ["Decision Governance", "Autonomous AI", "Audit & Compliance", "API Integration"],
+          meta: "SOVEREIGN_OPERATIONS"
+        },
+        {
+          period: "2026 – PRESENT",
           title: "LUCIEN CONTROL",
           role: isEn ? "Chief System Architect" : "Hlavní systémový architekt",
           mission: isEn ? "Engineering a unified 'Operating System' for interim management. Conceptualizing the 'Single Value Flow' to eliminate silos in Sales, HR, and Delivery." : "Vývoj jednotného 'Operačního systému' pro interim management. Konceptualizace 'Single Value Flow' pro eliminaci sil v prodeji, HR a delivery.",
@@ -217,7 +225,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
                        style={{ borderColor: phaseColor, boxShadow: `0 0 12px ${phaseColor}55` }} 
                   />
                   
-                  <div className="border border-white/5 bg-[#081426]/80 hover:bg-[#081426]/90 transition-all duration-500 p-8 md:p-14 industrial-clip relative overflow-hidden group/card hover:border-white/20 card-hover-soft">
+                  <div className="border border-white/5 bg-[#0a1931]/95 hover:bg-[#0a1931]/95 transition-all duration-500 p-8 md:p-14 industrial-clip relative overflow-hidden group/card hover:border-white/20 card-hover-soft">
                     <div className="absolute top-4 right-8 text-[8px] font-mono opacity-10 uppercase tracking-widest flex gap-4">
                        <span>{item.meta}</span>
                        <Box className="w-2 h-2" />
@@ -258,7 +266,7 @@ export const Archive: React.FC<ArchiveProps> = ({ mode, lang }) => {
       </div>
 
       {/* FINAL STATEMENT */}
-      <div className="mt-40 p-12 md:p-24 border border-white/10 bg-[#081426]/95 text-center industrial-clip relative overflow-hidden group card-hover">
+      <div className="mt-40 p-12 md:p-24 border border-white/10 bg-[#0a1931]/95 text-center industrial-clip relative overflow-hidden group card-hover">
          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
          <Globe className="w-16 h-16 mx-auto opacity-10 mb-12 animate-[spin_20s_linear_infinite]" style={{ color: accentColor }} />
          <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-8 leading-tight">

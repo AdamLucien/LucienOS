@@ -25,7 +25,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div 
-      className={`group relative bg-[#081426]/95 backdrop-blur-md border border-white/10 transition-all duration-500 cursor-pointer overflow-hidden card-hover ${
+      className={`group relative bg-[#0a1931]/95 backdrop-blur-md border border-white/10 transition-all duration-500 cursor-pointer overflow-hidden card-hover ${
         isExpanded ? 'ring-1 ring-white/20' : 'hover:border-white/20'
       }`}
       onClick={() => setIsExpanded(!isExpanded)}

@@ -125,7 +125,7 @@ const translations = {
       tagline: 'Systémový architekt. AI inženýr. Auditor strategických systémů.',
       desc_prof: 'NARUŠOVÁNÍ KONVENČNÍCH SYSTÉMŮ POMOCÍ AI A LOGIKY',
       desc_raw: 'SUVERENITA SKRZE STRATEGII A OBRANU',
-      logic_title: 'Stavitel (Logika)',
+      logic_title: 'STAVITEL (LOGIKA)',
       chaos_title: 'Drak (Chaos)',
       logic_desc: 'Specialista na strukturální integritu. Lean Six Sigma aplikovaná na digitální i fyzické architektury. Kovaný v průmyslové logistice.',
       chaos_desc: 'Obranný protokol s vysokou citlivostí. Provoz v "Bunker módu" pro zajištění integrity systému a informační suverenity. Nulová tolerance šumu.'
@@ -561,7 +561,7 @@ const App: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
-          <div className="md:col-span-8 p-10 border border-white/10 bg-[#081426]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+          <div className="md:col-span-8 p-10 border border-white/10 bg-[#0a1931]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
             <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: primaryColor }} />
             <h2 className="font-bold mb-6 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Zap className="w-5 h-5" /> {mode === 'raw' ? t.hero.chaos_title : t.hero.logic_title}
@@ -577,7 +577,7 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="md:col-span-4 p-10 border border-white/10 bg-[#081426]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+          <div className="md:col-span-4 p-10 border border-white/10 bg-[#0a1931]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
             <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: '#ff9f43' }} />
             <h2 className="font-bold mb-8 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Shield className="w-5 h-5" /> OPERATIONS_BASE
@@ -718,7 +718,7 @@ const App: React.FC = () => {
           ))}
         </div>
         
-        <div className="border border-white/10 bg-[#081426]/90 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">
+        <div className="border border-white/10 bg-[#0a1931]/90 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">
           <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
           <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -782,7 +782,7 @@ const App: React.FC = () => {
             </button>
             
             <div className="flex gap-4 items-center">
-              <div className="flex border border-white/10 bg-[#081426]/90 backdrop-blur-md p-1 industrial-clip">
+              <div className="flex border border-white/10 bg-[#0a1931]/90 backdrop-blur-md p-1 industrial-clip">
                 <a 
                   href={getSectionHref(currentSection, 'en')}
                   onClick={(event) => {
@@ -843,7 +843,7 @@ const App: React.FC = () => {
 
       {/* TACTICAL NAVIGATION DOCK (Desktop) */}
       <div className="fixed bottom-0 left-0 w-full z-50 hidden md:block px-8 pb-12">
-        <div className="max-w-6xl mx-auto bg-[#081426]/92 backdrop-blur-xl border-2 border-[#8ba6c3]/35 p-6 industrial-clip shadow-[0_0_30px_rgba(90,118,150,0.22)]">
+        <div className="max-w-6xl mx-auto bg-[#0a1931]/92 backdrop-blur-xl border-2 border-[#8ba6c3]/35 p-6 industrial-clip shadow-[0_0_30px_rgba(90,118,150,0.22)]">
           <TerminalNavigation currentSection={currentSection} onNavigate={navigateTo} getHref={getSectionHref} mode={mode} lang={language} />
         </div>
       </div>

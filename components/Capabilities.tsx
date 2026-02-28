@@ -203,7 +203,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* PRIMARY MODULE - ASYMMETRIC LARGE CARD */}
-        <div className="md:col-span-8 group relative border border-white/10 bg-[#081426]/95 backdrop-blur-xl p-6 sm:p-8 md:p-12 industrial-clip overflow-hidden transition-all duration-500 hover:border-white/30 card-hover">
+        <div className="md:col-span-8 group relative border border-white/10 bg-[#0a1931]/95 backdrop-blur-xl p-6 sm:p-8 md:p-12 industrial-clip overflow-hidden transition-all duration-500 hover:border-white/30 card-hover">
           <div className="absolute top-0 left-0 w-4 h-full transition-all duration-500 group-hover:w-4" style={{ backgroundColor: data[0].id === 'neural' && mode === 'raw' ? '#8f3a52' : accentColor }} />
           
           <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 relative z-10">
@@ -276,7 +276,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
         </div>
 
         {/* SECONDARY MODULE - TACTICAL GRID */}
-        <div className="md:col-span-4 group relative border border-white/10 bg-[#081426]/95 backdrop-blur-md p-6 sm:p-8 industrial-clip hover:border-white/30 transition-colors card-hover">
+        <div className="md:col-span-4 group relative border border-white/10 bg-[#0a1931]/95 backdrop-blur-md p-6 sm:p-8 industrial-clip hover:border-white/30 transition-colors card-hover">
           <div className="flex items-center gap-4 mb-8 md:mb-10 border-b border-white/10 pb-6">
             <div className="p-2 sm:p-3 bg-white/5 border border-white/10 shrink-0" style={{ color: accentColor }}>
               {data[1].icon}
@@ -315,7 +315,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
         </div>
 
         {/* TERTIARY MODULE - BLUEPRINT STYLE */}
-        <div className="md:col-span-5 group relative border border-white/10 bg-[#081426]/95 backdrop-blur-md p-6 sm:p-8 industrial-clip hover:border-white/30 transition-colors card-hover">
+        <div className="md:col-span-5 group relative border border-white/10 bg-[#0a1931]/95 backdrop-blur-md p-6 sm:p-8 industrial-clip hover:border-white/30 transition-colors card-hover">
           <div className="absolute top-4 right-4 text-[7px] md:text-[9px] font-mono opacity-10 uppercase tracking-widest italic hidden sm:block">NODE_REF: 09-ARCH</div>
           <h3 className={`${headingClass} mb-8 md:mb-12 flex items-center gap-3`}>
             <Zap className="w-3 h-3 md:w-4 md:h-4" style={{ color: accentColor }} /> {data[2].category}
@@ -361,7 +361,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
         </div>
 
         {/* QUATERNARY MODULE - TACTICAL HARDWARE */}
-        <div className="md:col-span-7 group relative border border-white/10 bg-[#081426]/95 p-6 sm:p-8 industrial-clip hover:border-white/30 transition-all overflow-hidden card-hover">
+        <div className="md:col-span-7 group relative border border-white/10 bg-[#0a1931]/95 p-6 sm:p-8 industrial-clip hover:border-white/30 transition-all overflow-hidden card-hover">
           <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: accentColor }} />
           <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.08)_0%,_rgba(0,0,0,0.8)_55%)]" />
           <div className="absolute inset-0 opacity-10 bg-[linear-gradient(90deg,_rgba(255,255,255,0.06)_1px,_transparent_1px)] bg-[length:24px_100%]" />
@@ -440,7 +440,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
 
       {/* FOOTER CALLOUT - REWORKED */}
       <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div className="p-6 border border-white/5 bg-[#081426]/95 industrial-clip text-center flex flex-col items-center justify-center gap-2 card-hover-soft">
+        <div className="p-6 border border-white/5 bg-[#0a1931]/95 industrial-clip text-center flex flex-col items-center justify-center gap-2 card-hover-soft">
           <Database className="w-5 h-5 opacity-60 mb-2" />
           <span className="text-[9px] font-mono opacity-50 uppercase tracking-[0.2em]">Data_Lake_Integrity</span>
           <span className="text-sm font-bold tracking-widest">99.98% OK</span>
@@ -455,7 +455,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ mode, lang }) => {
             ))}
           </div>
         </div>
-        <div className="p-6 border border-white/5 bg-[#081426]/95 industrial-clip text-center flex flex-col items-center justify-center gap-2 hidden md:flex card-hover-soft">
+        <div className="p-6 border border-white/5 bg-[#0a1931]/95 industrial-clip text-center flex flex-col items-center justify-center gap-2 hidden md:flex card-hover-soft">
           <Shield className="w-5 h-5 opacity-60 mb-2" />
           <span className="text-[9px] font-mono opacity-50 uppercase tracking-[0.2em]">Security_Layer</span>
           <span className="text-sm font-bold tracking-widest">ENCRYPTED</span>
