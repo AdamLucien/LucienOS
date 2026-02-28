@@ -192,16 +192,16 @@ const buildSeoContent = (brand: string) =>
         MODULES: `${brand} | Projects & Modules`,
         CAPABILITIES: `${brand} | Capabilities`,
         ARCHIVE: `${brand} | Archive Timeline`,
-        DIAGNOSTICS: `${brand} | Diagnostics`,
+        DIAGNOSTICS: `${brand} | Cognitive Profile`,
         RESONANCE: `${brand} | Resonance`,
         SIGNAL: `${brand} | Signal / Contact`
       },
       descriptions: {
         CORE: `${brand} — System Architect, AI Engineer, and strategic systems auditor. Explore Lucien OS v2.0, a dual-mode digital twin with projects, mission, and operations.`,
-        MODULES: `${brand} — Projects and systems: NOXIS, ARCHΞON, Lucien Control, industrial operations, and robotics protocols.`,
+        MODULES: `${brand} — Projects and systems: NOXIS, ARCHΞON, AI-powered decision governance with Kryfor, Lucien Control, industrial operations, and robotics protocols.`,
         CAPABILITIES: `${brand} — Capability matrix across AI, OSINT fusion, systems architecture, logistics optimization, automation, and industrial engineering.`,
         ARCHIVE: `${brand} — Career timeline and mission log across AI systems, logistics, and industrial operations.`,
-        DIAGNOSTICS: `${brand} — Cognitive diagnostics, system profile, and analytical telemetry for the Lucien OS persona.`,
+        DIAGNOSTICS: `${brand} — Cognitive profile, system diagnostics, and analytical telemetry for the Lucien OS persona.`,
         RESONANCE: `${brand} — Interests and resonance: systems dynamics, inner practices, philosophy, and curated media.`,
         SIGNAL: `${brand} — Contact and secure signal channel to initiate collaboration or a systems audit.`
       },
@@ -213,16 +213,16 @@ const buildSeoContent = (brand: string) =>
         MODULES: `${brand} | Projekty a moduly`,
         CAPABILITIES: `${brand} | Schopnosti`,
         ARCHIVE: `${brand} | Archiv a časová osa`,
-        DIAGNOSTICS: `${brand} | Diagnostika`,
+        DIAGNOSTICS: `${brand} | Kognitivní profil`,
         RESONANCE: `${brand} | Rezonance`,
         SIGNAL: `${brand} | Signál / Kontakt`
       },
       descriptions: {
         CORE: `${brand} — Systémový architekt, AI inženýr a auditor strategických systémů. Lucien OS v2.0 jako digitální profil s projekty, misí a operacemi.`,
-        MODULES: `${brand} — Projekty a systémy: NOXIS, ARCHΞON, Lucien Control, průmyslové operace a robotika.`,
+        MODULES: `${brand} — Projekty a systémy: NOXIS, ARCHΞON, AI governance pro rozhodování s Kryfor, Lucien Control, průmyslové operace a robotika.`,
         CAPABILITIES: `${brand} — Matice schopností napříč AI, OSINT fúzí, architekturou systémů, logistikou, automatizací a průmyslovým inženýrstvím.`,
         ARCHIVE: `${brand} — Kariérní časová osa a log misí napříč AI, logistikou a průmyslovými operacemi.`,
-        DIAGNOSTICS: `${brand} — Diagnostika kognitivního profilu, systémová telemetrie a analytické charakteristiky.`,
+        DIAGNOSTICS: `${brand} — Kognitivní profil, systémová diagnostika a analytická telemetrie pro osobnostní OS Lucien.`,
         RESONANCE: `${brand} — Rezonance a zájmy: systémová dynamika, vnitřní disciplíny, filozofie a kurátorské odkazy.`,
         SIGNAL: `${brand} — Kontakt a šifrovaný signální kanál pro spolupráci nebo audit systému.`
       },
@@ -455,7 +455,21 @@ const App: React.FC = () => {
           name: 'Adam Karl Lucien',
           url: baseOrigin,
           email: 'adam.karl.lucien@lucien.technology',
-          jobTitle: language === 'en' ? 'System Architect, AI Engineer' : 'Systémový architekt, AI inženýr'
+          jobTitle: [
+            language === 'en' ? 'System Architect' : 'Systémový architekt',
+            language === 'en' ? 'AI Engineer' : 'AI inženýr',
+            language === 'en' ? 'AI Governance Architect' : 'AI Governance architekt'
+          ],
+          knowsAbout: [
+            { '@type': 'Thing', name: 'Archeon' },
+            { '@type': 'Thing', name: 'Noxis' },
+            { '@type': 'Thing', name: 'Kryfor' },
+            { '@type': 'Thing', name: 'AI Governance' },
+            { '@type': 'Thing', name: 'System Architecture' },
+            { '@type': 'Thing', name: 'Decision Governance' },
+            { '@type': 'Thing', name: 'Autonomous Systems' },
+            { '@type': 'Thing', name: 'AI Auditing' }
+          ]
         },
         {
           '@type': 'WebSite',
@@ -474,6 +488,24 @@ const App: React.FC = () => {
           isPartOf: { '@id': `${baseOrigin}/#website` },
           about: { '@id': `${baseOrigin}/#person` },
           inLanguage: language
+        },
+        {
+          '@type': 'Service',
+          serviceType: language === 'en' ? 'System Architecture Consulting' : 'Poradenství v oblasti systémové architektury',
+          provider: { '@id': `${baseOrigin}/#person` },
+          name: language === 'en' ? 'System Architecture' : 'Systémová architektura'
+        },
+        {
+          '@type': 'Service',
+          serviceType: language === 'en' ? 'AI Governance Consulting' : 'Poradenství v oblasti AI Governance',
+          provider: { '@id': `${baseOrigin}/#person` },
+          name: language === 'en' ? 'AI Governance' : 'AI Governance'
+        },
+        {
+          '@type': 'Service',
+          serviceType: language === 'en' ? 'Strategic Systems Auditing' : 'Auditování strategických systémů',
+          provider: { '@id': `${baseOrigin}/#person` },
+          name: language === 'en' ? 'Strategic Systems Auditing' : 'Auditování strategických systémů'
         }
       ]
     };
@@ -605,11 +637,14 @@ const App: React.FC = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-            <div className="md:col-span-12 lg:col-span-7 h-full">
+            <div className="md:col-span-6 lg:col-span-4 h-full">
                <ProjectCard title="NOXIS" subtitle={t.projects.noxis.sub} description={t.projects.noxis.desc} techStack={["Python", "FastAPI", "Docker", "CV", "OSINT"]} accentColor="#29d1ff" icon={<Eye className="w-6 h-6" />} archetype="THE DRAGON" mode={mode} lang={language} />
             </div>
-            <div className="md:col-span-6 lg:col-span-5 flex flex-col gap-6">
+            <div className="md:col-span-6 lg:col-span-4 h-full">
                <ProjectCard title="ARCHΞON" subtitle={t.projects.archeon.sub} description={t.projects.archeon.desc} techStack={["Neo4j", "Causal AI", "Sim Engines", "LOD Arch"]} accentColor="#8d7bff" icon={<Globe className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
+            </div>
+            <div className="md:col-span-6 lg:col-span-4 h-full">
+               <ProjectCard title="KRYFOR" subtitle="Deterministic Decision Governance" description="A deterministic decision governance layer and operational system that turns AI behaviors into structured, auditable, and compliant decision frameworks for sovereign operations." techStack={["Decision Governance", "Autonomous AI", "Audit & Compliance", "API Integration"]} accentColor="#10b981" icon={<Bot className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
             </div>
             <div className="md:col-span-6 lg:col-span-12">
                <ProjectCard title="LUCIEN CONTROL" subtitle={t.projects.control.sub} description={t.projects.control.desc} techStack={["Next.js", "TypeScript", "Prisma", "DDD"]} accentColor="#8d7bff" icon={<Layout className="w-6 h-6" />} archetype="THE BUILDER" mode={mode} lang={language} />
@@ -821,6 +856,7 @@ const App: React.FC = () => {
             <a className="hover:opacity-80 transition-opacity" href="https://lucien.technology" target="_blank" rel="noreferrer">lucien.technology</a>
             <a className="hover:opacity-80 transition-opacity" href="https://portal.lucien.technology" target="_blank" rel="noreferrer">portal.lucien.technology</a>
             <a className="hover:opacity-80 transition-opacity" href="https://archeon.lucien.technology" target="_blank" rel="noreferrer">archeon.lucien.technology</a>
+            <a className="hover:opacity-80 transition-opacity" href="https://kryfor.lucien.technology" target="_blank" rel="noreferrer">kryfor.lucien.technology</a>
           </div>
           <div className="opacity-80 font-mono">LATENCY: 12ms</div>
       </footer>
