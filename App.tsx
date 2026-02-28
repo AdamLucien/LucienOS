@@ -56,13 +56,13 @@ const SECTION_PATHS: Record<SectionKey, string> = {
 const translations = {
   en: {
     nav: {
-      CORE: 'ARCHITECTURE',
-      MODULES: 'GOVERNANCE DOMAINS',
-      CAPABILITIES: 'EXECUTION CAPACITY',
-      ARCHIVE: 'PROGRAMS & MISSIONS',
-      DIAGNOSTICS: 'SYSTEM TELEMETRY',
-      RESONANCE: 'STRATEGIC CONTEXT',
-      SIGNAL: 'EXECUTIVE CONTACT'
+      CORE: 'PROFILE',
+      MODULES: 'SYSTEMS',
+      CAPABILITIES: 'CAPABILITIES',
+      ARCHIVE: 'ARCHIVE',
+      DIAGNOSTICS: 'COGNITIVE PROFILE',
+      RESONANCE: 'RESONANCE',
+      SIGNAL: 'SIGNAL'
     },
     hud: { status: 'System Status', stable: 'ARCHITECT_NOMINAL', unstable: 'BUNKER_SHIELDED', mode: 'MODE', stableMode: 'STABLE', unstableMode: 'UNSTABLE' },
     hero: { 
@@ -112,13 +112,13 @@ const translations = {
   },
   cs: {
     nav: {
-      CORE: 'ARCHITEKTURA',
-      MODULES: 'DOMÉNY ŘÍZENÍ',
-      CAPABILITIES: 'EXEKUČNÍ KAPACITY',
-      ARCHIVE: 'PROGRAMY A MISE',
-      DIAGNOSTICS: 'SYSTÉMOVÁ TELEMETRIE',
-      RESONANCE: 'STRATEGICKÝ KONTEXT',
-      SIGNAL: 'EXEKUTIVNÍ KONTAKT'
+      CORE: 'PROFIL',
+      MODULES: 'SYSTÉMY',
+      CAPABILITIES: 'SCHOPNOSTI',
+      ARCHIVE: 'ARCHIV',
+      DIAGNOSTICS: 'KOGNITIVNÍ PROFIL',
+      RESONANCE: 'REZONANCE',
+      SIGNAL: 'SIGNÁL'
     },
     hud: { status: 'Stav systému', stable: 'ARCHITEKT_NOMINÁLNÍ', unstable: 'BUNK_STÍNĚNÝ', mode: 'MÓD', stableMode: 'STABILNÍ', unstableMode: 'NESTABILNÍ' },
     hero: { 
@@ -814,15 +814,15 @@ const App: React.FC = () => {
       </div>
 
       <footer className="fixed bottom-0 left-0 w-full py-3 px-8 flex justify-between items-center z-40 bg-[#020306]/92 border-t border-white/10 text-[8px] md:text-[10px]">
-          <div className="opacity-60 font-mono tracking-widest uppercase">© 2026 Lucien Technology</div>
-          <div className="hidden lg:flex items-center gap-4 opacity-60 font-mono uppercase tracking-[0.3em]">
+          <div className="opacity-80 font-mono tracking-widest uppercase">© 2026 Lucien Technology</div>
+          <div className="hidden lg:flex items-center gap-4 opacity-80 font-mono uppercase tracking-[0.3em]">
             <span>Signal over Noise // Strategy above Chaos</span>
             <span className="h-3 w-px bg-white/10" />
-            <a className="hover:opacity-60 transition-opacity" href="https://lucien.technology" target="_blank" rel="noreferrer">lucien.technology</a>
-            <a className="hover:opacity-60 transition-opacity" href="https://portal.lucien.technology" target="_blank" rel="noreferrer">portal.lucien.technology</a>
-            <a className="hover:opacity-60 transition-opacity" href="https://archeon.lucien.technology" target="_blank" rel="noreferrer">archeon.lucien.technology</a>
+            <a className="hover:opacity-80 transition-opacity" href="https://lucien.technology" target="_blank" rel="noreferrer">lucien.technology</a>
+            <a className="hover:opacity-80 transition-opacity" href="https://portal.lucien.technology" target="_blank" rel="noreferrer">portal.lucien.technology</a>
+            <a className="hover:opacity-80 transition-opacity" href="https://archeon.lucien.technology" target="_blank" rel="noreferrer">archeon.lucien.technology</a>
           </div>
-          <div className="opacity-60 font-mono">LATENCY: 12ms</div>
+          <div className="opacity-80 font-mono">LATENCY: 12ms</div>
       </footer>
     </div>
   );

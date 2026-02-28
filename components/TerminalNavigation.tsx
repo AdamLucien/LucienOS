@@ -12,8 +12,8 @@ interface TerminalNavigationProps {
 }
 
 const navTranslations = {
-  en: { CORE: 'CORE', MODULES: 'MODULES', CAPABILITIES: 'CAPABILITIES', ARCHIVE: 'ARCHIVE', DIAGNOSTICS: 'DIAGNOSTICS', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNAL', prompt: 'ENTER_NODE_ID...', title: 'PRIMARY NAVIGATION', hint: 'Click a section to navigate' },
-  cs: { CORE: 'ARCHITEKTURA', MODULES: 'DOMÉNY ŘÍZENÍ', CAPABILITIES: 'EXEKUČNÍ KAPACITY', ARCHIVE: 'PROGRAMY A MISE', DIAGNOSTICS: 'SYSTÉMOVÁ TELEMETRIE', RESONANCE: 'STRATEGICKÝ KONTEXT', SIGNAL: 'EXEKUTIVNÍ KONTAKT', prompt: 'ZADEJ_ID_NODU...', title: 'ARCHITEKTONICKÁ NAVIGACE', hint: 'Klikněte na sekci pro přechod' }
+  en: { CORE: 'PROFILE', MODULES: 'SYSTEMS', CAPABILITIES: 'CAPABILITIES', ARCHIVE: 'ARCHIVE', DIAGNOSTICS: 'COGNITIVE PROFILE', RESONANCE: 'RESONANCE', SIGNAL: 'SIGNAL', prompt: 'ENTER_NODE_ID...', title: 'MAIN MENU', hint: 'Click a section to navigate' },
+  cs: { CORE: 'PROFIL', MODULES: 'SYSTÉMY', CAPABILITIES: 'SCHOPNOSTI', ARCHIVE: 'ARCHIV', DIAGNOSTICS: 'KOGNITIVNÍ PROFIL', RESONANCE: 'REZONANCE', SIGNAL: 'SIGNÁL', prompt: 'ZADEJ_ID_NODU...', title: 'HLAVNÍ MENU', hint: 'Klikněte na sekci pro přechod' }
 };
 
 export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({ 
