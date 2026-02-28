@@ -66,13 +66,13 @@ const translations = {
     },
     hud: { status: 'System Status', stable: 'ARCHITECT_NOMINAL', unstable: 'BUNKER_SHIELDED', mode: 'MODE', stableMode: 'STABLE', unstableMode: 'UNSTABLE' },
     hero: { 
-      tagline: 'System Architect. AI Engineer. Strategic Systems Auditor.',
-      desc_prof: 'DISRUPTING CONVENTIONAL SYSTEMS WITH AI & LOGIC',
+      tagline: 'Architecting Resilient Systems. Engineering AI-Driven Futures. Auditing Strategic Imperatives.',
+      desc_prof: 'Forging Order from Chaos through the Strategic Application of AI and First-Principles Logic.',
       desc_raw: 'SOVEREIGNTY THROUGH STRATEGY & DEFENSE',
-      logic_title: 'The Builder (Logic)',
+      logic_title: 'THE BUILDER (LOGIC)',
       chaos_title: 'The Dragon (Chaos)',
-      logic_desc: 'Structural integrity specialist. Lean Six Sigma mastery applied to digital and physical architectures. Forged in industrial logistics.',
-      chaos_desc: 'High-sensitivity defense protocol. Operating in "Bunker Mode" to ensure system integrity and information sovereignty. Zero noise tolerance.'
+      logic_desc: 'A specialist in structural integrity, applying Lean Six Sigma and system dynamics to architect resilient digital and physical infrastructures. Expertise forged in the crucible of industrial logistics and high-stakes interim management.',
+      chaos_desc: 'A high-sensitivity defense protocol, operating in "Bunker Mode" to ensure absolute system integrity and information sovereignty. This mode enforces zero-trust principles and prioritizes signal over noise, neutralizing threats before they materialize.'
     },
     sections: {
       sys_arch: 'Category_I: Systems_Architecture & AI Intelligence',
@@ -122,13 +122,13 @@ const translations = {
     },
     hud: { status: 'Stav systému', stable: 'ARCHITEKT_NOMINÁLNÍ', unstable: 'BUNK_STÍNĚNÝ', mode: 'MÓD', stableMode: 'STABILNÍ', unstableMode: 'NESTABILNÍ' },
     hero: { 
-      tagline: 'Systémový architekt. AI inženýr. Auditor strategických systémů.',
-      desc_prof: 'NARUŠOVÁNÍ KONVENČNÍCH SYSTÉMŮ POMOCÍ AI A LOGIKY',
+      tagline: 'Architektura Odolných Systémů. Inženýrství Budoucnosti s AI. Audit Strategických Imperativů.',
+      desc_prof: 'Tvorba Řádu z Chaosu pomocí Strategické Aplikace AI a Logiky Prvních Principů.',
       desc_raw: 'SUVERENITA SKRZE STRATEGII A OBRANU',
       logic_title: 'STAVITEL (LOGIKA)',
       chaos_title: 'Drak (Chaos)',
-      logic_desc: 'Specialista na strukturální integritu. Lean Six Sigma aplikovaná na digitální i fyzické architektury. Kovaný v průmyslové logistice.',
-      chaos_desc: 'Obranný protokol s vysokou citlivostí. Provoz v "Bunker módu" pro zajištění integrity systému a informační suverenity. Nulová tolerance šumu.'
+      logic_desc: 'Specialista na strukturální integritu, aplikující Lean Six Sigma a systémovou dynamiku na architekturu odolných digitálních a fyzických infrastruktur. Odbornost vykovaná v průmyslové logistice a krizovém interim managementu.',
+      chaos_desc: 'Obranný protokol s vysokou citlivostí, operující v "Bunker Módu" pro zajištění absolutní integrity systému a informační suverenity. Tento mód vynucuje principy nulové důvěry a upřednostňuje signál před šumem, neutralizující hrozby dříve, než se zhmotní.'
     },
     sections: {
       sys_arch: 'Kategorie_I: Architektura systémů & AI Inteligence',
@@ -233,35 +233,35 @@ const buildSeoContent = (brand: string) =>
 const sectionCopy = {
   en: {
     CORE: [
-      'System Architect and AI Engineer focused on resilient, auditable systems across digital and physical operations.',
-      'Lucien OS v2.0 documents strategy, defense, and execution patterns for complex environments.',
-      'Explore modules, capabilities, archive, diagnostics, resonance, and signal for full system context.'
+      'Systems Architect focused on deterministic control and audit-grade decision environments.',
+      'KRYFOR is my core framework: governance for autonomous organizations and agent teams.',
+      'Explore modules, capabilities, archive, diagnostics, resonance, and signal for full context.'
     ],
     MODULES: [
-      'Modules represent deployed systems spanning autonomous intelligence, predictive governance, and operational logistics.',
-      'Each module highlights scope, stack, and measurable impact across AI and industrial domains.',
-      'Use this page to evaluate alignment, integration paths, and readiness.'
+      'Modules cover autonomous teams, decision topologies, and enforcement systems.',
+      'Each module documents scope, stack, and operational impact across real environments.',
+      'Use this page to assess fit, integration paths, and deployment readiness.'
     ],
     SIGNAL: [
-      'Signal is the secure contact channel for collaborations, audits, and strategic requests.',
-      'Provide a clear origin ID, protocol type, and payload to accelerate response.',
+      'Signal: direct channel for collaboration, architecture audits, and pilot deployments.',
+      'Provide origin ID, context, and a clear payload.',
       'High-signal requests are prioritized.'
     ]
   },
   cs: {
     CORE: [
-      'Systémový architekt a AI inženýr se zaměřením na odolné a auditovatelné systémy.',
-      'Lucien OS v2.0 mapuje principy strategie, obrany a exekuce v komplexním prostředí.',
-      'Prozkoumejte moduly, schopnosti, archiv, diagnostiku, rezonanci a signál.'
+      'Systems Architect zaměřený na deterministické řízení a auditovatelné rozhodování.',
+      'KRYFOR je můj core framework: governance vrstva pro autonomní organizace a agentní týmy.',
+      'Moduly, schopnosti, archiv, diagnostika, rezonance a signál — celý kontext systému.'
     ],
     MODULES: [
-      'Moduly představují nasazené systémy napříč autonomní inteligencí, prediktivním řízením a logistikou.',
-      'Každý modul shrnuje rozsah, technologický stack a měřitelný dopad.',
-      'Stránka slouží k posouzení kompatibility, integrace a připravenosti.'
+      'Moduly pokrývají autonomní týmy, rozhodovací topologie a enforcement systémy.',
+      'Každý modul definuje rozsah, stack a provozní dopad v reálném prostředí.',
+      'Tahle stránka slouží k rychlému posouzení fitu, integrace a readiness.'
     ],
     SIGNAL: [
-      'Signál je bezpečný kontaktní kanál pro spolupráci, audity a strategické požadavky.',
-      'Uveďte ID původu, typ protokolu a jasný payload pro rychlou reakci.',
+      'Signál: přímý kanál pro spolupráci, architektonické audity a pilotní nasazení.',
+      'Uveďte origin ID, kontext a jasný payload — bez omáčky.',
       'High-signal požadavky mají prioritu.'
     ]
   }
@@ -352,7 +352,7 @@ const App: React.FC = () => {
   const [currentSection, setCurrentSection] = useState<SectionKey>('CORE');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const primaryColor = mode === 'raw' ? '#d04c75' : '#4f8ff7';
+  const primaryColor = '#E6E6E6';
   const t = translations[language];
   const brand = getBrandName();
   const seo = buildSeoContent(brand)[language];
@@ -531,18 +531,18 @@ const App: React.FC = () => {
                 <Terminal className="w-3 h-3" />
                 <span>IDENTITY_INITIALIZATION_PROTOCOL</span>
               </div>
-              <h1 className="text-5xl md:text-8xl font-bold uppercase tracking-tighter leading-none mb-6">
-                ADAM KARL <span style={{ color: primaryColor }}>LUCIEN</span>
+              <h1 className="text-5xl md:text-8xl font-bold uppercase tracking-tighter leading-none mb-6 text-text-1">
+                ADAM KARL <span className="text-accent">LUCIEN</span>
               </h1>
-              <p className="text-xl md:text-3xl font-light opacity-80 leading-tight max-w-3xl border-l-4 pl-8 py-2" style={{ borderColor: primaryColor }}>
+              <p className="text-xl md:text-3xl font-light text-text-2 leading-tight max-w-3xl border-l-4 pl-8 py-2 border-accent">
                 {t.hero.tagline} 
-                <span className={`block font-bold mt-4 text-sm md:text-base tracking-[0.2em] transition-colors duration-500`} style={{ color: primaryColor }}>
+                <span className={`block font-bold mt-4 text-sm md:text-base tracking-[0.2em] transition-colors duration-500 text-accent`}>
                   {mode === 'raw' ? t.hero.desc_raw : t.hero.desc_prof}
                 </span>
               </p>
             </div>
             <div className="hidden lg:block text-right">
-               <div className="text-[10px] font-mono opacity-20 leading-loose">
+               <div className="text-[10px] font-mono text-text-3 leading-loose">
                   ARCHTYPE: {mode === 'raw' ? 'DRAGON_DEFENSE' : 'BUILDER_LOGIC'}<br />
                   NODE_ID: 0x25_LUCIEN<br />
                   STATE: AUTHORIZED
@@ -554,14 +554,14 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs opacity-70 leading-relaxed">
+        <div className="max-w-3xl space-y-3 text-[11px] md:text-xs text-text-2 leading-relaxed">
           {sectionCopy[language].CORE.map((line) => (
             <p key={line}>{line}</p>
           ))}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-12">
-          <div className="md:col-span-8 p-10 border border-white/10 bg-[#0a1931]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+          <div className="md:col-span-8 p-10 border border-border bg-surface-1/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-border-strong hover:bg-surface-2 transition-all">
             <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: primaryColor }} />
             <h2 className="font-bold mb-6 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Zap className="w-5 h-5" /> {mode === 'raw' ? t.hero.chaos_title : t.hero.logic_title}
@@ -577,7 +577,7 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="md:col-span-4 p-10 border border-white/10 bg-[#0a1931]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
+          <div className="md:col-span-4 p-10 border border-white/10 bg-[#081023]/90 backdrop-blur-md industrial-clip relative overflow-hidden group hover:border-white/20 transition-all card-hover">
             <div className="absolute top-0 left-0 w-1 h-full" style={{ backgroundColor: '#ff9f43' }} />
             <h2 className="font-bold mb-8 uppercase flex items-center gap-3 transition-colors text-sm tracking-[0.3em]" style={{ color: primaryColor }}>
               <Shield className="w-5 h-5" /> OPERATIONS_BASE
@@ -718,7 +718,7 @@ const App: React.FC = () => {
           ))}
         </div>
         
-        <div className="border border-white/10 bg-[#0a1931]/90 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">
+        <div className="border border-white/10 bg-[#081023]/90 backdrop-blur-xl p-8 md:p-12 industrial-clip relative card-hover-soft">
           <div className="absolute top-0 left-0 w-4 h-full" style={{ backgroundColor: primaryColor }} />
           <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -755,7 +755,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 ${mode === 'raw' ? 'bg-[#04070b]' : 'bg-[#020306]'}`}>
+    <div className={`min-h-screen relative overflow-hidden transition-colors duration-1000 bg-bg`}>
       <NeuralNetwork mode={mode} />
       
       {/* HUD OVERLAY - Controlled Transparency */}
@@ -782,7 +782,7 @@ const App: React.FC = () => {
             </button>
             
             <div className="flex gap-4 items-center">
-              <div className="flex border border-white/10 bg-[#0a1931]/90 backdrop-blur-md p-1 industrial-clip">
+              <div className="flex border border-white/10 bg-[#081023]/90 backdrop-blur-md p-1 industrial-clip">
                 <a 
                   href={getSectionHref(currentSection, 'en')}
                   onClick={(event) => {

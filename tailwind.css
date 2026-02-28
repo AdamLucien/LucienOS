@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --bg: #0B0F14;
+    --surface-1: #0F141B;
+    --surface-2: #121A23;
+    --border: rgba(255, 255, 255, 0.06);
+    --border-strong: rgba(255, 255, 255, 0.10);
+    --text-1: rgba(255, 255, 255, 0.92);
+    --text-2: rgba(255, 255, 255, 0.70);
+    --text-3: rgba(255, 255, 255, 0.48);
+    --accent: #E6E6E6;
+  }
+}
+
 @layer utilities {
   .card-hover {
     transition: border-color 0.7s ease, box-shadow 0.7s ease, transform 0.7s ease;

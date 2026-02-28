@@ -116,14 +116,14 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
   const headingClass = "text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.3em]";
   const seoIntro = isEn
     ? [
-        'Diagnostics provide a structured profile of cognitive and operational signals.',
-        'Telemetry is presented for clarity and context, supporting strategic decision-making.',
-        'This section aligns system behavior with constraints and mission goals.'
+        'Diagnostics: decision telemetry, operational signals, limits, and runtime posture.',
+        'Presented for clarity and audit—not spectacle.',
+        'Used to align system behavior with strategic constraints.'
       ]
     : [
-        'Diagnostika poskytuje strukturovaný profil kognitivních a provozních signálů.',
-        'Telemetrie je prezentována pro jasnost a kontext rozhodování.',
-        'Sekce zarovnává chování systému se strategickými omezeními a cíli.'
+        'Diagnostika: telemetrie rozhodování, provozní signály, limity a režimy chování.',
+        'Bez spektáklu. Pro jasnost, audit a rychlé vyhodnocení rizika.',
+        'Slouží k zarovnání systému se strategickými omezeními.'
       ];
 
   return (
@@ -166,7 +166,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* MBTI INFO CARD */}
-        <div className="lg:col-span-7 border border-white/10 bg-[#081426]/95 p-6 sm:p-8 md:p-12 backdrop-blur-md industrial-clip relative overflow-hidden group card-hover">
+        <div className="lg:col-span-7 border border-white/10 bg-[#081023]/95 p-6 sm:p-8 md:p-12 backdrop-blur-md industrial-clip relative overflow-hidden group card-hover">
           <div className="absolute top-0 left-0 w-2 h-full" style={{ backgroundColor: primaryColor }} />
           <div className="absolute top-0 right-0 p-8 opacity-[0.03] pointer-events-none">
             <Binary className="w-48 h-48" />
@@ -205,7 +205,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
         </div>
 
         {/* RADAR CHART CARD - Fixed Overflow */}
-        <div className="lg:col-span-5 border border-white/10 bg-[#081426]/95 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all flex flex-col justify-center card-hover">
+        <div className="lg:col-span-5 border border-white/10 bg-[#081023]/95 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all flex flex-col justify-center card-hover">
           <h3 className={`${headingClass} mb-12 border-b border-white/10 pb-6 flex items-center gap-3`}>
             <Brain className="w-5 h-5 opacity-80" /> {isEn ? 'COGNITIVE_MAP' : 'KOGNITIVNÍ_MAPA'}
           </h3>
@@ -240,7 +240,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
       </div>
 
       {/* DUALITY FLOW VISUALIZATION */}
-      <div className="border border-white/10 bg-[#081426]/95 p-8 sm:p-10 md:p-16 industrial-clip relative overflow-hidden card-hover">
+      <div className="border border-white/10 bg-[#081023]/95 p-8 sm:p-10 md:p-16 industrial-clip relative overflow-hidden card-hover">
         <h3 className={`${headingClass} mb-16 flex items-center gap-3`}>
           <Cpu className="w-5 h-5" style={{ color: primaryColor }} /> {isEn ? 'TRANSFORMATION_FLOW: ENTROPY_TO_STRATEGY' : 'PRŮBĚH_TRANSFORMACE: ENTROPIE_K_STRATEGII'}
         </h3>
@@ -267,7 +267,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
 
       {/* PROFILE SYNTHESIS + COGNITIVE STACK */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <div className="lg:col-span-7 border border-white/10 bg-[#081426]/95 p-6 md:p-10 industrial-clip relative overflow-hidden card-hover">
+        <div className="lg:col-span-7 border border-white/10 bg-[#081023]/95 p-6 md:p-10 industrial-clip relative overflow-hidden card-hover">
           <div className="absolute top-0 left-0 w-2 h-full" style={{ backgroundColor: primaryColor }} />
           <div className="flex items-center justify-between gap-4 mb-8 border-b border-white/10 pb-6">
             <h3 className={`${headingClass} flex items-center gap-3`}>
@@ -295,7 +295,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
           </ul>
         </div>
 
-        <div className="lg:col-span-5 border border-white/10 bg-[#081426]/95 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all card-hover">
+        <div className="lg:col-span-5 border border-white/10 bg-[#081023]/95 backdrop-blur-md p-6 md:p-8 industrial-clip hover:border-white/30 transition-all card-hover">
           <h3 className={`${headingClass} mb-8 border-b border-white/10 pb-6 flex items-center gap-3`}>
             <Brain className="w-4 h-4 opacity-80" /> {data.cognitive.title}
           </h3>
@@ -315,7 +315,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
 
       {/* LEARNING + ENNEAGRAM */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="border border-white/10 bg-[#081426]/95 p-6 md:p-8 industrial-clip card-hover">
+        <div className="border border-white/10 bg-[#081023]/95 p-6 md:p-8 industrial-clip card-hover">
           <h3 className={`${headingClass} mb-8 border-b border-white/10 pb-6 flex items-center gap-3`}>
             <Cpu className="w-4 h-4 opacity-80" /> {data.learning.title}
           </h3>
@@ -342,7 +342,7 @@ export const Diagnostics: React.FC<DiagnosticsProps> = ({ mode, lang }) => {
           </div>
         </div>
 
-        <div className="border border-white/10 bg-[#081426]/95 p-6 md:p-8 industrial-clip card-hover">
+        <div className="border border-white/10 bg-[#081023]/95 p-6 md:p-8 industrial-clip card-hover">
           <h3 className={`${headingClass} mb-8 border-b border-white/10 pb-6 flex items-center gap-3`}>
             <Terminal className="w-4 h-4 opacity-80" /> {data.enneagram.title}
           </h3>

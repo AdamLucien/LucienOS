@@ -26,7 +26,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
 
   return (
     <nav className="w-full space-y-4" aria-label="Section navigation">
-      <div className="flex items-center justify-between gap-4 border border-white/15 bg-[#0d1828]/80 px-4 py-2 industrial-clip">
+      <div className="flex items-center justify-between gap-4 border border-white/15 bg-[#081023]/80 px-4 py-2 industrial-clip">
         <div className="flex items-center gap-2">
           <NavigationIcon className="w-4 h-4" style={{ color: accentColor }} />
           <span className="text-[10px] font-bold uppercase tracking-[0.28em] text-white/80">{t.title}</span>
@@ -58,7 +58,7 @@ export const TerminalNavigation: React.FC<TerminalNavigationProps> = ({
           </a>
         ))}
       </div>
-      <div className="relative group flex items-center gap-4 border border-white/10 bg-[#081426]/95 p-3 industrial-clip">
+      <div className="relative group flex items-center gap-4 border border-white/10 bg-[#081023]/95 p-3 industrial-clip">
         <input 
           type="text" 
           value={inputValue}
