@@ -1,1 +1,24 @@
+# Canonical host + HTTPS
+http://adamkarl.lucien.technology/* https://adamkarl.lucien.technology/:splat 301!
+http://www.adamkarl.lucien.technology/* https://adamkarl.lucien.technology/:splat 301!
+https://www.adamkarl.lucien.technology/* https://adamkarl.lucien.technology/:splat 301!
+
+# Trailing slash canonicalization (CZ)
+/modules /modules/ 301!
+/capabilities /capabilities/ 301!
+/archive /archive/ 301!
+/diagnostics /diagnostics/ 301!
+/resonance /resonance/ 301!
+/signal /signal/ 301!
+
+# Trailing slash canonicalization (EN)
+/en /en/ 301!
+/en/modules /en/modules/ 301!
+/en/capabilities /en/capabilities/ 301!
+/en/archive /en/archive/ 301!
+/en/diagnostics /en/diagnostics/ 301!
+/en/resonance /en/resonance/ 301!
+/en/signal /en/signal/ 301!
+
+# SPA fallback
 /* /index.html 200
