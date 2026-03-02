@@ -318,7 +318,17 @@ const writeSitemap = () => {
 };
 
 const writeRobots = () => {
-  const robots = `User-agent: *\nAllow: /\nSitemap: ${joinUrl(SITE_URL, '/sitemap.xml')}\n`;
+  // Keep robots explicit for search bots; do not emit Host directive.
+  const robots = [
+    'User-agent: *',
+    'Allow: /',
+    '',
+    'User-agent: Googlebot',
+    'Allow: /',
+    '',
+    `Sitemap: ${joinUrl(SITE_URL, '/sitemap.xml')}`,
+    ''
+  ].join('\n');
   writeFileSync(join(distDir, 'robots.txt'), robots, 'utf8');
 };
 

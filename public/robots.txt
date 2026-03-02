@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://adamkarl.lucien.technology/sitemap.xml
